@@ -8,19 +8,19 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema lab_mysql
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema lab_mysql
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
-USE `mydb` ;
+CREATE SCHEMA IF NOT EXISTS `lab_mysql` DEFAULT CHARACTER SET utf8 ;
+USE `lab_mysql` ;
 
 -- -----------------------------------------------------
--- Table `mydb`.`Costumers`
+-- Table `lab_mysql`.`Costumers`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Costumers` (
+CREATE TABLE IF NOT EXISTS `lab_mysql`.`Costumers` (
   `Costumer ID` VARCHAR(20) NOT NULL,
   `Name` VARCHAR(45) NOT NULL,
   `Phone Number` INT NULL,
@@ -35,9 +35,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Invoices`
+-- Table `lab_mysql`.`Invoices`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Invoices` (
+CREATE TABLE IF NOT EXISTS `lab_mysql`.`Invoices` (
   `Invoice #` VARCHAR(50) NOT NULL,
   `Date` DATE NOT NULL,
   `Car` VARCHAR(45) NOT NULL,
@@ -48,16 +48,16 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Invoices` (
   INDEX `fk_Invoices_Costumers1_idx` (`Costumers_Costumer ID` ASC) VISIBLE,
   CONSTRAINT `fk_Invoices_Costumers1`
     FOREIGN KEY (`Costumers_Costumer ID`)
-    REFERENCES `mydb`.`Costumers` (`Costumer ID`)
+    REFERENCES `lab_mysql`.`Costumers` (`Costumer ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Salespersons`
+-- Table `lab_mysql`.`Salespersons`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Salespersons` (
+CREATE TABLE IF NOT EXISTS `lab_mysql`.`Salespersons` (
   `Staff Id` VARCHAR(25) NOT NULL,
   `Name` VARCHAR(45) NOT NULL,
   `Store at your company` VARCHAR(45) NOT NULL,
@@ -66,9 +66,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Cars`
+-- Table `lab_mysql`.`Cars`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Cars` (
+CREATE TABLE IF NOT EXISTS `lab_mysql`.`Cars` (
   `Vehicle ID` INT NOT NULL,
   `Manufacturer` VARCHAR(45) NOT NULL,
   `Model` VARCHAR(45) NULL,
@@ -83,26 +83,26 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Cars` (
   INDEX `fk_Cars_Salespersons1_idx` (`Salespersons_Staff Id` ASC) VISIBLE,
   CONSTRAINT `fk_Cars_Invoices`
     FOREIGN KEY (`Invoices_Invoice #`)
-    REFERENCES `mydb`.`Invoices` (`Invoice #`)
+    REFERENCES `lab_mysql`.`Invoices` (`Invoice #`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Cars_Costumers1`
     FOREIGN KEY (`Costumers_Costumer ID`)
-    REFERENCES `mydb`.`Costumers` (`Costumer ID`)
+    REFERENCES `lab_mysql`.`Costumers` (`Costumer ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Cars_Salespersons1`
     FOREIGN KEY (`Salespersons_Staff Id`)
-    REFERENCES `mydb`.`Salespersons` (`Staff Id`)
+    REFERENCES `lab_mysql`.`Salespersons` (`Staff Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Costumers_has_Salespersons`
+-- Table `lab_mysql`.`Costumers_has_Salespersons`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`Costumers_has_Salespersons` (
+CREATE TABLE IF NOT EXISTS `lab_mysql`.`Costumers_has_Salespersons` (
   `Costumers_Costumer ID` VARCHAR(20) NOT NULL,
   `Salespersons_Staff Id` VARCHAR(25) NOT NULL,
   PRIMARY KEY (`Costumers_Costumer ID`, `Salespersons_Staff Id`),
@@ -110,12 +110,12 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Costumers_has_Salespersons` (
   INDEX `fk_Costumers_has_Salespersons_Costumers1_idx` (`Costumers_Costumer ID` ASC) VISIBLE,
   CONSTRAINT `fk_Costumers_has_Salespersons_Costumers1`
     FOREIGN KEY (`Costumers_Costumer ID`)
-    REFERENCES `mydb`.`Costumers` (`Costumer ID`)
+    REFERENCES `lab_mysql`.`Costumers` (`Costumer ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Costumers_has_Salespersons_Salespersons1`
     FOREIGN KEY (`Salespersons_Staff Id`)
-    REFERENCES `mydb`.`Salespersons` (`Staff Id`)
+    REFERENCES `lab_mysql`.`Salespersons` (`Staff Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
