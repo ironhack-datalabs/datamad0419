@@ -1,0 +1,1 @@
+DELETE FROM `cardealdb`.`Car` WHERE (`idCar` = '6');
