@@ -39,7 +39,6 @@ SELECT
 	FROM authors
 	INNER JOIN titleauthor ON titleauthor.au_id = authors.au_id
 	INNER JOIN titles ON titles.title_id = titleauthor.title_id
-	INNER JOIN publishers ON publishers.pub_id = titles.pub_id
     INNER JOIN sales ON sales.title_id = titles.title_id
     GROUP BY authors.au_id
     ORDER BY SUM(sales.qty) DESC
@@ -54,11 +53,14 @@ SELECT
     -- COALESCE SIGNIFICA: CASE WHEN MyColumn IS NULL THEN 0 ELSE MyColumn
     -- SINTAXIS COALESCE(MyCoumn, 0)
 	COALESCE(SUM(sales.qty) , 0) AS "TOTAL"
+    -- Tambien se puede hacer con IFNULL()
 	FROM authors
 	LEFT JOIN titleauthor ON titleauthor.au_id = authors.au_id
 	LEFT JOIN titles ON titles.title_id = titleauthor.title_id
-	LEFT JOIN publishers ON publishers.pub_id = titles.pub_id
     LEFT JOIN sales ON sales.title_id = titles.title_id
     GROUP BY authors.au_id
     ORDER BY SUM(sales.qty) DESC
 ;
+
+-- BONUS
+
