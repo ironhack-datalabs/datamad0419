@@ -35,13 +35,13 @@ SELECT
 	authors.au_id AS "AUTHOR ID", 
 	authors.au_lname AS "LAST NAME", 
 	authors.au_fname AS "FIRST NAME" ,
-	SUM(sales.qty) AS "TOTAL"
+	SUM(sales.qty) AS TOTAL
 	FROM authors
 	INNER JOIN titleauthor ON titleauthor.au_id = authors.au_id
 	INNER JOIN titles ON titles.title_id = titleauthor.title_id
     INNER JOIN sales ON sales.title_id = titles.title_id
     GROUP BY authors.au_id
-    ORDER BY SUM(sales.qty) DESC
+    ORDER BY TOTAL DESC
     LIMIT 3
 ;
 
@@ -52,14 +52,14 @@ SELECT
 	authors.au_fname AS "FIRST NAME" ,
     -- COALESCE SIGNIFICA: CASE WHEN MyColumn IS NULL THEN 0 ELSE MyColumn
     -- SINTAXIS COALESCE(MyCoumn, 0)
-	COALESCE(SUM(sales.qty) , 0) AS "TOTAL"
+	COALESCE(SUM(sales.qty) , 0) AS TOTAL
     -- Tambien se puede hacer con IFNULL()
 	FROM authors
 	LEFT JOIN titleauthor ON titleauthor.au_id = authors.au_id
 	LEFT JOIN titles ON titles.title_id = titleauthor.title_id
     LEFT JOIN sales ON sales.title_id = titles.title_id
     GROUP BY authors.au_id
-    ORDER BY SUM(sales.qty) DESC
+    ORDER BY TOTAL DESC
 ;
 
 -- BONUS
@@ -67,13 +67,14 @@ SELECT
 	authors.au_id AS "AUTHOR ID", 
 	authors.au_lname AS "LAST NAME", 
 	authors.au_fname AS "FIRST NAME",
-	(IFNULL(titles.price, 0)*IFNULL(sales.qty,0)*(titleauthor.royaltyper/100)*(titles.royalty/100))+IFNULL(titles.advance, 0) AS "PROFIT"
+	(IFNULL(titles.price, 0)*IFNULL(sales.qty,0)*(titleauthor.royaltyper/100)*(titles.royalty/100))+IFNULL(titles.advance, 0) AS PROFIT
 	FROM authors
 	LEFT JOIN titleauthor ON titleauthor.au_id = authors.au_id
 	LEFT JOIN titles ON titles.title_id = titleauthor.title_id
     LEFT JOIN sales ON sales.title_id = titles.title_id
     GROUP BY authors.au_id
-    -- NO esta funcionando ordenar por "PROFIT"
-    ORDER BY (IFNULL(titles.price, 0)*IFNULL(sales.qty,0)*(titleauthor.royaltyper/100)*(titles.royalty/100))+IFNULL(titles.advance, 0) DESC
+    -- NO esta funcionando ordenar por "PROFIT
+    -- TIENE QUE IR SIN COMILLAS!!!
+    ORDER BY PROFIT DESC
 	LIMIT 3
 ;
