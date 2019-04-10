@@ -63,4 +63,17 @@ SELECT
 ;
 
 -- BONUS
-
+SELECT 
+	authors.au_id AS "AUTHOR ID", 
+	authors.au_lname AS "LAST NAME", 
+	authors.au_fname AS "FIRST NAME",
+	(IFNULL(titles.price, 0)*IFNULL(sales.qty,0)*(titleauthor.royaltyper/100)*(titles.royalty/100))+IFNULL(titles.advance, 0) AS "PROFIT"
+	FROM authors
+	LEFT JOIN titleauthor ON titleauthor.au_id = authors.au_id
+	LEFT JOIN titles ON titles.title_id = titleauthor.title_id
+    LEFT JOIN sales ON sales.title_id = titles.title_id
+    GROUP BY authors.au_id
+    -- NO esta funcionando ordenar por "PROFIT"
+    ORDER BY (IFNULL(titles.price, 0)*IFNULL(sales.qty,0)*(titleauthor.royaltyper/100)*(titles.royalty/100))+IFNULL(titles.advance, 0) DESC
+	LIMIT 3
+;
