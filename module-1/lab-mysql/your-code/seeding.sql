@@ -31,3 +31,6 @@ INSERT INTO invoices (invoice_number, emission_date, cars_car_ID, salespersons_s
 INSERT INTO invoices (invoice_number, emission_date, cars_car_ID, salespersons_staff_ID) VALUES ('731166526',	'2018-12-31',	3,	7);
 
 --Seeding invoices-customers to create the relation between previous invoices with the specified customers
+INSERT INTO invoice_customer (invoices_invoice_ID, customers_customer_ID, percentage_customer1) VALUES (1, 2, 1);
+INSERT INTO invoice_customer (invoices_invoice_ID, customers_customer_ID, percentage_customer1) VALUES (2, 1, 1);
+INSERT INTO invoice_customer (invoices_invoice_ID, customers_customer_ID, percentage_customer1) VALUES (3, 3, 1);
