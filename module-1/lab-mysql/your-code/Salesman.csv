@@ -1,9 +1,9 @@
-﻿ID;Staff ID;Name;Store
-0;1;Petey Cruiser;Madrid
-1;2;Anna Sthesia;Barcelona
-2;3;Paul Molive;Berlin
-3;4;Gail Forcewind;Paris
-4;5;Paige Turner;Mimia
-5;6;Bob Frapples;Mexico City
-6;7;Walter Melon;Amsterdam
-7;8;Shonda Leer;São Paulo
+ID	Staff ID	Name	Store
+1	1	Petey Cruiser	Madrid
+2	2	Anna Sthesia	Barcelona
+3	3	Paul Molive	Berlin
+4	4	Gail Forcewind	Paris
+5	5	Paige Turner	Mimia
+6	6	Bob Frapples	Mexico City
+7	7	Walter Melon	Amsterdam
+8	8	Shonda Leer	S�o Paulo
