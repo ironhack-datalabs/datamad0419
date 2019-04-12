@@ -8,13 +8,14 @@ print(numpy.__version__)
 # Challenge: there are at least three easy ways that use numpy to generate random arrays. How many ways can you find?
 import numpy as np
 a1 = np.random.random((2,3,5))
-a = np.random.randint(0, high=100, size=(2,3,5,), dtype=int)
-a3 = np.random.uniform(0,high=10,size=(2,3,5,))
+a2 = np.random.uniform(0,high=10,size=(2,3,5,))
+a3 = np.random.randint(0, high=100, size=(2,3,5,), dtype=int)
+a=a3
 
 #4. Print a.
-print(a1)
-print(a)
-print(a3)
+print('a random matrix could be:\n',a1)
+print('a random matrix could be:\n',a2)
+print('a random matrix could be:\n',a,"\n\n in this case we'll keep the last one as a")
 
 #5. Create a 5x2x3 3-dimensional array with all values equaling 1.
 #Assign the array to variable "b"
@@ -22,13 +23,13 @@ bb = np.ones((5,2,3))
 b = np.ones(((5,2,3)), dtype=int)
 
 #6. Print b.
-print(bb)
-print(b)
+print('b ones matrix could be:\n',bb)
+print('b ones matrix could be:\n',b,"\n\n in this case we'll keep the last one as b")
 
 #7. Do a and b have the same size? How do you prove that in Python code?
 
-print(a.size)
-print(b.size)
+print('a size is:',a.size)
+print('b size is:',b.size)
 if a.size == b.size:
         print('a and b are equal')
 else:
@@ -36,35 +37,51 @@ else:
 
 #8. Are you able to add a and b? Why or why not?
 
-a+b
-# NOT POSSIBLE TO ADD A ()
+# ERROR when doing a+b
+# NOT POSSIBLE to add A (2x3x5) to A (5x2x3), A and B need to have the same shape
 
 #9. Transpose b so that it has the same structure of a (i.e. become a 2x3x5 array). Assign the transposed array to varialbe "c".
-
-
+c = np.reshape(b,(2,3,5))
+print('c size is:',c.size)
+print('c shape is:',c.shape)
+print('c matrix is: \n',c)
 
 #10. Try to add a and c. Now it should work. Assign the sum to varialbe "d". But why does it work now?
-
-
+d= a+c
+print('d matrix is: \n',d)
+print('d shape is:',d.shape)
+print('Now it works because a shape is',a.shape,'and c shape is',c.shape,'so they are compatible to sum')
 
 #11. Print a and d. Notice the difference and relation of the two array in terms of the values? Explain.
-
-
-
+a+d
+print('Now it works because a shape is',a.shape,'and d shape is',d.shape,'so they are compatible to sum')
 
 #12. Multiply a and c. Assign the result to e.
-
-
+e=a*c
+print('e matrix is:\n',e)
 
 #13. Does e equal to a? Why or why not?
+# mi primer intento fue:
+# if e == a:
+#       print(e,'e equals a',a)
+# else:
+#       print(e,'e DOES NOT equals a',a)
 
+# --> ValueError: The truth value of an array with more than one element is ambiguous. 
+# --> Use a.any() or a.all()
 
-
+np.array_equal(e,a)
+if np.array_equal(e,a) == True:
+        print(e,'e equals a',a)
+ else:
+       print(e,'e DOES NOT equals a',a)
+#Without checking through Python we can see than c is a ones matrix (identity matrix) so all elements are multiplicated by one
+# n*1 = n --> a*c = a*1 = a
 
 #14. Identify the max, min, and mean values in d. Assign those values to variables "d_max", "d_min", and "d_mean"
-
-
-
+print('maximum value of d matrix elements is:',np.max(d))
+print('minimum value of d matrix elements is:',np.min(d))
+print('mean value of d matrix elements is:',np.around(np.mean(d), decimals=2))
 
 #15. Now we want to label the values in d. First create an empty array "f" with the same shape (i.e. 2x3x5) as d using `np.empty`.
 
