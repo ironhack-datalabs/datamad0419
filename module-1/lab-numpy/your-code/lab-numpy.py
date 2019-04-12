@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
 #1. Import the NUMPY package under the name np.
 import numpy as np
 
@@ -205,3 +211,10 @@ for i in range(f.shape[0]):
                 e[i][j][k] = 'E'
 e = np.array(e)
 print (e)
+
+
+# In[ ]:
+
+
+
+
