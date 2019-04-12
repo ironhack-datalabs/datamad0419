@@ -67,6 +67,8 @@ print(d_min)
 print(d_mean)
 #15. Now we want to label the values in d. First create an empty array "f" with the same shape (i.e. 2x3x5) as d using `np.empty`.
 f = np.empty_like(d)
+print("----------f------------")
+print(f)
 print(f.shape)
 
 """
@@ -78,8 +80,17 @@ Assign 100 to the corresponding value(s) in f for d_max in d.
 In the end, f should have only the following values: 0, 25, 50, 75, and 100.
 Note: you don't have to use Numpy in this question.
 """
-
-
+print(d)
+print('---------')
+#print(d.shape[0])
+for z in range(d.shape[0]):
+        for x in range(d.shape[1]):
+                for y in range(d.shape[2]):
+                        if d[z,x,y] > d_min and d[z,x,y] < d_mean: f[z,x,y]= 25
+                        if d[z,x,y] > d_mean and d[z,x,y] < d_max: f[z,x,y]= 75       
+                        if d[z,x,y] == d_mean: f[z,x,y]= 50
+                        if d[z,x,y] == d_min: f[z,x,y]= 0
+                        if d[z,x,y] == d_max: f[z,x,y]= 100
 
 
 """
@@ -102,7 +113,10 @@ array([[[ 75.,  75.,  75.,  25.,  75.],
         [ 75.,  75.,  75.,  75.,  75.],
         [ 25.,  75.,   0.,  75.,  75.]]])
 """
-
+print('---d---')
+print(d)
+print('---f---')
+print(f)
 
 """
 #18. Bonus question: instead of using numbers (i.e. 0, 25, 50, 75, and 100), how to use string values 
@@ -116,3 +130,15 @@ array([[[ 'D',  'D',  'D',  'B',  'D'],
         [ 'B',  'D',   'A',  'D', 'D']]])
 Again, you don't need Numpy in this question.
 """
+print(f.dtype)
+f= f.astype(str)
+print(f.dtype)
+for z in range(d.shape[0]):
+        for x in range(d.shape[1]):
+                for y in range(d.shape[2]):
+                        if d[z,x,y] > d_min and d[z,x,y] < d_mean: f[z,x,y]= 'B'
+                        if d[z,x,y] > d_mean and d[z,x,y] < d_max: f[z,x,y]= 'D'    
+                        if d[z,x,y] == d_mean: f[z,x,y]= 'C'
+                        if d[z,x,y] == d_min: f[z,x,y]= 'A'
+                        if d[z,x,y] == d_max: f[z,x,y]= 'E'
+print(f)
