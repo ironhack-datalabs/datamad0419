@@ -51,7 +51,7 @@ a.size == b.size
 
 
 #8. Are you able to add a and b? Why or why not?
-print(a+b)
+#print(a+b)
 
 
 # In[34]:
