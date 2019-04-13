@@ -79,13 +79,26 @@ Assign 100 to the corresponding value(s) in f for d_max in d.
 In the end, f should have only the following values: 0, 25, 50, 75, and 100.
 Note: you don't have to use Numpy in this question.
 """
-
-
+for i in range(f.shape[0]):
+    for ii in range(f.shape[1]):
+        for iii in range (f.shape[2]):
+            if d[i,ii,iii]>d_min and d[i,ii,iii]<d_mean:
+                f[i,ii,iii]=25
+            elif d[i,ii,iii]>d_mean and d[i,ii,iii]<d_max:
+                f[i,ii,iii]=75
+            elif d[i,ii,iii]==d_mean:
+                f[i,ii,iii]=50
+            elif d[i,ii,iii]==d_min:
+                f[i,ii,iii]=0
+            elif d[i,ii,iii]==d_max:
+                f[i,ii,iii]=100
+print(f)
 
 
 """
 #17. Print d and f. Do you have your expected f?
 For instance, if your d is:
+
 array([[[1.85836099, 1.67064465, 1.62576044, 1.40243961, 1.88454931],
         [1.75354326, 1.69403643, 1.36729252, 1.61415071, 1.12104981],
         [1.72201435, 1.1862918 , 1.87078449, 1.7726778 , 1.88180042]],
@@ -103,8 +116,8 @@ array([[[ 75.,  75.,  75.,  25.,  75.],
         [ 75.,  75.,  75.,  75.,  75.],
         [ 25.,  75.,   0.,  75.,  75.]]])
 """
-
-
+print(d)
+print(f)
 """
 #18. Bonus question: instead of using numbers (i.e. 0, 25, 50, 75, and 100), how to use string values 
 ("A", "B", "C", "D", and "E") to label the array elements? You are expecting the result to be:
@@ -117,3 +130,4 @@ array([[[ 'D',  'D',  'D',  'B',  'D'],
         [ 'B',  'D',   'A',  'D', 'D']]])
 Again, you don't need Numpy in this question.
 """
+# no pude hacerlo siempre me daba error
