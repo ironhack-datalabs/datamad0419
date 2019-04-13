@@ -1,12 +1,11 @@
 #1. Import the NUMPY package under the name np.
-import numpy
+import numpy as np
 
 #2. Print the NUMPY version and the configuration.
-print(numpy.__version__)
+print(np.version.version)
 
 #3. Generate a 2x3x5 3-dimensional array with random values. Assign the array to variable "a"
 # Challenge: there are at least three easy ways that use numpy to generate random arrays. How many ways can you find?
-import numpy as np
 a1 = np.random.random((2,3,5))
 a2 = np.random.uniform(0,high=10,size=(2,3,5,))
 a3 = np.random.randint(0, high=100, size=(2,3,5,), dtype=int)
@@ -73,33 +72,47 @@ print('e matrix is:\n',e)
 np.array_equal(e,a)
 if np.array_equal(e,a) == True:
         print(e,'e equals a',a)
- else:
-       print(e,'e DOES NOT equals a',a)
+else:
+        print(e,'e DOES NOT equals a',a)
 #Without checking through Python we can see than c is a ones matrix (identity matrix) so all elements are multiplicated by one
 # n*1 = n --> a*c = a*1 = a
 
 #14. Identify the max, min, and mean values in d. Assign those values to variables "d_max", "d_min", and "d_mean"
-print('maximum value of d matrix elements is:',np.max(d))
-print('minimum value of d matrix elements is:',np.min(d))
-print('mean value of d matrix elements is:',np.around(np.mean(d), decimals=2))
+d_max= np.max(d)
+print('maximum value of d matrix elements is:',d_max)
+d_min= np.min(d)
+print('minimum value of d matrix elements is:',d_min)
+d_mean= np.around(np.mean(d), decimals=2)
+print('mean value of d matrix elements is:',d_mean)
 
-#15. Now we want to label the values in d. First create an empty array "f" with the same shape (i.e. 2x3x5) as d using `np.empty`.
-
-
-
-
+#15. Now we want to label the values in d. First create an empty array "f" with the same shape 
+# (i.e. 2x3x5) as d using `np.empty`.
+f= np.empty(d.shape, dtype=int, order='C')
+print(f)
 """
-#16. Populate the values in f. For each value in d, if it's larger than d_min but smaller than d_mean, assign 25 to the corresponding value in f.
-If a value in d is larger than d_mean but smaller than d_max, assign 75 to the corresponding value in f.
+#16. Populate the values in f. For each value in d, 
+# if it's larger than d_min but smaller than d_mean, assign 25 to the corresponding value in f.
+If a value in d is larger than d_mean but smaller than d_max, 
+assign 75 to the corresponding value in f.
 If a value equals to d_mean, assign 50 to the corresponding value in f.
 Assign 0 to the corresponding value(s) in f for d_min in d.
 Assign 100 to the corresponding value(s) in f for d_max in d.
 In the end, f should have only the following values: 0, 25, 50, 75, and 100.
 Note: you don't have to use Numpy in this question.
 """
-
-
-
+for i in range(0,2):
+        for j in range(0,3):
+                for k in range(0,5):
+                        if d[i][j][k] > d_min and d[i][j][k] < d_mean:
+                                f[i][j][k]=25
+                        elif d[i][j][k] > d_mean and d[i][j][k] < d_max:
+                                f[i][j][k]=75
+                        elif d[i][j][k] == d_mean:
+                                f[i][j][k]=50
+                        elif d[i][j][k] == d_min:
+                                f[i][j][k]=0
+                        elif d[i][j][k] == d_max:
+                                f[i][j][k]=100
 
 """
 #17. Print d and f. Do you have your expected f?
@@ -121,11 +134,14 @@ array([[[ 75.,  75.,  75.,  25.,  75.],
         [ 75.,  75.,  75.,  75.,  75.],
         [ 25.,  75.,   0.,  75.,  75.]]])
 """
-
+print(d)
+print(f)
 
 """
-#18. Bonus question: instead of using numbers (i.e. 0, 25, 50, 75, and 100), how to use string values 
-("A", "B", "C", "D", and "E") to label the array elements? You are expecting the result to be:
+#18. Bonus question: instead of using numbers (i.e. 0, 25, 50, 75, and 100), 
+# how to use string values 
+("A", "B", "C", "D", and "E") to label the array elements? 
+You are expecting the result to be:
 array([[[ 'D',  'D',  'D',  'B',  'D'],
         [ 'D',  'D',  'B',  'B',  'B'],
         [ 'D',  'B',  'D',  'D',  'D']],
@@ -135,3 +151,20 @@ array([[[ 'D',  'D',  'D',  'B',  'D'],
         [ 'B',  'D',   'A',  'D', 'D']]])
 Again, you don't need Numpy in this question.
 """
+g= np.empty(d.shape, dtype=str, order='C')
+print(g)
+
+for i in range(0,2):
+        for j in range(0,3):
+                for k in range(0,5):
+                        if d[i][j][k] > d_min and d[i][j][k] < d_mean:
+                                g[i][j][k]='B'
+                        elif d[i][j][k] > d_mean and d[i][j][k] < d_max:
+                                g[i][j][k]='D'
+                        elif d[i][j][k] == d_mean:
+                                g[i][j][k]='C'
+                        elif d[i][j][k] == d_min:
+                                g[i][j][k]='A'
+                        elif d[i][j][k] == d_max:
+                                g[i][j][k]='E'
+print(g)
