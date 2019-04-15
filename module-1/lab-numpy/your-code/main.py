@@ -150,5 +150,7 @@ for i in range(len(d)):
                         elif value == d_min:
                                 f[i][j][k] = "A"
                         elif value == d_max:
-                                f[i][j][k] = "C"
+                                f[i][j][k] = "E"
+                        else:
+                                f[i][j][k] = "c"
 print(f)
