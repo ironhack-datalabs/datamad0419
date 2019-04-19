@@ -1,0 +1,1 @@
+# función para strip
