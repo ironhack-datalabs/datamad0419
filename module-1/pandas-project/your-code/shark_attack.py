@@ -22,11 +22,11 @@ from matplotlib import pyplot as plt   # para plots
 
 
 
-
 #2º
 datos=pd.read_csv('attacks.csv', encoding='ISO-8859-1')           # se crea el dataframe
 #print (datos)
 #print (datos.columns)
+
 
 
 
@@ -39,8 +39,9 @@ datos=datos.rename(columns={'Year': 'Año', 'Type': 'Tipo', 'Activity': 'Activid
 
 
 
+
 #4º
-datos['Año']=datos[datos['Año']>=1940]['Año']     # una primera seleccion de datos, desde 1940
+datos['Año']=datos[datos['Año']>=1940]['Año']        # una primera seleccion de datos, desde 1940
 datos=datos.dropna(how='all')                        # elimina Nan, desde el registro 6304 no hay datos
 datos=datos.iloc[0:4782, :]                          # ahora solo me quedo con los registros desde 1940, 4783 registros
 # print (datos['Año'])
@@ -48,12 +49,19 @@ datos=datos.iloc[0:4782, :]                          # ahora solo me quedo con l
 
 
 
+#5º
+datos=datos.fillna('UNKNOWN')                                   # renombro los valores nulos...
+datos=datos[datos['Especie'].map(lambda x: str(x)!='UNKNOWN')]  # ... y los elimino segun ese nombre.
+datos.index=range(len(datos))                                   # reindexo el frame por si lo necesito en el futuro 
+#print (datos['Especie'])                                     
+
+
 null=datos.isna().sum()                                       # se miran los valores nulos
 #print (null[null>0])
 
 
-datos=datos.fillna('UNKNOWN')
-#print (datos.shape)
+
+print (datos.shape)
 print (null[null>0])
 #print (datos['Species '])
 #print (datos)
