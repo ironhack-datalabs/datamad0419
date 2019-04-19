@@ -34,7 +34,7 @@ datos=pd.read_csv('attacks.csv', encoding='ISO-8859-1')           # se crea el d
 datos=datos[['Year',  'Type', 'Activity', 'Species ', 'Injury', 'Fatal (Y/N)']]  # se escogen los datos a tratar
 # elimino el resto de columnas porque no me hacen falta para el proposito del estudio
 datos=datos.rename(columns={'Year': 'Año', 'Type': 'Tipo', 'Activity': 'Actividad',\
-                            'Species ': 'Especie', 'Injury': 'Daños', 'Fatal (Y/N)': 'Fatal'}) 
+                            'Species ': 'Especie', 'Injury': 'Daños', 'Fatal (Y/N)': 'Mortal'}) 
 # renombro las columnas por comodidad
 
 
@@ -53,19 +53,24 @@ datos=datos.iloc[0:4782, :]                          # ahora solo me quedo con l
 datos=datos.fillna('UNKNOWN')                                   # renombro los valores nulos...
 datos=datos[datos['Especie'].map(lambda x: str(x)!='UNKNOWN')]  # ... y los elimino segun ese nombre.
 datos.index=range(len(datos))                                   # reindexo el frame por si lo necesito en el futuro 
-#print (datos['Especie'])                                     
+#print (datos.shape)                                             # 2993 registros
+null=datos.isna().sum()                                         # se miran los valores nulos
+#print (null[null>0])                                            # el frame esta limpio
 
 
-null=datos.isna().sum()                                       # se miran los valores nulos
-#print (null[null>0])
+
+
+#6º
 
 
 
-print (datos.shape)
-print (null[null>0])
-#print (datos['Species '])
-#print (datos)
-#print (datos.dtypes)
+
+
+
+
+
+
+
 
 
 
