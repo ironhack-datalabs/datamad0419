@@ -11,6 +11,7 @@ sino tambien que especie provoca mayores daños no mortales.
 En una segunda parte intentare construir una serie temporal con esa informacion 
 para tratar de responder una pregunta:
 ¿los tiburones se estan volviendo mas agresivos con el tiempo?   
+De ser cierto, ¿esta relacionado con la actividad humana?
 '''
 
 
