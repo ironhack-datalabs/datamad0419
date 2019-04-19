@@ -17,7 +17,7 @@ import numpy as np                     # numerical python
 
 datos=pd.read_csv('attacks.csv', encoding='ISO-8859-1')           # se crea el dataframe
 print (datos)
-
+print (datos.columns)
 
 
 
