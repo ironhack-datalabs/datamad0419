@@ -18,8 +18,8 @@ De ser cierto, ¿esta relacionado con la actividad humana?. (esto para otra)
 #1º
 import pandas as pd                    # dataframe
 from matplotlib import pyplot as plt   # para plots
-from regEX import *                    # expresiones regulares
-from shark import *
+from regEX import *                    # expresiones regulares, clasificacion ataque
+from shark import *                    # expresiones regulares, limpieza especie
 
 
 
@@ -86,16 +86,80 @@ datos['Especie(clean)']=shark(str_shark)                             # limpieza 
 # plot por especie, numero de ataques
 tiburones=datos['Especie(clean)'].value_counts()
 #print (tiburones)
-tiburones[(tiburones<800) & (tiburones>10)].plot.barh(color='red')
+tiburones[(tiburones<800) & (tiburones>10)].plot.barh(color='red')   # ataque entre 10 y 800
+plt.title('Ataques por especie',size=14,fontweight='bold')
+plt.xlabel('Numero de ataques',size=13)
 plt.show()
 
 
-
 '''
+#9º
+# plot mortal si o no
 datos[datos['Mortal'].isin(['N','Y'])]["Mortal"].value_counts().plot(kind='bar', color= ['green','red'])
+plt.title('Ataques mortales',size=14,fontweight='bold')
+plt.ylabel('Numero de ataques',size=13)
 plt.show()   
 '''
 
+
+#10º
+# plots tipo de ataque y especie (blanco, tigre, toro, punta negra, nodriza, bronce)
+fig=plt.figure()                                # subplots de 6 especies
+fig.subplots_adjust(hspace=0.4, wspace=0.4)     # ajuste de espacio
+
+plt.subplot(3,2,1)           # posicion subplot
+ataque=datos[datos['Especie(clean)'].isin(['White'])]["Clase_Daños"].value_counts().sort_index()
+#datos
+#plt.ylim(0, 260)                                           # ajusta eje y
+ataque.plot(kind='bar', color= ['g','b','y','orange','r'])  # dibuja
+plt.title('White shark',size=12,fontweight='bold')          # titulo
+plt.ylabel('Numero de ataques',size=10)                     # etiqueta eje y
+
+plt.subplot(3,2,2)
+ataque=datos[datos['Especie(clean)'].isin(['Tiger'])]["Clase_Daños"].value_counts().sort_index()
+ataque.plot(kind='bar', color= ['g','b','y','orange','r'])
+plt.title('Tiger shark',size=12,fontweight='bold')
+
+plt.subplot(3,2,3)
+ataque=datos[datos['Especie(clean)'].isin(['Bull'])]["Clase_Daños"].value_counts().sort_index()
+ataque.plot(kind='bar', color= ['g','b','y','orange','r'])
+plt.title('Bull shark',size=12,fontweight='bold')
+plt.ylabel('Numero de ataques',size=10)
+
+plt.subplot(3,2,4)
+ataque=datos[datos['Especie(clean)'].isin(['Blacktip'])]["Clase_Daños"].value_counts().sort_index()
+ataque.plot(kind='bar', color= ['g','b','y','orange','r'])
+plt.title('Blacktip shark',size=12,fontweight='bold')
+
+plt.subplot(3,2,5)
+ataque=datos[datos['Especie(clean)'].isin(['Nurse'])]["Clase_Daños"].value_counts().sort_index()
+ataque.plot(kind='bar', color= ['g','b','y','orange','r'])
+plt.title('Nurse shark',size=12,fontweight='bold')
+plt.xlabel('Tipo de ataque',size=10)                   # etiqueta eje x
+plt.ylabel('Numero de ataques',size=10)
+
+plt.subplot(3,2,6)
+ataque=datos[datos['Especie(clean)'].isin(['Bronze'])]["Clase_Daños"].value_counts().sort_index()
+ataque.plot(kind='bar', color= ['g','b','y','orange','r'])
+plt.title('Bronze shark',size=12,fontweight='bold')
+plt.xlabel('Tipo de ataque',size=10)
+plt.show() 
+
+
+#ataque0=datos[(datos['Clase_Daños'].isin(['0']))&(datos['Especie(clean)']!='Other')\
+               #&(datos['Especie(clean)']!='')]["Especie(clean)"].value_counts().sort_index()    # ataque sin daño
+#ataque0.plot(kind='bar', color= 'g')
+#ataque1=datos[(datos['Clase_Daños'].isin(['1']))&(datos['Especie(clean)']!='Other')\
+               #&(datos['Especie(clean)']!='')]["Especie(clean)"].value_counts().sort_index()    # ataque daño bajo
+#ataque1.plot(kind='bar', color= 'b')
+#ataque0.plot(kind='bar', color= 'g')
+#plt.xticks(rotation=60)
+#plt.show()                         # para multihistograma (todavia no sale)
+
+
+
+
+#11º
 
 
 
