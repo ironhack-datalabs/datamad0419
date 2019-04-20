@@ -14,7 +14,7 @@ def dibuja(datos):
 	#plt.ylim(0, 260)                                           # ajusta eje y
 	ataque.plot(kind='bar', color= ['g','b','y','orange','r'])  # dibuja
 	plt.title('White shark',size=12,fontweight='bold')          # titulo
-	
+	plt.ylabel('Numero de ataques',size=10)                     # etiqueta eje y
 	
 	plt.subplot(3,2,2)
 	ataque=datos[datos['Especie(clean)'].isin(['Tiger'])]["Clase_Daños"].value_counts().sort_index()
@@ -37,7 +37,7 @@ def dibuja(datos):
 	ataque.plot(kind='bar', color= ['g','b','y','orange','r'])
 	plt.title('Nurse shark',size=12,fontweight='bold')
 	plt.xlabel('Tipo de ataque',size=10)                   # etiqueta eje x
-	
+	plt.ylabel('Numero de ataques',size=10)
 	
 	plt.subplot(3,2,6)
 	ataque=datos[datos['Especie(clean)'].isin(['Bronze'])]["Clase_Daños"].value_counts().sort_index()
