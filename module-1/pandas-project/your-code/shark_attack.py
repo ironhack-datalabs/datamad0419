@@ -105,7 +105,8 @@ plt.show()
 #10º
 # plots tipo de ataque y especie (blanco, tigre, toro, punta negra, nodriza, bronce)
 fig=plt.figure()                                # subplots de 6 especies
-fig.subplots_adjust(hspace=0.4, wspace=0.4)     # ajuste de espacio
+fig.subplots_adjust(hspace=0.4, wspace=0.4)     # ajuste de espacio  entre plots
+#plt.rcParams["figure.figsize"] =(20,20)         # ajuste de tamaño completo
 
 plt.subplot(3,2,1)           # posicion subplot
 ataque=datos[datos['Especie(clean)'].isin(['White'])]["Clase_Daños"].value_counts().sort_index()
