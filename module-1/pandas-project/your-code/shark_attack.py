@@ -19,7 +19,7 @@ De ser cierto, ¿esta relacionado con la actividad humana?. (esto para otra)
 import pandas as pd                    # dataframe
 from matplotlib import pyplot as plt   # para plots
 from regEX import *                    # expresiones regulares
-
+from shark import *
 
 
 
@@ -66,13 +66,35 @@ null=datos.isna().sum()                                         # se miran los v
 # clasifico el tipo de ataque: clase '0'=sin daños, '1'=daño bajo, '2'=daño medio, '3'=daño alto, '4'=mortal
 datos.loc[datos['Mortal']=='Y', 'Daños']='4'                     # cambio los mortales a clase '4'
 #print (datos['Daños'])		
-strings=[datos['Daños'][i].lower() for i in range(len(datos))]   # pasa a minusculas
-datos['Clase_Daños']=regEX(strings)                              # clasificacion categorica de los ataques
-print (datos)
+str_daños=[datos['Daños'][i].lower() for i in range(len(datos))]   # pasa a minusculas
+datos['Clase_Daños']=regEX(str_daños)                              # clasificacion categorica de los ataques
+#print (datos)
+
+
+
+#7º 
+# Ahora las especies
+str_shark=[datos['Especie'][i].lower() for i in range(len(datos))]   # pasa a minusculas
+datos['Especie(clean)']=shark(str_shark)                             # limpieza especies
+#print (shark(str_shark))
+#print (datos)
 
 
 
 
+#8º 
+# plot por especie, numero de ataques
+tiburones=datos['Especie(clean)'].value_counts()
+#print (tiburones)
+tiburones[(tiburones<800) & (tiburones>10)].plot.barh(color='red')
+plt.show()
+
+
+
+'''
+datos[datos['Mortal'].isin(['N','Y'])]["Mortal"].value_counts().plot(kind='bar', color= ['green','red'])
+plt.show()   
+'''
 
 
 
