@@ -40,11 +40,13 @@ datos=datos.rename(columns={'Year': 'Año', 'Type': 'Tipo', 'Activity': 'Activid
 
 
 #4º
-datos['Año']=datos[datos['Año']>=1940]['Año']        # una primera seleccion de datos, desde 1940solo para visualizacion[i]
-datos=datos.dropna(how='all')                        # elimina Nan, desde el registro 6304 no hay datos
-datos=datos.iloc[0:4782, :]                          # ahora solo me quedo con los registros desde 1940, 4782 registros
+#datos['Año']=datos[datos['Año']>=1940]['Año']        # una primera seleccion de datos, desde 1940, solo para visualizacion[i]
+datos=datos.dropna(how='all')                        # elimina Nan, desde el registro 6302 no hay datos
+#print (datos.shape)
+datos=datos[datos.Año>=1940]                        # una primera seleccion de datos, desde 1940
+#datos=datos.iloc[0:4782, :]                          # ahora solo me quedo con los registros desde 1940, 4780 registros
 #print (datos['Año'])
-
+#print (datos.shape)
 
 
 
@@ -52,7 +54,7 @@ datos=datos.iloc[0:4782, :]                          # ahora solo me quedo con l
 datos=datos.fillna('UNKNOWN')                                   # renombro los valores nulos...
 datos=datos[datos['Especie'].map(lambda x: str(x)!='UNKNOWN')]  # ... y los elimino segun ese nombre.
 datos=datos.drop_duplicates()                                   # se eliminan duplicados
-#print (datos.shape)                                             # 2981 registros
+#print (datos.shape)                                             # 2980 registros
 datos.index=range(len(datos))                                   # reindexo el frame por si lo necesito en el futuro 
 null=datos.isna().sum()                                         # se miran los valores nulos
 #print (null[null>0])                                            # el frame esta limpio
@@ -61,7 +63,10 @@ null=datos.isna().sum()                                         # se miran los v
 
 
 #6º
-strings=[datos['Daños'][i].lower() for i in range(len(datos))]
+# clasifico el tipo de ataque: clase '0'=sin daños, '1'=daño bajo, '2'=daño medio, '3'=daño alto, '4'=mortal
+datos.loc[datos['Mortal']=='Y', 'Daños']='4'                     # cambio los mortales a clase '4'
+#print (datos['Daños'])		
+strings=[datos['Daños'][i].lower() for i in range(len(datos))]   # pasa a minusculas
 print(regEX(strings))	
 	
 
