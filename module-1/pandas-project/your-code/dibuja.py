@@ -46,7 +46,10 @@ def dibuja(datos):
 	plt.xlabel('Tipo de ataque',size=10)
 	
 	plt.show()
-	return 'Dibujo de las 6 especies de tiburón que más atacan.' 
+	return "Tipo de ataque: '0'=sin daños, '1'=daño bajo, '2'=daño medio, '3'=daño alto, '4'=mortal\
+	        \
+	         \
+	        Dibujo de las 6 especies de tiburón que más atacan." 
 
 
 
