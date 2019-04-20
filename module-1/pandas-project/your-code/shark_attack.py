@@ -11,7 +11,7 @@ sino tambien que especie provoca mayores daños no mortales.
 En una segunda parte intentare construir una serie temporal con esa informacion 
 para tratar de responder una pregunta:
 ¿los tiburones se estan volviendo mas agresivos con el tiempo?.   
-De ser cierto, ¿esta relacionado con la actividad humana?.
+De ser cierto, ¿esta relacionado con la actividad humana?. (esto para otra)
 '''
 
 
@@ -67,10 +67,8 @@ null=datos.isna().sum()                                         # se miran los v
 datos.loc[datos['Mortal']=='Y', 'Daños']='4'                     # cambio los mortales a clase '4'
 #print (datos['Daños'])		
 strings=[datos['Daños'][i].lower() for i in range(len(datos))]   # pasa a minusculas
-print(regEX(strings))	
-	
-
-
+datos['Clase_Daños']=regEX(strings)                              # clasificacion categorica de los ataques
+print (datos)
 
 
 
