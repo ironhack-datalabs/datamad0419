@@ -41,7 +41,7 @@ def regEX(datos):
 			res.append(n)	
 				
 		
-	for f in res:
+	for f in res:                # bucle para cuantas me faltan por asignar 
 		if   f=='0': cero+=1	
 		elif f=='1': uno+=1
 		elif f=='2': dos+=1
