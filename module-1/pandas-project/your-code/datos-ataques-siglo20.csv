@@ -474,7 +474,7 @@ Year,Month,Type,Fatal,Sex,Country,Case Number,Decade
 1931,3,Provoked,N,M,AUSTRALIA,1931.03.06,Años 30
 1931,1,Unprovoked,N,M,AUSTRALIA,1931.01.24,Años 30
 1931,3,Unprovoked,Y,M,AUSTRALIA,1931.03.22,Años 30
-1931,4,Unprovoked,Y,M,Otro,1931.04.27.R,Años 30
+1931,4,Unprovoked,Y,M,OTRO,1931.04.27.R,Años 30
 1931,5,Boating,N,UNKNOWN,AUSTRALIA,1931.05.02,Años 30
 1931,6,Unprovoked,UNKNOWN,UNKNOWN,PAPUA NEW GUINEA,1931.00.00.a,Años 30
 1931,6,Provoked,N,M,USA,1931.06.13,Años 30
@@ -566,7 +566,7 @@ Year,Month,Type,Fatal,Sex,Country,Case Number,Decade
 1935,6,Unprovoked,N,UNKNOWN,PAPUA NEW GUINEA,1935.06.00.a,Años 30
 1935,5,Unprovoked,N,M,AUSTRALIA,1935.05.12,Años 30
 1935,3,Unprovoked,Y,M,AUSTRALIA,1935.03.09,Años 30
-1935,4,Unprovoked,N,F,Otro,1935.04.12.R,Años 30
+1935,4,Unprovoked,N,F,OTRO,1935.04.12.R,Años 30
 1935,4,Unprovoked,N,M,USA,1935.04.08.R,Años 30
 1935,3,Unprovoked,N,M,AUSTRALIA,1935.03.30,Años 30
 1935,3,Provoked,N,M,SOUTH AFRICA,1935.03.25.R,Años 30
@@ -726,7 +726,7 @@ Year,Month,Type,Fatal,Sex,Country,Case Number,Decade
 1941,2,Provoked,N,M,JAMAICA,1941.02.01,Años 40
 1941,2,Provoked,N,M,AUSTRALIA,1941.02.13.,Años 40
 1941,6,Unprovoked,Y,M,IRAN,1941.00.00.f,Años 40
-1942,11,Sea Disaster,Y,M,Otro,1942.11.00.a,Años 40
+1942,11,Sea Disaster,Y,M,OTRO,1942.11.00.a,Años 40
 1942,8,Sea Disaster,N,M,SOLOMON ISLANDS,1942.08.08,Años 40
 1942,9,Sea Disaster,Y,M,SOUTHWEST PACIFIC OCEAN,1942.09.11,Años 40
 1942,9,Unprovoked,N,M,AUSTRALIA,1942.09.12.a,Años 40
@@ -748,9 +748,9 @@ Year,Month,Type,Fatal,Sex,Country,Case Number,Decade
 1942,6,Unprovoked,N,M,USA,1942.06.04,Años 40
 1942,6,Sea Disaster,Y,M,BAY OF BENGAL,1942.06.11.R,Años 40
 1942,6,Unprovoked,Y,M,PANAMA,1942.00.00.a,Años 40
-1942,6,Boating,N,M,Otro,1942.00.00.b,Años 40
+1942,6,Boating,N,M,OTRO,1942.00.00.b,Años 40
 1942,6,Sea Disaster,N,M,SOUTHWEST PACIFIC OCEAN,1942.00.00.c,Años 40
-1942,6,Sea Disaster,Y,M,Otro,1942.00.00.e,Años 40
+1942,6,Sea Disaster,Y,M,OTRO,1942.00.00.e,Años 40
 1942,6,Unprovoked,N,M,BAHAMAS,1942.00.00.f,Años 40
 1942,6,Boating,N,UNKNOWN,SOUTH AFRICA,1942.00.00.g,Años 40
 1942,6,Boating,N,UNKNOWN,SOUTH AFRICA,1942.00.00.h,Años 40
@@ -759,7 +759,7 @@ Year,Month,Type,Fatal,Sex,Country,Case Number,Decade
 1942,6,Sea Disaster,Y,M,INDONESIA,1942.00.00.k,Años 40
 1942,1,Provoked,N,M,AUSTRALIA,1942.01.00,Años 40
 1942,1,Unprovoked,Y,F,AUSTRALIA,1942.01.04,Años 40
-1942,6,Unprovoked,N,M,Otro,1942.06.00,Años 40
+1942,6,Unprovoked,N,M,OTRO,1942.06.00,Años 40
 1942,1,Boating,N,UNKNOWN,AUSTRALIA,1942.01.18,Años 40
 1942,3,Sea Disaster,Y,M,CUBA,1942.03.08,Años 40
 1942,5,Unprovoked,N,M,AUSTRALIA,1942.05.09,Años 40
@@ -799,7 +799,7 @@ Year,Month,Type,Fatal,Sex,Country,Case Number,Decade
 1944,10,Sea Disaster,Y,M,PHILIPPINES,1944.10.26.b,Años 40
 1944,11,Sea Disaster,Y,M,SIERRA LEONE,1944.11.08,Años 40
 1944,12,Sea Disaster,N,M,PHILIPPINES,1944.12.18,Años 40
-1944,10,Sea Disaster,Y,M,Otro,1944.10.24,Años 40
+1944,10,Sea Disaster,Y,M,OTRO,1944.10.24,Años 40
 1944,5,Unprovoked,N,UNKNOWN,SAMOA,1944.05.24.R,Años 40
 1944,10,Sea Disaster,Y,M,PHILIPPINES,1944.10.26.a,Años 40
 1944,4,Unprovoked,Y,UNKNOWN,NICARAGUA,1944.04.00,Años 40
@@ -925,7 +925,7 @@ Year,Month,Type,Fatal,Sex,Country,Case Number,Decade
 1949,8,Unprovoked,N,M,AUSTRALIA,1949.08.28.b,Años 40
 1949,11,Unprovoked,N,M,AUSTRALIA,1949.11.20,Años 40
 1949,12,Unprovoked,N,M,AUSTRALIA,1949.12.00.a,Años 40
-1949,12,Sea Disaster,Y,M,Otro,1949.12.00.b,Años 40
+1949,12,Sea Disaster,Y,M,OTRO,1949.12.00.b,Años 40
 1949,8,Unprovoked,N,M,AUSTRALIA,1949.08.16,Años 40
 1949,5,Unprovoked,N,F,AUSTRALIA,1949.05.16,Años 40
 1949,6,Unprovoked,Y,M,PAPUA NEW GUINEA,1949.00.00.c,Años 40
@@ -1167,7 +1167,7 @@ Year,Month,Type,Fatal,Sex,Country,Case Number,Decade
 1956,12,Unprovoked,Y,M,GABON,1956.12.15.R,Años 50
 1956,9,Unprovoked,N,M,ITALY,1956.09.00.a,Años 50
 1956,9,Unprovoked,Y,M,MAYOTTE,1956.09.00.b,Años 50
-1956,9,Unprovoked,Y,M,Otro,1956.09.13,Años 50
+1956,9,Unprovoked,Y,M,OTRO,1956.09.13,Años 50
 1956,9,Unprovoked,N,M,USA,1956.09.23,Años 50
 1956,10,Unprovoked,Y,M,PAPUA NEW GUINEA,1956.10.00,Años 50
 1956,10,Unprovoked,N,M,SENEGAL,1956.10.07,Años 50
@@ -1186,7 +1186,7 @@ Year,Month,Type,Fatal,Sex,Country,Case Number,Decade
 1956,6,Unprovoked,UNKNOWN,F,USA,1956.00.00.d,Años 50
 1956,6,Provoked,N,M,USA,1956.00.00.e,Años 50
 1956,6,Unprovoked,Y,F,GREECE,1956.00.00.f,Años 50
-1956,6,Sea Disaster,Y,M,Otro,1956.00.00.g,Años 50
+1956,6,Sea Disaster,Y,M,OTRO,1956.00.00.g,Años 50
 1956,6,Unprovoked,N,M,PAPUA NEW GUINEA,1956.00.00.h,Años 50
 1956,1,Unprovoked,N,M,AUSTRALIA,1956.01.05,Años 50
 1956,1,Unprovoked,Y,M,COSTA RICA,1956.01.16,Años 50
@@ -1413,7 +1413,7 @@ Year,Month,Type,Fatal,Sex,Country,Case Number,Decade
 1960,8,Unprovoked,N,M,USA,1960.08.21,Años 50
 1960,5,Unprovoked,N,F,USA,1960.05.19,Años 50
 1960,1,Unprovoked,N,M,PAPUA NEW GUINEA,1960.01.30,Años 50
-1960,1,Sea Disaster,N,UNKNOWN,Otro,1960.01.26,Años 50
+1960,1,Sea Disaster,N,UNKNOWN,OTRO,1960.01.26,Años 50
 1960,1,Boat,N,UNKNOWN,AUSTRALIA,1960.01.21,Años 50
 1960,1,Unprovoked,Y,M,AUSTRALIA,1960.01.16,Años 50
 1960,1,Provoked,N,M,AUSTRALIA,1960.01.13,Años 50
@@ -1727,7 +1727,7 @@ Year,Month,Type,Fatal,Sex,Country,Case Number,Decade
 1965,11,Unprovoked,N,M,PACIFIC OCEAN,1965.11.21.a,Años 60
 1965,10,Unprovoked,Y,F,BAHAMAS,1965.10.16.a,Años 60
 1965,10,Unprovoked,N,M,BAHAMAS,1965.10.16.b,Años 60
-1965,10,Unprovoked,N,M,Otro,1965.10.21,Años 60
+1965,10,Unprovoked,N,M,OTRO,1965.10.21,Años 60
 1965,11,Unprovoked,N,M,AUSTRALIA,1965.11.03.a,Años 60
 1965,11,Provoked,Y,M,AUSTRALIA,1965.11.21.b,Años 60
 1965,12,Boat,N,UNKNOWN,AUSTRALIA,1965.12.10,Años 60
@@ -1890,7 +1890,7 @@ Year,Month,Type,Fatal,Sex,Country,Case Number,Decade
 1968,3,Unprovoked,N,M,USA,1968.03.10,Años 60
 1969,7,Provoked,N,M,USA,1969.07.22,Años 60
 1969,7,Provoked,N,M,ENGLAND,1969.07.27,Años 60
-1969,8,Unprovoked,N,M,Otro,1969.08.00,Años 60
+1969,8,Unprovoked,N,M,OTRO,1969.08.00,Años 60
 1969,8,Unprovoked,N,M,USA,1969.08.01,Años 60
 1969,8,Unprovoked,N,M,USA,1969.08.02,Años 60
 1969,10,Unprovoked,N,M,USA,1969.10.14,Años 60
@@ -1921,10 +1921,10 @@ Year,Month,Type,Fatal,Sex,Country,Case Number,Decade
 1970,6,Provoked,N,M,SOUTH AFRICA,1970.06.15,Años 60
 1970,12,Unprovoked,Y,M,MOZAMBIQUE,1970.12.17,Años 60
 1970,6,Provoked,N,M,USA,1970.06.22,Años 60
-1970,7,Unprovoked,N,M,Otro,1970.07.05,Años 60
+1970,7,Unprovoked,N,M,OTRO,1970.07.05,Años 60
 1970,9,Unprovoked,N,M,USA,1970.09.00.a,Años 60
 1970,9,Provoked,N,M,AUSTRALIA,1970.09.02,Años 60
-1970,11,Unprovoked,N,M,Otro,1970.11.00,Años 60
+1970,11,Unprovoked,N,M,OTRO,1970.11.00,Años 60
 1970,9,Provoked,N,M,PALAU,1970.09.13,Años 60
 1970,9,Unprovoked,N,M,MICRONESIA,1970.09.28,Años 60
 1970,10,Unprovoked,N,M,USA,1970.10.00,Años 60
@@ -1937,7 +1937,7 @@ Year,Month,Type,Fatal,Sex,Country,Case Number,Decade
 1970,4,Unprovoked,Y,M,GRENADA,1970.04.04,Años 60
 1970,1,Unprovoked,N,M,MOZAMBIQUE,1970.01.23.c,Años 60
 1970,4,Unprovoked,UNKNOWN,M,SOLOMON ISLANDS,1970.04.00.a,Años 60
-1970,4,Provoked,N,M,Otro,1970.04.00.b,Años 60
+1970,4,Provoked,N,M,OTRO,1970.04.00.b,Años 60
 1970,6,Unprovoked,N,M,IRAQ,1970.00.00.a,Años 60
 1970,6,Unprovoked,Y,M,IRAQ,1970.00.00.b,Años 60
 1970,6,Unprovoked,N,F,IRAQ,1970.00.00.d,Años 60
@@ -1952,7 +1952,7 @@ Year,Month,Type,Fatal,Sex,Country,Case Number,Decade
 1970,1,Unprovoked,N,M,MOZAMBIQUE,1970.01.23.a,Años 60
 1970,1,Unprovoked,N,M,MOZAMBIQUE,1970.01.23.b,Años 60
 1970,1,Unprovoked,N,M,MOZAMBIQUE,1970.01.23.d,Años 60
-1970,2,Unprovoked,N,F,Otro,1970.02.05,Años 60
+1970,2,Unprovoked,N,F,OTRO,1970.02.05,Años 60
 1970,3,Unprovoked,N,M,USA,1970.03.23,Años 60
 1970,1,Unprovoked,N,M,PAPUA NEW GUINEA,1970.01.00,Años 60
 1971,9,Unprovoked,Y,M,AUSTRALIA,1971.09.05,Años 70
@@ -2365,7 +2365,7 @@ Year,Month,Type,Fatal,Sex,Country,Case Number,Decade
 1983,6,Unprovoked,Y,M,BAHAMAS,1983.06.22,Años 80
 1983,6,Unprovoked,N,M,USA,1983.06.29,Años 80
 1983,6,Provoked,N,M,USA,1983.00.00.b,Años 80
-1983,6,Unprovoked,N,M,Otro,1983.00.00.d,Años 80
+1983,6,Unprovoked,N,M,OTRO,1983.00.00.d,Años 80
 1983,1,Unprovoked,N,M,SOUTH AFRICA,1983.01.08,Años 80
 1983,1,Unprovoked,N,M,SOUTH AFRICA,1983.01.10,Años 80
 1983,1,Provoked,N,M,USA,1983.01.24,Años 80
