@@ -211,11 +211,12 @@ Por último, y no menos importante, pues es el objetivo primero de éste proyect
 # se exporta el dataframe limpio
 # ahora elimino tambien el Tipo y la Actividad, pues no lo he utilizado en el estudio
 attacks_clean=pd.DataFrame()
-attacks_clean['Year']=datos['Año']
+attacks_clean['Year']=datos['Año'].astype('int64')
 attacks_clean['Species']=datos['Especie(clean)']
 attacks_clean['Injury']=datos['Daños']
 attacks_clean['Injury_Class']=datos['Clase_Daños']
 attacks_clean['Fatal (Y/N)']=datos['Mortal']
+attacks_clean.loc[attacks_clean['Injury']=='4', 'Injury']='FATAL' 
 print (attacks_clean)
 attacks_clean.to_csv('attacks(clean).csv')
 
