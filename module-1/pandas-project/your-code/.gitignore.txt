@@ -1,0 +1,2 @@
+GSAF5.csv
+.gitignore.txt
