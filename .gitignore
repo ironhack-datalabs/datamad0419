@@ -6,3 +6,4 @@ venv/
 # data pipeline
 
 .env
+Data_To_Hourervals_no_filter.csv
