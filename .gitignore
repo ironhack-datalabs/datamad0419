@@ -2,3 +2,7 @@
 .idea
 venv/
 .ipynb_checkpoints
+
+# data pipeline
+
+.env
