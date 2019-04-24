@@ -6,24 +6,23 @@
 
 import requests
 import json
-import pandas as pd
 
 
-#forks=requests.get('https://api.github.com/repos/ironhack-datalabs/datamad0419/forks?client_id=xxxx&client_secret=yyyy')
-#print (forks.content)
+# 1.1
 
-
-
-t=pd.read_json('output.json', 0)
-
-print (t)
+r=requests.get('https://api.github.com/repos/ironhack-datalabs/datamad0419/forks').json()  # forks
+#print (type(r))
+#print (r)
 
 
 
+# 1.2
+
+languages=[value for d in r for key,value in d.items() if key=='language']
 
 
 
+# 1.3			
 
-
-
+print (list(set(languages)))	
 
