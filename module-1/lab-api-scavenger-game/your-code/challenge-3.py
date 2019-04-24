@@ -13,5 +13,5 @@ r=requests.get('https://api.github.com/repos/ironhack-datalabs/scavenger/content
 
 
 			
-print (r[6])
+print (r)
 	
