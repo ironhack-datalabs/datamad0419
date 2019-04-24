@@ -7,3 +7,4 @@ venv/
 # lab-api-scavenger-game
 
 .env
+token.env.txt
