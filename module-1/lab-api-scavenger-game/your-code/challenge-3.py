@@ -9,7 +9,7 @@ import json
 
 
 
-r=requests.get('https://api.github.com/repos/ironhack-datalabs/scavenger/contents/#get_contents').json()  
+r=requests.get('https://api.github.com/repos/ironhack-datalabs/scavenger/contents/').json()  
 
 
 			
