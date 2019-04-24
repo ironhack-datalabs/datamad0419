@@ -2,5 +2,5 @@
 .idea
 venv/
 .ipynb_checkpoints
-.env
+key.env
 
