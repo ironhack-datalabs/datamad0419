@@ -2,3 +2,7 @@
 .idea
 venv/
 .ipynb_checkpoints
+
+### pipelines-project
+
+Data_To_Hourervals_no_filter.csv
