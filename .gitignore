@@ -1,6 +1,8 @@
+#files to be ignored in push to github.com
 .DS_Store
 .idea
 venv/
 .ipynb_checkpoints
 .env
+.env.txt
 keys.txt
