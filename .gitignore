@@ -8,3 +8,5 @@ venv/
 
 .env
 token.env.txt
+HTTP Requests.ipynb
+Read a file in python.ipynb
