@@ -24,7 +24,7 @@ scaven=[requests.get(url+names[i]).json()[0]['name'] for i in range(1, len(names
 
 #print (scaven)	
 
-
+print (requests.get(url+names[1]+scaven[1]))
 
 
 
