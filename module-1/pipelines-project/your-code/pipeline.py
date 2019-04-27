@@ -37,10 +37,12 @@ def wrangling(df):
     print('Vamos a explorar el dataset')
     print('Primero veremos la cantidad de filas y columnas que tiene:')
     print(df.shape)
+    null_cols = df.isnull().sum()
+    print(null_cols)
     filtered = df
     return filtered
-
-
+    
+    
 if __name__ == '__main__':
     data = acquisition()
     filtered = wrangling(data)
