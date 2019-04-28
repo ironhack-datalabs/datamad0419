@@ -31,8 +31,10 @@ if __name__ == '__main__':
   df_selected= wrangle(df)
   df_selected= create_bins(df_selected)
   
-  print(categories = df_selected['category'].value_counts().sort_index())
-  #cat_plot= categories.plot.bar()
+  categories = df_selected['category'].value_counts().sort_index()
+  cat_plot= categories.plot.bar()
+  fig= cat_plot.get_figure()
+  fig.savefig(outPath+'pipe_cat_plot.png')
 
 
     
