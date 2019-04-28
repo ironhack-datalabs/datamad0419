@@ -21,7 +21,6 @@ usar filter, map, reduce
 import pandas as pd
 import pandas_profiling
 import requests
-import json
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -37,8 +36,13 @@ def wrangling(df):
     print('Vamos a explorar el dataset')
     print('Primero veremos la cantidad de filas y columnas que tiene:')
     print(df.shape)
+    # vemos número de nulls en las columnas
     null_cols = df.isnull().sum()
     print(null_cols)
+    # vemos que hay muchos nulls en las ciudades
+    # vamos a usar una api para obtener las ciudades a partir de las coordenadas
+
+    
     filtered = df
     return filtered
     
