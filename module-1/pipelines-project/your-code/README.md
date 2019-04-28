@@ -20,7 +20,6 @@ En la columna de los años, las cantidades están expresadas en 1000 toneladas.
 **pipeline.ipynb** : Pipeline en Jupyter Notebook
 **main.py** : Pipeline
 **FAO.csv** : CSV de producción de alimentos
-**FAOSTAT_data_poblation.csv** : CSV de población
 **README.me** : Descripción del proyecto
 
 ## Datos complementarios para el dataset
@@ -31,10 +30,6 @@ Para completar el conjunto de datos del que disponemos, realizaremos llamadas a 
 
 De la cual obetendremos el continente del area y su codificación para el csv de población.
 
-También utilizaremos otro csv donde donde se puede ver la evolución de la población por cada área.
-La unidad que se utiliza es de 1000 personas.
-**FAOSTAT_data_poblation.csv**
-Estos datos han sido obtenidos de la página de la FAO
 
 
 ## Anotaciones
