@@ -9,4 +9,6 @@ Dado que el dataset estaba en formato **.sqlite**, he tenido que descargarlo y c
 
 ## Importamos los datos.
 
-Primero importamos las librerias con las que vamos a trabajar, en este caso *pandas*, *numpy*, *functools* (import reduce) y mi archivo de funciones: *functionspipe*.
+Primero importamos las librerias con las que vamos a trabajar, en este caso *pandas*, *numpy*, *functools* (import reduce), *matplotlib* y mi archivo de funciones: *functionspipe*.
+
+Visualizamos los .csv que hemos importado y hacemos un merge de los mismos a través de la función reduce de *functools*.
