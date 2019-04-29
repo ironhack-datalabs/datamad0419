@@ -7,7 +7,7 @@ import datetime           # para manejo temporal
 import quandl             # api quandl
 import numpy as np        # numerical python
 from draw import *        # importacion para plots
-
+from stats import *       # esdisticas
 
 
 def full(df):             # funcion para mostrar el dataframe completo
@@ -88,7 +88,7 @@ def time_process(df):  # procesa datos, agrupa por fecha, limpia y renombra el d
 	
 	df['F Mean Duration']=[str(df['F Mean Duration'][i])[6:15] for i in range(len(df))]  # formato temporal
 	df['F Mean Duration']=[pd.to_datetime(df['F Mean Duration'][i],  format='%H%M%S', errors='ignore') for i in range(len(df))] 
-	
+
 	return df
 	
 
@@ -156,6 +156,8 @@ def f_n_class(df):                 # clasificacion numerica de las llamaradas
 
 
 def month_means(df):         # medias mensuales de llamaradas y manchas (media de medias, media de maximos, etc..)
+	# no me ha quedado mas remedio que construir esta funcion asi, hay huecos en las fechas 
+	# si no entraria todo en un solo bucle.
 	
 	df.insert(6, 'F Month Mean', pd.Series(list(range(len(df)))))   # media mensual de medias
 	for i in range(5, 13):
@@ -193,6 +195,48 @@ def month_means(df):         # medias mensuales de llamaradas y manchas (media d
 			df.loc[(df.index.year==i) & (df.index.month==j), 'F Month Maximum']=df[(df.index.year==i) & (df.index.month==j)]['n_Maximum'].mean()
 	for i in range(1, 11):
 		df.loc[(df.index.year==2017) & (df.index.month==i), 'F Month Maximum']=df[(df.index.year==2017) & (df.index.month==i)]['n_Maximum'].mean()
+	
+	
+	df.insert(11, 'F Month Max Duration', pd.Series(list(range(len(df))))) # media mensual de duracion maxima
+	for i in range(5, 13):
+		df.loc[(df.index.year==2010) & (df.index.month==i), 'F Month Max Duration']=df[(df.index.year==2010) & (df.index.month==i)]['F Max Duration'].mean()
+	for i in range(1, 13):
+		df.loc[(df.index.year==2011) & (df.index.month==i), 'F Month Max Duration']=df[(df.index.year==2011) & (df.index.month==i)]['F Max Duration'].mean()
+	for i in range(1, 11):
+		df.loc[(df.index.year==2012) & (df.index.month==i), 'F Month Max Duration']=df[(df.index.year==2012) & (df.index.month==i)]['F Max Duration'].mean()
+	df.loc[(df.index.year==2012) & (df.index.month==12), 'F Month Max Duration']=df[(df.index.year==2012) & (df.index.month==12)]['F Max Duration'].mean()
+	for i in range(1, 8):
+		df.loc[(df.index.year==2013) & (df.index.month==i), 'F Month Max Duration']=df[(df.index.year==2013) & (df.index.month==i)]['F Max Duration'].mean()
+	for i in range(11, 13):
+		df.loc[(df.index.year==2013) & (df.index.month==i), 'F Month Max Duration']=df[(df.index.year==2013) & (df.index.month==i)]['F Max Duration'].mean()
+	for i in range(2014, 2017):
+		for j in range(1, 13):
+			df.loc[(df.index.year==i) & (df.index.month==j), 'F Month Max Duration']=df[(df.index.year==i) & (df.index.month==j)]['F Max Duration'].mean()
+	for i in range(1, 11):
+		df.loc[(df.index.year==2017) & (df.index.month==i), 'F Month Max Duration']=df[(df.index.year==2017) & (df.index.month==i)]['F Max Duration'].mean()
+	df['F Month Max Duration']=[str(df['F Month Max Duration'][i])[6:15] for i in range(len(df))]  # formato temporal
+	df['F Month Max Duration']=[pd.to_datetime(df['F Month Max Duration'][i],  format='%H%M%S', errors='ignore') for i in range(len(df))] 
+	
+
+	
+	for i in range(5, 13):
+		df.loc[(df.index.year==2010) & (df.index.month==i), 'Spots Month Mean']=df[(df.index.year==2010) & (df.index.month==i)]['Spots Number'].mean()
+	for i in range(1, 13):
+		df.loc[(df.index.year==2011) & (df.index.month==i), 'Spots Month Mean']=df[(df.index.year==2011) & (df.index.month==i)]['Spots Number'].mean()
+	for i in range(1, 11):
+		df.loc[(df.index.year==2012) & (df.index.month==i), 'Spots Month Mean']=df[(df.index.year==2012) & (df.index.month==i)]['Spots Number'].mean()
+	df.loc[(df.index.year==2012) & (df.index.month==12), 'Spots Month Mean']=df[(df.index.year==2012) & (df.index.month==12)]['Spots Number'].mean()
+	for i in range(1, 8):
+		df.loc[(df.index.year==2013) & (df.index.month==i), 'Spots Month Mean']=df[(df.index.year==2013) & (df.index.month==i)]['Spots Number'].mean()
+	for i in range(11, 13):
+		df.loc[(df.index.year==2013) & (df.index.month==i), 'Spots Month Mean']=df[(df.index.year==2013) & (df.index.month==i)]['Spots Number'].mean()
+	for i in range(2014, 2017):
+		for j in range(1, 13):
+			df.loc[(df.index.year==i) & (df.index.month==j), 'Spots Month Mean']=df[(df.index.year==i) & (df.index.month==j)]['Spots Number'].mean()
+	for i in range(1, 11):
+		df.loc[(df.index.year==2017) & (df.index.month==i), 'Spots Month Mean']=df[(df.index.year==2017) & (df.index.month==i)]['Spots Number'].mean()
+	
+    
 	
 	return df	
 

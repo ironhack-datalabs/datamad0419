@@ -19,10 +19,9 @@ https://www.quandl.com/data/SIDC/SUNSPOTS_D-Total-Sunspot-Numbers-Daily
 
 if __name__=="__main__":
 	df=data()
-	#corr=np.corrcoef(df['Spots Number'],df['Month Mean'])      
-	#print (corr) 
+	print (df)
 	draw(df)    
-	#print (df)                              
+	                             
 	             
 	
 	
