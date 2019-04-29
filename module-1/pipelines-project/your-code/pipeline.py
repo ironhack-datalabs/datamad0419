@@ -60,6 +60,7 @@ def wrangling(df):
     # eliminamos registros de terremotos con índice 0 en la Escala de Richter
     df = df.loc[data['year'] >= 1964]
     df = df.loc[data['richter'] != 0]
+    # df = df.query(['year'] >= 1964 & ['richter'] != 0)
     # nos quedamos con las columnas que nos interesan
     df = df[['id', 'date', 'time', 'lat', 'long', 'city', 'area', 'richter', 'year']]
     
