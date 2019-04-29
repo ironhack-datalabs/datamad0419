@@ -2,10 +2,13 @@ import json
 import requests
 import os
 import pandas as pd
+from dotenv import load_dotenv
+load_dotenv()
 
 def igdbApi():
   #ENTER YOUR KEY HERE
-  key = "358b26818240ae6fecc8ba34dd037843"
+  IGDB_TOKEN = os.getenv("IGDB_TOKEN")
+  key = IGDB_TOKEN
   url = 'https://api-v3.igdb.com/games'
   body= 'fields name,popularity; sort popularity desc;'
   #RETRIEVE ONE GAME
