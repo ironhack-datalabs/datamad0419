@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib
 import matplotlib.pyplot as plt
+from igdbApi import igdbApi
 
 filePath= 'data/metacritic_games.csv'
 outPath= 'output/'
@@ -31,7 +32,7 @@ def analyze_serie(df, name):
   return serie
 
 def visualize(name, df= None, ser= None):
-  print('-------------{}-------------'.format(name))
+  print('\n-------------{}-------------'.format(name))
   if df is not None: print(df.to_string())
   elif ser is not None: print(ser.to_string())
 
@@ -43,7 +44,13 @@ def save_plots(name, df= None, ser= None):
   fig.savefig(outPath+name)
 
 if __name__ == '__main__':
-  df = acquire()
+  try:
+    df = acquire()
+  except:
+    print('Error en la lectura del fichero .csv')
+  else:
+    print('Capturando datos de Metacritic.')
+    
   df_selected= wrangle(df)
   df_selected= create_bins(df_selected)
 
@@ -66,6 +73,10 @@ if __name__ == '__main__':
 
   df_users= df_selected[df_selected['dif_score']>52.5].sort_values('dif_score', ascending=False)
   visualize('Mayores diferencias usuarios', df_users)
+
+  #Top ten populares
+  top10hyped_df= igdbApi()
+  visualize('Juegos más populares hoy', top10hyped_df)
 
 
 
