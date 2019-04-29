@@ -16,11 +16,17 @@ En la columna de los años, las cantidades están expresadas en 1000 toneladas.
 
 ## Archivos del repo
 
-**main.ipynb** : Para el trabajo de data cleaning y manipulation.
-**pipeline.ipynb** : Pipeline en Jupyter Notebook
-**main.py** : Pipeline
-**FAO.csv** : CSV de producción de alimentos
-**README.me** : Descripción del proyecto
+**main.ipynb** : Para el trabajo de data cleaning y manipulation.  
+**main.py** : Pipeline  
+**config.py**: Configuración y contantes  
+**limpia.py**: Funciones para limpiar los datos  
+**analisis.py**: Funciones para el análisis de los datos  
+**guardar.py**: Funciones para guardar csv y gráficas  
+**report.py**: Funciones para crear los gráficos  
+**callapi.py**: Funciones para llamar a la api  
+**FAO.csv** : CSV de producción de alimentos  
+**README.me** : Descripción del proyecto  
+
 
 ## Datos complementarios para el dataset
 
@@ -28,10 +34,12 @@ Para completar el conjunto de datos del que disponemos, realizaremos llamadas a 
 
 [https://restcountries.eu/](https://restcountries.eu/)
 
-De la cual obetendremos el continente del area y su codificación para el csv de población.
-
-
+De la cual obetendremos el continente del area.
 
 ## Anotaciones
+
+Para las gráficas de comparación de países se toman los años desde el 2000 al 2010
+
+## Mejoras
 
 
