@@ -8,7 +8,11 @@ outPath= 'output/'
 
 def acquire():
   df = pd.read_csv(filePath)
-  return df
+  if isinstance(df, pd.DataFrame): 
+    return df
+  if not isinstance(df, pd.DataFrame): 
+    print('NO instancia')
+    raise Exception("Error al obtener los datos.")
 
 def wrangle(df):
   df_selected = df[['game','platform','developer', 'metascore','user_score']]
@@ -46,10 +50,10 @@ def save_plots(name, df= None, ser= None):
 if __name__ == '__main__':
   try:
     df = acquire()
-  except:
+  except Exception as error:
     print('Error en la lectura del fichero .csv')
   else:
-    print('Capturando datos de Metacritic.')
+    print('Capturando datos de Metacritic...')
     
   df_selected= wrangle(df)
   df_selected= create_bins(df_selected)
@@ -76,7 +80,8 @@ if __name__ == '__main__':
 
   #Top ten populares
   top10hyped_df= igdbApi()
-  visualize('Juegos más populares hoy', top10hyped_df)
+  visualize('Top 10 más populares hoy', top10hyped_df)
+  save_plots('top10_populares.png', df=top10hyped_df)
 
 
 
