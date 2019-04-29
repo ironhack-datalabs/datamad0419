@@ -3,10 +3,9 @@ import matplotlib
 import matplotlib.pyplot as plt
 from igdbApi import igdbApi
 
-filePath= 'data/metacritic_games.csv'
 outPath= 'output/'
 
-def acquire():
+def acquire(filePath):
   df = pd.read_csv(filePath)
   if isinstance(df, pd.DataFrame): 
     return df
@@ -47,42 +46,40 @@ def save_plots(name, df= None, ser= None):
   fig= plot.get_figure()
   fig.savefig(outPath+name)
 
-if __name__ == '__main__':
-  try:
-    df = acquire()
-  except Exception as error:
-    print('Error en la lectura del fichero .csv')
-  else:
-    print('Capturando datos de Metacritic...')
-    
-  df_selected= wrangle(df)
-  df_selected= create_bins(df_selected)
+#Ejecución del programa principal
+if True:
+  def ejecutar(filePath):
+    try:
+      df = acquire(filePath)
+    except Exception as error:
+      print('Error en la lectura del fichero .csv')
+    else:
+      print('Capturando datos de Metacritic...')
+      
+    df_selected= wrangle(df)
+    df_selected= create_bins(df_selected)
 
-  # Titulos imprescindibles y por por plataforma.
-  df_essentials= df_selected[df_selected['category']=='Essential']
-  visualize('Titulos imprescindibles', df_essentials)
+    # Titulos imprescindibles y por por plataforma.
+    df_essentials= df_selected[df_selected['category']=='Essential']
+    visualize('Titulos imprescindibles', df_essentials)
 
-  essential_serie= analyze_serie(df_essentials, 'platform')
-  visualize('Esenciales plataforma', ser=essential_serie)
-  save_plots('Esenciales_plataforma.png', ser=essential_serie)
-  
-  # Estudio de categorías de puntuación.
-  categories_serie= analyze_serie(df_selected, 'category')
-  visualize('Categorias de puntuación', ser=categories_serie)
-  save_plots('Categorias_de_puntuación.png', ser=categories_serie)
+    essential_serie= analyze_serie(df_essentials, 'platform')
+    visualize('Esenciales plataforma', ser=essential_serie)
+    save_plots('Esenciales_plataforma.png', ser=essential_serie)
 
-  #analizar puntuaciones.
-  df_media= df_selected[df_selected['dif_score']<-28.5]
-  visualize('Mayores diferencias prensa', df_media)
+    # Estudio de categorías de puntuación.
+    categories_serie= analyze_serie(df_selected, 'category')
+    visualize('Categorias de puntuación', ser=categories_serie)
+    save_plots('Categorias_de_puntuación.png', ser=categories_serie)
 
-  df_users= df_selected[df_selected['dif_score']>52.5].sort_values('dif_score', ascending=False)
-  visualize('Mayores diferencias usuarios', df_users)
+    #analizar puntuaciones.
+    df_media= df_selected[df_selected['dif_score']<-28.5]
+    visualize('Mayores diferencias prensa', df_media)
 
-  #Top ten populares
-  top10hyped_df= igdbApi()
-  visualize('Top 10 más populares hoy', top10hyped_df)
-  save_plots('top10_populares.png', df=top10hyped_df)
+    df_users= df_selected[df_selected['dif_score']>52.5].sort_values('dif_score', ascending=False)
+    visualize('Mayores diferencias usuarios', df_users)
 
-
-
-    
+    #Top ten populares
+    top10hyped_df= igdbApi()
+    visualize('Top 10 más populares hoy', top10hyped_df)
+    save_plots('top10_populares.png', df=top10hyped_df)
