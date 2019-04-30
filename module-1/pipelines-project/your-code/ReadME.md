@@ -25,3 +25,8 @@ https://www.kaggle.com/</p>
 * <b> Plot Depth vs. Magnitude: </b> Plot a graph that shows the relation between depth and magnitude and color according to continent.
 * <b>Plot Eq's on world map:</b> Place the filtered events on a world map
 * <b> Export images: </b> Export images as .png for reports
+
+<h2>Conclusions</h2>
+* The earthquakes in the "Very High" magnitude bin occur in the ocean and in Asia.<br>
+* The higher magnitude earthquakes occur in the 0-100km depth range, while the lower magnitude ones occure anywhere between 0-700kms.<br>
+* As described in the wikipedia page, most quakes occur along the faults between tectonic plates.
