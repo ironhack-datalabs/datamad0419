@@ -73,19 +73,22 @@ def ejecutar(filePath):
   # Titulos imprescindibles y por por plataforma.
   df_essentials= df_selected[df_selected['category']=='Essential']
   visualize('Titulos imprescindibles', df_essentials)
+  save_plots('Titulos imprescindibles', df=df_essentials.sort_values('total_score'), x= 'game', y='total_score', tipo='barh')
 
   essential_serie= analyze_serie(df_essentials, 'platform')
   visualize('Esenciales plataforma', ser=essential_serie)
-  save_plots('Esenciales_plataforma', ser=essential_serie)
+  save_plots('Esenciales plataforma', ser=essential_serie)
   
   #analizar puntuaciones.
   df_media= df_selected[df_selected['dif_score']<-28.5]
   visualize('Mayores diferencias prensa', df_media)
+  save_plots('Mayores diferencias prensa', df=df_media.sort_values('dif_score'), x= 'game', y='dif_score', tipo='barh')
 
   df_users= df_selected[df_selected['dif_score']>52.5].sort_values('dif_score', ascending=False)
   visualize('Mayores diferencias usuarios', df_users)
+  save_plots('Mayores diferencias usuarios', df=df_users.sort_values('dif_score'), x= 'game', y='dif_score', tipo='barh')
 
   #Top ten populares
   top10hyped_df= igdbApi()
-  visualize('Top 10 más populares hoy', top10hyped_df)
-  save_plots('top10_populares', df=top10hyped_df, x= 'name', y='popularity', tipo='barh')
+  visualize('Top 10 populares hoy', top10hyped_df)
+  save_plots('top10 populares hoy', df=top10hyped_df.sort_values('popularity'), x= 'name', y='popularity', tipo='barh')
