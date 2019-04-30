@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from raven import Client
+import argparse
 
 from config import DATOS_PATH, URL_API, SALIDA_PATH
 import limpia ,analisis, guardar, reports 
@@ -17,19 +17,30 @@ def wrangle(data):
 def analyze(data):
     datos = analisis.datos_analisis(data)
     areas = set(datos['Area_ISO'])
+    paises = list(set(data['Area']))
     datos = analisis.columna_continente(datos, areas)
-    datos = analisis.columna_total_alimento(datos)
-    datos = analisis.produccion_bin(datos)
+    datos_paises = analisis.columna_total_alimento(datos)
+    datos_paises = analisis.produccion_bin(datos)
     total_pais = analisis.total_produccion_pais(datos)
 
-    return datos, total_pais
+    return datos_paises, total_pais
 
 def report(data, total):
-    chart_compara = reports.report_compare(data, 'Italy', 'France')
+    chart_total = reports.paises_mayores_productores(total)
+    guardar.save_viz(chart_total, 'Los 5 países que más producen - Valores por 1000 toneladas')
+    chart_compara = reports.report_compare(data, args.pais1, args.pais2)
     guardar.save_viz(chart_compara, 'Compara_paises')
 
-    chart_total = reports.paises_mayores_productores(total)
-    guardar.save_viz(chart_total, 'Países que más producen')
+#Para pasar los valores de los paises
+parser = argparse.ArgumentParser(description='Genera un gráfico comparando los datos de los paises eligidos')
+parser.add_argument('--p1', dest='pais1',
+                    default='Italy',
+                    help='País 1 para la comparación')
+parser.add_argument('--p2', dest='pais2',
+                    default='France',
+                    help='País 2 para la comparación')                    
+
+args = parser.parse_args()
 
 
 
@@ -37,11 +48,10 @@ def main():
     df = acquire()
     df_new = wrangle(df)
     datos, total_pais = analyze(df_new)
-
     #guardamos el csv
     guardar.guardar_csv(datos, 'Datos_totales')
     report(datos, total_pais)
-    print(datos.head(5))
+    
     
 
 if __name__ == "__main__":

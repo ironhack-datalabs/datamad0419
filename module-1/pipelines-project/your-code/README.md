@@ -38,7 +38,8 @@ De la cual obetendremos el continente del area.
 
 ## Anotaciones
 
-Para las gráficas de comparación de países se toman los años desde el 2000 al 2010
+Para las gráficas de comparación de países se toman los años desde el 2000 al 2010  
+Para la gráfica de el top5 se utiliza todos los años disponibles en los datos
 
 ## Mejoras
 

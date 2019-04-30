@@ -25,7 +25,7 @@ def total_produccion_pais(data):
 
 def produccion_bin(data):
     por_produccion = ['Muy baja', 'Baja', 'Media', 'Alta', 'Muy Alta']
-    cutoffs = [0, 100000, 200000, 300000, 500000, 10000000]
+    cutoffs = [0, 10000, 200000, 300000, 500000, 10000000]
 
     produccion_bins = pd.cut(data['Total'], cutoffs, labels = por_produccion)
     data['Nivel Producción'] = produccion_bins

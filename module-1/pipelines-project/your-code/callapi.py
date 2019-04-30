@@ -3,6 +3,8 @@ from config import URL_API
 import time
 import requests
 import json
+from raven import Client
+client = Client('https://89603445572042889c27e993cefb14bd@sentry.io/1449374')
 
 def devuelve_continente(area):
     #Devuelve el continente al que pertenece el area
@@ -14,6 +16,7 @@ def devuelve_continente(area):
         return results['region']
 
     except Exception as e:
+        client.captureException()
         return 'Error: ' + str(e)
 
 
