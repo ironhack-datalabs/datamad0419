@@ -58,11 +58,11 @@ bins = [0,2,6,10,19]
 edades = ['0-1', '2-5', '6-10', '10-19']
 ani['bins'] = pd.cut(ani['age_upon_outcome_years'], bins ,labels=edades)
 w=ani.groupby('bins')['outcome_type'].value_counts()
-w.plot(kind='bar', color=['g', 'b', 'r','y','purple','orange','pink'])
+w_1=w.plot(kind='bar', color=['g', 'b', 'r','y','purple','orange','pink'])
 v=ani.groupby('breed')['outcome_type'].value_counts()
-v.plot(kind='bar', color=['g', 'b', 'r','y','purple','orange','pink'])
+v_1=v.plot(kind='bar', color=['g', 'b', 'r','y','purple','orange','pink'])
 z=ani.groupby('outcome_type')['Mix'].value_counts()
-z.plot(kind='bar', color=['g', 'b', 'r','grey','y','purple','orange','brown','pink'])
+z_1=z.plot(kind='bar', color=['g', 'b', 'r','grey','y','purple','orange','brown','pink'])
 print(ani)
 ani.to_csv('Ani-hub.csv')
 
