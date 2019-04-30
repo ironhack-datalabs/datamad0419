@@ -194,7 +194,7 @@ def repo(df):
 	pdf.cell(0, 0, 'He obtenido datos en crudo, también desde una API, los he limpiado y creado un pipeline.')
 	pdf.ln(0.25)
 	pdf.cell(90, 10, " ", 0, 2, 'C')
-	pdf.cell(0, 10, 'He hecho un pequeño análisis y dibujado varios plots para ello. Por último intentaré mandar un mail.')
+	pdf.cell(0, 10, 'He hecho un pequeño análisis y dibujado varios plots para ello. PIPELINE PROJECT.')
 	
 	pdf.output('repo.pdf', 'F')
 	print ('repo guardado.')
@@ -204,8 +204,5 @@ def repo(df):
 
 
 	
-
-# def mail():
-
 
 
