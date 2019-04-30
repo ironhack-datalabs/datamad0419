@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib
 import sys
+import os
 import matplotlib.pyplot as plt
 from igdbApi import igdbApi
 
@@ -41,11 +42,15 @@ def visualize(name, df= None, ser= None):
   elif ser is not None: print(ser.to_string())
 
 def save_plots(name, df= None, ser= None):
-  if df is not None: plot= df.plot.bar()
-  elif ser is not None: plot= ser.plot.bar()
-  
+  if df is not None: 
+    plot= df.plot.bar() 
+  elif ser is not None: 
+    plot= ser.plot.bar()
+
+  plt.title(name)
   fig= plot.get_figure()
-  fig.savefig(outPath+name)
+  save_path= os.path.join(outPath,name+'.png')
+  fig.savefig(save_path)
 
 #Ejecución del programa principal
 
@@ -66,12 +71,12 @@ def ejecutar(filePath):
 
   essential_serie= analyze_serie(df_essentials, 'platform')
   visualize('Esenciales plataforma', ser=essential_serie)
-  save_plots('Esenciales_plataforma.png', ser=essential_serie)
+  save_plots('Esenciales_plataforma', ser=essential_serie)
 
   # Estudio de categorías de puntuación.
   categories_serie= analyze_serie(df_selected, 'category')
   visualize('Categorias de puntuación', ser=categories_serie)
-  save_plots('Categorias_de_puntuación.png', ser=categories_serie)
+  save_plots('Categorias_de_puntuación', ser=categories_serie)
 
   #analizar puntuaciones.
   df_media= df_selected[df_selected['dif_score']<-28.5]
@@ -83,4 +88,4 @@ def ejecutar(filePath):
   #Top ten populares
   top10hyped_df= igdbApi()
   visualize('Top 10 más populares hoy', top10hyped_df)
-  save_plots('top10_populares.png', df=top10hyped_df)
+  save_plots('top10_populares', df=top10hyped_df)
