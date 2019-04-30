@@ -41,30 +41,35 @@ def visualize(name, df= None, ser= None):
   if df is not None: print(df.to_string())
   elif ser is not None: print(ser.to_string())
 
-def save_plots(name, df= None, ser= None):
+def save_plots(name, df= None, ser= None, x= None, y= None, tipo='bar'):
+  plt.figure(figsize=(12,8))
   if df is not None: 
-    plot= df.plot.bar() 
+    df.plot(x, y, color='red', kind=tipo, figsize=(12,8)) 
   elif ser is not None: 
-    plot= ser.plot.bar()
+    ser.plot(kind=tipo)
 
   plt.title(name)
-  fig= plot.get_figure()
   save_path= os.path.join(outPath,name+'.png')
-  fig.savefig(save_path)
+  plt.savefig(save_path)
+
 
 #Ejecución del programa principal
-
 def ejecutar(filePath):
   try:
     df = acquire(filePath)
     print('Capturando datos de Metacritic...')
-  except Exception as error:
+  except Exception:
     print('Error en la lectura del fichero .csv, revise la ruta especificada.')
     sys.exit(-1)
     
   df_selected= wrangle(df)
   df_selected= create_bins(df_selected)
 
+  # Estudio de categorías de puntuación.
+  categories_serie= analyze_serie(df_selected, 'category')
+  visualize('Categorias de puntuación', ser=categories_serie)
+  save_plots('Categorias_de_puntuación', ser=categories_serie)
+  
   # Titulos imprescindibles y por por plataforma.
   df_essentials= df_selected[df_selected['category']=='Essential']
   visualize('Titulos imprescindibles', df_essentials)
@@ -72,12 +77,7 @@ def ejecutar(filePath):
   essential_serie= analyze_serie(df_essentials, 'platform')
   visualize('Esenciales plataforma', ser=essential_serie)
   save_plots('Esenciales_plataforma', ser=essential_serie)
-
-  # Estudio de categorías de puntuación.
-  categories_serie= analyze_serie(df_selected, 'category')
-  visualize('Categorias de puntuación', ser=categories_serie)
-  save_plots('Categorias_de_puntuación', ser=categories_serie)
-
+  
   #analizar puntuaciones.
   df_media= df_selected[df_selected['dif_score']<-28.5]
   visualize('Mayores diferencias prensa', df_media)
@@ -88,4 +88,4 @@ def ejecutar(filePath):
   #Top ten populares
   top10hyped_df= igdbApi()
   visualize('Top 10 más populares hoy', top10hyped_df)
-  save_plots('top10_populares', df=top10hyped_df)
+  save_plots('top10_populares', df=top10hyped_df, x= 'name', y='popularity', tipo='barh')
