@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import matplotlib.style as style
 import seaborn as sns
+import sys
 
 def report_compare(data, paisA, paisB, ver = 0):
     style.use('seaborn')
@@ -39,12 +40,11 @@ def paises_mayores_productores(data_total_pais, ver = 0):
         plt.show()
     return total_bar
 
-def comprobar_pais(data, pais):
-    paises = list(set(data['Area']))
-    try:
-        if pais not in paises:
-            raise Exception('{} no es un pais correcto.'.format(pais))
-        else:
-            return pais
-    except Exception as e:
-        print('Error: ' + str(e))
+def comprobar_pais(data, pais1, pais2):
+    paises = set(data['Area'])
+    if (pais1 not in paises) or (pais2 not in paises):
+        #raise Exception('{} o {} no es un pais correcto.'.format(pais1, pais2))
+        print('{} o {} no es un pais correcto.'.format(pais1, pais2))
+        exit(-1)
+    else:
+        return pais1, pais2

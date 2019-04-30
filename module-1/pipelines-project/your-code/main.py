@@ -26,8 +26,7 @@ def analyze(data):
     return datos_paises, total_pais
 
 def report(data, total):
-    pais1 = reports.comprobar_pais(data, args.pais1)
-    pais2 = reports.comprobar_pais(data, args.pais2)
+    pais1, pais2 = reports.comprobar_pais(data, args.pais1, args.pais2)
 
     chart_compara = reports.report_compare(data, pais1, pais2, args.ver)
     guardar.save_viz(chart_compara, 'Compara_paises')
