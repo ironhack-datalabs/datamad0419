@@ -29,4 +29,5 @@ https://www.kaggle.com/</p>
 <h2>Conclusions</h2>
 * The earthquakes in the "Very High" magnitude bin occur in the ocean and in Asia.<br>
 * The higher magnitude earthquakes occur in the 0-100km depth range, while the lower magnitude ones occure anywhere between 0-700kms.<br>
-* As described in the wikipedia page, most quakes occur along the faults between tectonic plates.
+* As described in the wikipedia page, most quakes occur along the faults between tectonic plates.<br>
+* The program took around 250sec to run, so the implementation of ASYNC could make the query mor efficient.
