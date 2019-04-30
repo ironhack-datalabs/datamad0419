@@ -35,6 +35,8 @@ En la columna de los años, las cantidades están expresadas en 1000 toneladas.
 **--p2** Segundo pais a comparar  
 **-v** Ver la gráfica, por defecto a 0, por lo que no se ve (-v 1 para cargar la gráfica)  
 
+Si no se especifica ningún país por defecto se selecciona Italy y France  
+
 ## Datos complementarios para el dataset
 
 Para completar el conjunto de datos del que disponemos, realizaremos llamadas a la siguiente api:  
