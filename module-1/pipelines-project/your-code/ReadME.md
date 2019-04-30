@@ -12,9 +12,9 @@ https://en.wikipedia.org/wiki/Earthquake</p>
 
 The main objective of this excercise was to apply learnt lessons on data analysis rather than make significant foindings on the geological field.  The project was structured as a pipeline that started on retrieving the cvs file containing the data to finishing the pipeline with a table of the top 15 most powerfull earthquakes, a world distributions of the earthquakes, and a relational graph between magnitude and depth of the quakes.
 
-https://www.kaggle.com/</p>
+https://www.kaggle.com/usgs/earthquake-database</p>
 
-<img src="./pipeline.png">
+
 
 * <b>Acquire data:</b> Use of pandas to importa cvs file into a dataframe.
 * <b>Clean data:</b> Drop empty and unusefull columns from dataframe.
@@ -25,7 +25,10 @@ https://www.kaggle.com/</p>
 * <b> Plot Depth vs. Magnitude: </b> Plot a graph that shows the relation between depth and magnitude and color according to continent.
 * <b>Plot Eq's on world map:</b> Place the filtered events on a world map
 * <b> Export images: </b> Export images as .png for reports
-
+<br>
+<br>
+<img src="./output/earthquakes_worldmap.png">
+<img src="./output/mag_vs_depth.png">
 <h2>Conclusions</h2>
 * The earthquakes in the "Very High" magnitude bin occur in the ocean and in Asia.<br>
 * The higher magnitude earthquakes occur in the 0-100km depth range, while the lower magnitude ones occure anywhere between 0-700kms.<br>
