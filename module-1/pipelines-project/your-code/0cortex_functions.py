@@ -2,9 +2,6 @@
 # coding: utf-8
 
 # In[1]:
-
-
-#Este jupyter me funciona, pero no quiero tener todas las funciones descritas aquí
 import pandas as pd
 import numpy as np
 import json
@@ -20,7 +17,6 @@ import seaborn as sns
 
 
 # In[2]:
-
 
 def get_wiki_info(theme):
     response = requests.get('https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles='+str(theme))
@@ -139,32 +135,6 @@ def save(data2):
     data3=binn(data2)
     data2.to_csv('Cortex_cuantitative.csv')
     data3.to_csv('Cortex_cualitative.csv')
-
-
-# In[3]:
-
-
-if __name__ == '__main__':
-    data = acquire()
-    data2 = wrangle()
-    analyze()
-    visualize()
-    save()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 

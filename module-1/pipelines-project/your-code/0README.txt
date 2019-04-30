@@ -6,8 +6,7 @@ La presente base de datos incluye información sobre las proteínas que se prese
 
 La combinación de estas condiciones se registra en la columna "class"
 
-Mi pregunta de investigación es qué proteínas están asociadas a la función de aprendizaje.
-
+Mi pregunta de investigación se refiere a qué proteínas están asociadas a la función de aprendizaje.
 
 En primer lugar elimino todos los valores extremos (outliers), puesto que en este caso un valor extremo suele indicar un error de medida. A continuación elimino todas las columnas en las cuales haya más de tres valores inexistentes en los registros. Estos valores inexistentes pueden deberse a un fallo en la recogida de datos o a la ausencia de la expresión de la proteína en dicho registro. Puesto que quiero centrarme en aquellas proteínas cuya expresión sea común, sólo me interesan las que aparzcan en un numero muy alto de registros. 
 
