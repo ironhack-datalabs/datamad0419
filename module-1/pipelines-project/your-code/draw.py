@@ -29,6 +29,25 @@ def bar_plot(df):   # plot del numero de  manchas
 	return ''
 
 
+def dist_plot(df):   # plot del numero de  manchas
+	sns.distplot(df['Spots Number'], color='r')
+	plt.title('Sunspots',size=12,fontweight='bold')
+	plt.xlabel('Spots',size=10)                   
+	plt.ylabel('Proportion',size=10)
+	plt.savefig('distplot_spots.png')
+	#plt.show()
+	plt.close()
+	
+	sns.distplot(df['Flares Number'], color='y')
+	plt.title('Solar Flares',size=12,fontweight='bold')
+	plt.xlabel('Flares',size=10)                   
+	plt.ylabel('Proportion',size=10)
+	plt.savefig('distplot_flares.png')
+	#plt.show()
+	plt.close()
+	return ''
+
+
 
 def binning_plot(df):   # plot por clase de llamarada
 	A=0
@@ -62,19 +81,40 @@ def correlation_heatmap(df):     # plot de correlacion
 	mask=np.zeros_like(df.corr(), dtype=np.bool)
 	mask[np.triu_indices_from(mask)]=True
 	cmap=sns.diverging_palette(220, 10, as_cmap=True)
+	sns.heatmap(df.corr(method='pearson'), mask=mask, cmap=cmap, vmax=1.0, center=0, square=True, linewidths=.5, cbar_kws={"shrink": .5})
+	plt.title("Correlation (Pearson)")  
+	plt.savefig('correlation Pearson.png', dpi=100)                                   
+	#plt.show()  
+	plt.close() 
+	
+	mask=np.zeros_like(df.corr(), dtype=np.bool)
+	mask[np.triu_indices_from(mask)]=True
+	cmap=sns.diverging_palette(220, 10, as_cmap=True)
 	sns.heatmap(df.corr(method='spearman'), mask=mask, cmap=cmap, vmax=1.0, center=0, square=True, linewidths=.5, cbar_kws={"shrink": .5})
-	plt.title("Correlation")  
-	plt.savefig('correlation.png', dpi=100)                                   
-	plt.show()  
+	plt.title("Correlation (Spearman)")  
+	plt.savefig('correlation Spearman.png', dpi=100)                                   
+	#plt.show()  
+	plt.close() 
+	
+	mask=np.zeros_like(df.corr(), dtype=np.bool)
+	mask[np.triu_indices_from(mask)]=True
+	cmap=sns.diverging_palette(220, 10, as_cmap=True)
+	sns.heatmap(df.corr(method='kendall'), mask=mask, cmap=cmap, vmax=1.0, center=0, square=True, linewidths=.5, cbar_kws={"shrink": .5})
+	plt.title("Correlation (Kendall)")  
+	plt.savefig('correlation Kendall.png', dpi=100)                                   
+	#plt.show()  
 	plt.close() 
 	return ''
 
 
 
 def draw(df):
+	print ('Realizando graficos...')
 	bar_plot(df)
+	dist_plot(df)
 	binning_plot(df)
 	correlation_heatmap(df)
+	print ('Graficos guardados.')
 
 
 
