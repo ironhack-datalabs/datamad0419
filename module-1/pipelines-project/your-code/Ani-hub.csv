@@ -1,0 +1,187 @@
+,animal_id_outcome,outcome_type,age_upon_outcome_years,animal_type,breed,Mix,fotos,bins
+13,A208755,Euthanasia,14.0,Dog,collie,True,https://dog.ceo/api/breed/Border Collie Mix/images/random,10-19
+33,A251095,Euthanasia,14.0,Dog,collie,False,https://dog.ceo/api/breed/Border Collie/images/random,10-19
+56,A283735,Euthanasia,13.0,Dog,doberman,True,https://dog.ceo/api/breed/Doberman Pinsch Mix/images/random,10-19
+73,A298677,Euthanasia,13.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,10-19
+80,A305674,Euthanasia,12.0,Dog,husky,True,https://dog.ceo/api/breed/Siberian Husky Mix/images/random,10-19
+99,A318615,Euthanasia,14.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,10-19
+174,A358879,Euthanasia,13.0,Dog,germanshepherd,False,https://dog.ceo/api/breed/German Shepherd/images/random,10-19
+186,A367012,Euthanasia,11.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,10-19
+294,A427866,Euthanasia,8.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,6-10
+418,A464652,Euthanasia,11.0,Dog,collie,True,https://dog.ceo/api/breed/Border Collie Mix/images/random,10-19
+434,A467387,Euthanasia,9.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,6-10
+470,A476706,Euthanasia,8.0,Dog,doberman,True,https://dog.ceo/api/breed/Doberman Pinsch Mix/images/random,6-10
+518,A489376,Euthanasia,11.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,10-19
+531,A491810,Euthanasia,8.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,6-10
+592,A503376,Euthanasia,7.0,Dog,husky,True,https://dog.ceo/api/breed/Siberian Husky Mix/images/random,6-10
+882,A540495,Euthanasia,5.0,Dog,husky,True,https://dog.ceo/api/breed/Siberian Husky Mix/images/random,2-5
+1090,A558566,Euthanasia,5.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,2-5
+1137,A562220,Euthanasia,5.0,Dog,bulldog,True,https://dog.ceo/api/breed/Bulldog/Pit Bull/images/random,2-5
+1143,A562649,Euthanasia,14.0,Dog,collie,True,https://dog.ceo/api/breed/Border Collie Mix/images/random,10-19
+1155,A563397,Euthanasia,11.0,Dog,beagle,False,https://dog.ceo/api/breed/Beagle/images/random,10-19
+1382,A577780,Euthanasia,7.0,Dog,husky,True,https://dog.ceo/api/breed/Siberian Husky Mix/images/random,6-10
+1433,A582002,Euthanasia,6.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd/Labrador Retriever/images/random,2-5
+1733,A597665,Euthanasia,5.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,2-5
+1882,A605772,Euthanasia,2.0,Dog,bulldog,True,https://dog.ceo/api/breed/American Bulldog Mix/images/random,0-1
+2029,A610632,Euthanasia,6.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,2-5
+2036,A610772,Euthanasia,4.0,Dog,chihuahua,True,https://dog.ceo/api/breed/Chihuahua Longhair/Pomeranian/images/random,2-5
+2076,A612620,Euthanasia,7.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,6-10
+2126,A614177,Euthanasia,2.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,0-1
+2199,A616374,Euthanasia,4.0,Dog,husky,True,https://dog.ceo/api/breed/Alaskan Husky Mix/images/random,2-5
+2211,A616487,Euthanasia,4.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,2-5
+2391,A621845,Euthanasia,9.0,Dog,boxer,False,https://dog.ceo/api/breed/Boxer/images/random,6-10
+2475,A624949,Euthanasia,3.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,2-5
+2654,A631538,Euthanasia,2.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,0-1
+2918,A639771,Euthanasia,11.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,10-19
+3245,A647355,Euthanasia,7.0,Dog,boxer,False,https://dog.ceo/api/breed/Boxer/images/random,6-10
+3373,A649704,Euthanasia,9.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,6-10
+3591,A653125,Euthanasia,3.0,Dog,chihuahua,False,https://dog.ceo/api/breed/Chihuahua Shorthair/images/random,2-5
+3640,A654355,Euthanasia,1.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,0-1
+4162,A663488,Euthanasia,2.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,0-1
+4234,A664234,Euthanasia,8.0,Dog,collie,True,https://dog.ceo/api/breed/Border Collie Mix/images/random,6-10
+4665,A664824,Euthanasia,5.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,2-5
+5611,A666166,Euthanasia,2.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,0-1
+5685,A666272,Euthanasia,0.0821917808219178,Dog,chihuahua,True,https://dog.ceo/api/breed/Chihuahua Longhair Mix/images/random,0-1
+5686,A666273,Euthanasia,2.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer/Pit Bull/images/random,0-1
+5693,A666291,Euthanasia,7.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,6-10
+5765,A666404,Euthanasia,16.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,10-19
+6285,A667066,Euthanasia,12.0,Dog,chihuahua,False,https://dog.ceo/api/breed/Chihuahua Shorthair/images/random,10-19
+6396,A667225,Euthanasia,9.0,Dog,husky,True,https://dog.ceo/api/breed/Siberian Husky Mix/images/random,6-10
+6505,A667363,Euthanasia,2.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd/Labrador Retriever/images/random,0-1
+6947,A668113,Euthanasia,9.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,6-10
+7139,A668356,Euthanasia,3.0,Dog,collie,True,https://dog.ceo/api/breed/Border Collie Mix/images/random,2-5
+7179,A668421,Euthanasia,2.0,Dog,bulldog,True,https://dog.ceo/api/breed/American Bulldog Mix/images/random,0-1
+7221,A668497,Euthanasia,5.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer/Pit Bull/images/random,2-5
+7325,A668631,Euthanasia,1.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,0-1
+7326,A668632,Euthanasia,3.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd/Labrador Retriever/images/random,2-5
+7876,A669461,Euthanasia,13.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer/Pit Bull/images/random,10-19
+7957,A669561,Euthanasia,5.0,Dog,doberman,True,https://dog.ceo/api/breed/Doberman Pinsch Mix/images/random,2-5
+8161,A669839,Euthanasia,4.0,Dog,collie,True,https://dog.ceo/api/breed/Border Collie Mix/images/random,2-5
+8277,A669977,Euthanasia,1.0,Dog,bulldog,True,https://dog.ceo/api/breed/American Bulldog Mix/images/random,0-1
+8491,A670308,Euthanasia,2.0,Dog,chihuahua,True,https://dog.ceo/api/breed/Chihuahua Longhair Mix/images/random,0-1
+8624,A670518,Euthanasia,15.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,10-19
+9312,A671439,Euthanasia,14.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,10-19
+9384,A671541,Euthanasia,10.0,Dog,beagle,True,https://dog.ceo/api/breed/Beagle Mix/images/random,6-10
+9561,A671877,Euthanasia,6.0,Dog,collie,True,https://dog.ceo/api/breed/Border Collie Mix/images/random,2-5
+9574,A671913,Euthanasia,1.0,Dog,collie,True,https://dog.ceo/api/breed/Border Collie Mix/images/random,0-1
+9620,A672007,Euthanasia,0.1643835616438356,Dog,husky,True,https://dog.ceo/api/breed/Siberian Husky Mix/images/random,0-1
+10368,A673223,Euthanasia,10.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd/Labrador Retriever/images/random,6-10
+10653,A673611,Euthanasia,2.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,0-1
+10763,A673771,Euthanasia,2.0,Dog,bulldog,True,https://dog.ceo/api/breed/American Bulldog Mix/images/random,0-1
+11070,A674236,Euthanasia,10.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,6-10
+11279,A674511,Euthanasia,2.0,Dog,husky,False,https://dog.ceo/api/breed/Siberian Husky/images/random,0-1
+11344,A674601,Euthanasia,0.1643835616438356,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,0-1
+12237,A675935,Euthanasia,5.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,2-5
+12349,A676127,Euthanasia,0.03835616438356165,Dog,chihuahua,False,https://dog.ceo/api/breed/Chihuahua Shorthair/images/random,0-1
+12436,A676231,Euthanasia,4.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,2-5
+12671,A676571,Euthanasia,3.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,2-5
+12758,A676680,Euthanasia,2.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,0-1
+13547,A677786,Euthanasia,3.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,2-5
+13642,A677912,Euthanasia,16.0,Dog,doberman,True,https://dog.ceo/api/breed/Doberman Pinsch Mix/images/random,10-19
+13887,A678218,Euthanasia,11.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,10-19
+14061,A678428,Euthanasia,1.0,Dog,bulldog,True,https://dog.ceo/api/breed/American Bulldog Mix/images/random,0-1
+14905,A679459,Euthanasia,3.0,Dog,collie,True,https://dog.ceo/api/breed/Border Collie Mix/images/random,2-5
+15681,A680367,Euthanasia,9.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd/Labrador Retriever/images/random,6-10
+16684,A681698,Euthanasia,0.0821917808219178,Dog,chihuahua,True,https://dog.ceo/api/breed/Chihuahua Longhair Mix/images/random,0-1
+17562,A682883,Euthanasia,12.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,10-19
+18414,A683930,Euthanasia,0.410958904109589,Dog,husky,True,https://dog.ceo/api/breed/Siberian Husky Mix/images/random,0-1
+18741,A684400,Euthanasia,9.0,Dog,doberman,False,https://dog.ceo/api/breed/Doberman Pinsch/images/random,6-10
+19035,A684752,Euthanasia,2.0,Dog,germanshepherd,False,https://dog.ceo/api/breed/German Shepherd/images/random,0-1
+19131,A684875,Euthanasia,0.3287671232876712,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,0-1
+19147,A684913,Euthanasia,1.0,Dog,bulldog,True,https://dog.ceo/api/breed/American Bulldog Mix/images/random,0-1
+19381,A685183,Euthanasia,8.0,Dog,chihuahua,True,https://dog.ceo/api/breed/Chihuahua Longhair Mix/images/random,6-10
+19593,A685475,Euthanasia,8.0,Dog,husky,True,https://dog.ceo/api/breed/Siberian Husky Mix/images/random,6-10
+20505,A686683,Euthanasia,12.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,10-19
+20759,A687025,Euthanasia,10.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,6-10
+21292,A687699,Euthanasia,1.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd/Labrador Retriever/images/random,0-1
+21753,A688287,Euthanasia,5.0,Dog,chihuahua,True,https://dog.ceo/api/breed/Chihuahua Longhair Mix/images/random,2-5
+22157,A688785,Euthanasia,2.0,Dog,bulldog,True,https://dog.ceo/api/breed/American Bulldog Mix/images/random,0-1
+22406,A689099,Euthanasia,2.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,0-1
+22929,A689789,Euthanasia,2.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd/Labrador Retriever/images/random,0-1
+23206,A690146,Euthanasia,4.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,2-5
+23279,A690235,Euthanasia,8.0,Dog,husky,True,https://dog.ceo/api/breed/Siberian Husky Mix/images/random,6-10
+23427,A690423,Euthanasia,4.0,Dog,collie,True,https://dog.ceo/api/breed/Border Collie Mix/images/random,2-5
+24074,A691330,Euthanasia,3.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,2-5
+24705,A692191,Euthanasia,8.0,Dog,beagle,True,https://dog.ceo/api/breed/Beagle Mix/images/random,6-10
+24837,A692369,Euthanasia,1.0,Dog,dane,True,https://dog.ceo/api/breed/Great Dane Mix/images/random,0-1
+24895,A692441,Euthanasia,0.5753424657534246,Dog,husky,True,https://dog.ceo/api/breed/Siberian Husky Mix/images/random,0-1
+25182,A692855,Euthanasia,2.0,Dog,bulldog,True,https://dog.ceo/api/breed/American Bulldog Mix/images/random,0-1
+26622,A694739,Euthanasia,3.0,Dog,husky,True,https://dog.ceo/api/breed/Siberian Husky Mix/images/random,2-5
+27023,A695345,Euthanasia,3.0,Dog,dalmatian,True,https://dog.ceo/api/breed/Dalmatian/Australian Cattle Dog/images/random,2-5
+27248,A695672,Euthanasia,11.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,10-19
+27432,A695883,Euthanasia,5.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,2-5
+27725,A696278,Euthanasia,2.0,Dog,bulldog,True,https://dog.ceo/api/breed/American Bulldog Mix/images/random,0-1
+27804,A696390,Euthanasia,6.0,Dog,doberman,True,https://dog.ceo/api/breed/Doberman Pinsch Mix/images/random,2-5
+27853,A696478,Euthanasia,1.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,0-1
+28401,A697236,Euthanasia,13.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,10-19
+28750,A697797,Euthanasia,2.0,Dog,collie,True,https://dog.ceo/api/breed/Border Collie Mix/images/random,0-1
+29232,A698522,Euthanasia,4.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,2-5
+30112,A699736,Euthanasia,12.0,Dog,collie,True,https://dog.ceo/api/breed/Border Collie Mix/images/random,10-19
+30311,A699974,Euthanasia,1.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,0-1
+31353,A701305,Euthanasia,1.0,Dog,collie,True,https://dog.ceo/api/breed/Border Collie Mix/images/random,0-1
+32191,A702309,Euthanasia,0.0821917808219178,Dog,collie,True,https://dog.ceo/api/breed/Border Collie Mix/images/random,0-1
+32936,A703269,Euthanasia,0.2465753424657534,Dog,beagle,True,https://dog.ceo/api/breed/Beagle Mix/images/random,0-1
+32995,A703334,Euthanasia,2.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,0-1
+34123,A704682,Euthanasia,2.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,0-1
+35240,A705995,Euthanasia,5.0,Dog,bulldog,True,https://dog.ceo/api/breed/American Bulldog Mix/images/random,2-5
+35990,A706958,Euthanasia,3.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,2-5
+36054,A707046,Euthanasia,3.0,Dog,husky,True,https://dog.ceo/api/breed/Siberian Husky Mix/images/random,2-5
+36209,A707255,Euthanasia,13.0,Dog,collie,True,https://dog.ceo/api/breed/Border Collie Mix/images/random,10-19
+36330,A707412,Euthanasia,6.0,Dog,germanshepherd,False,https://dog.ceo/api/breed/German Shepherd/images/random,2-5
+38795,A710853,Euthanasia,2.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,0-1
+39889,A712193,Euthanasia,10.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,6-10
+40666,A713240,Euthanasia,16.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,10-19
+40826,A713430,Euthanasia,2.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,0-1
+41060,A713739,Euthanasia,2.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,0-1
+41225,A713954,Euthanasia,2.0,Dog,bulldog,True,https://dog.ceo/api/breed/American Bulldog Mix/images/random,0-1
+41256,A714003,Euthanasia,2.0,Dog,husky,False,https://dog.ceo/api/breed/Siberian Husky/images/random,0-1
+43035,A716542,Euthanasia,4.0,Dog,germanshepherd,False,https://dog.ceo/api/breed/German Shepherd/images/random,2-5
+43359,A716961,Euthanasia,0.07671232876712329,Dog,chihuahua,True,https://dog.ceo/api/breed/Chihuahua Longhair Mix/images/random,0-1
+43473,A717094,Euthanasia,9.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd/Labrador Retriever/images/random,6-10
+44097,A718046,,10.0,Dog,chihuahua,True,https://dog.ceo/api/breed/Chihuahua Longhair Mix/images/random,6-10
+44168,A718133,Euthanasia,16.0,Dog,chihuahua,False,https://dog.ceo/api/breed/Chihuahua Shorthair/images/random,10-19
+44763,A718886,Euthanasia,2.0,Dog,bulldog,True,https://dog.ceo/api/breed/American Bulldog Mix/images/random,0-1
+45542,A719918,Euthanasia,2.0,Dog,bulldog,True,https://dog.ceo/api/breed/American Bulldog Mix/images/random,0-1
+46300,A721045,Euthanasia,13.0,Dog,collie,True,https://dog.ceo/api/breed/Border Collie Mix/images/random,10-19
+46307,A721056,Euthanasia,5.0,Dog,collie,True,https://dog.ceo/api/breed/Border Collie Mix/images/random,2-5
+46896,A721834,Euthanasia,2.0,Dog,husky,False,https://dog.ceo/api/breed/Siberian Husky/images/random,0-1
+48654,A724334,Euthanasia,2.0,Dog,doberman,True,https://dog.ceo/api/breed/Doberman Pinsch Mix/images/random,0-1
+48920,A724758,Euthanasia,1.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,0-1
+48994,A724857,Euthanasia,4.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,2-5
+49364,A725440,Euthanasia,2.0,Dog,germanshepherd,False,https://dog.ceo/api/breed/German Shepherd/images/random,0-1
+50351,A726822,Euthanasia,6.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,2-5
+51029,A727628,Euthanasia,4.0,Dog,collie,False,https://dog.ceo/api/breed/Border Collie/images/random,2-5
+51403,A728107,Euthanasia,0.821917808219178,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,0-1
+51711,A728528,Euthanasia,6.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,2-5
+51918,A728789,Euthanasia,2.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,0-1
+51920,A728792,Euthanasia,4.0,Dog,bulldog,False,https://dog.ceo/api/breed/American Bulldog/images/random,2-5
+52044,A728958,Euthanasia,10.0,Dog,germanshepherd,False,https://dog.ceo/api/breed/German Shepherd/images/random,6-10
+54364,A732008,Euthanasia,7.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,6-10
+55023,A732869,Euthanasia,8.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,6-10
+56497,A734686,Euthanasia,5.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,2-5
+58578,A737358,Euthanasia,1.0,Dog,husky,True,https://dog.ceo/api/breed/Siberian Husky Mix/images/random,0-1
+58622,A737408,Euthanasia,12.0,Dog,beagle,True,https://dog.ceo/api/breed/Beagle Mix/images/random,10-19
+59376,A738364,Euthanasia,12.0,Dog,germanshepherd,False,https://dog.ceo/api/breed/German Shepherd/images/random,10-19
+59829,A738998,Euthanasia,4.0,Dog,chihuahua,True,https://dog.ceo/api/breed/Chihuahua Longhair Mix/images/random,2-5
+60276,A739703,Euthanasia,0.0821917808219178,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,0-1
+60326,A739785,Euthanasia,0.3287671232876712,Dog,beagle,True,https://dog.ceo/api/breed/Beagle Mix/images/random,0-1
+60612,A740279,Euthanasia,2.0,Dog,chihuahua,False,https://dog.ceo/api/breed/Chihuahua Shorthair/images/random,0-1
+62144,A742639,Euthanasia,2.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,0-1
+62146,A742640,Euthanasia,0.9041095890410958,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,0-1
+62148,A742641,Euthanasia,3.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,2-5
+63094,A743918,Euthanasia,17.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,10-19
+67342,A750223,Euthanasia,2.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,0-1
+71792,A756374,Euthanasia,10.0,Dog,chihuahua,True,https://dog.ceo/api/breed/Chihuahua Longhair Mix/images/random,6-10
+73826,A759272,Euthanasia,0.07671232876712329,Dog,chihuahua,True,https://dog.ceo/api/breed/Chihuahua Longhair Mix/images/random,0-1
+74313,A759972,Euthanasia,12.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,10-19
+74428,A760144,Euthanasia,15.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,10-19
+74440,A760157,Euthanasia,2.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,0-1
+75220,A761279,Euthanasia,2.0,Dog,chihuahua,True,https://dog.ceo/api/breed/Chihuahua Longhair Mix/images/random,0-1
+76112,A762880,Euthanasia,3.0,Dog,husky,True,https://dog.ceo/api/breed/Alaskan Husky Mix/images/random,2-5
+76905,A764156,Euthanasia,10.0,Dog,chihuahua,True,https://dog.ceo/api/breed/Chihuahua Longhair Mix/images/random,6-10
+76936,A764203,Euthanasia,5.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,2-5
+77047,A764391,Euthanasia,0.4931506849315068,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,0-1
+78255,A766365,Euthanasia,1.0,Dog,germanshepherd,True,https://dog.ceo/api/breed/German Shepherd Mix/images/random,0-1
+78772,A767240,Euthanasia,0.07671232876712329,Dog,germanshepherd,False,https://dog.ceo/api/breed/German Shepherd/images/random,0-1
+79358,A768365,Euthanasia,2.0,Dog,beagle,True,https://dog.ceo/api/breed/Beagle Mix/images/random,0-1
+79671,A769067,Euthanasia,10.0,Dog,boxer,True,https://dog.ceo/api/breed/Boxer Mix/images/random,6-10
