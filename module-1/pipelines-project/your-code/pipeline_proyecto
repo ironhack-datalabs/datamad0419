@@ -1,0 +1,41 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+selected=input('Hi, we are an app that deals with suicide data within the EU. Please, enter a Country of the UE and we will give you the correlation between number of suicides and the evolution of the gdp')
+
+def acquire():
+    data = pd.read_csv('Suicidios.csv')
+    df=pd.DataFrame(data)
+    return df
+
+def wrangle(df):
+    df1=df.rename(columns = {' gdp_for_year ($) ':'gdp_for_year'},inplace=True)
+    df2=df1['gdp_for_year']=df1['gdp_for_year'].str.replace(',','')
+    df3=df2['gdp_for_year']=df.gdp_for_year.astype(int)
+    df4=df3.columns = df.columns.str.strip()
+    df5=df4.drop(['population','suicides/100k pop','country-year', 'HDI for year','gdp_per_capita ($)', 'generation'], axis=1, inplace=True)
+    df_limpio=df5.query("country=='Spain' | country=='Germany' | country=='France' | country=='Italy' | country=='Belgium'| country=='Denmark'| country=='Croatia'| country=='Finland'| country=='Slovakia'| country=='Greece'| country=='Austria' | country=='Bulgary'| country=='Slovenia'| country=='Estonia' | country=='Hungary'| country=='Ireland' | country=='Poland'| country=='Portugal' | country=='Netherlands'| country=='Romania'| country=='Sweden'| country=='Czech Republic'")
+    return df_limpio
+
+def analyze(df):
+    df1=df.groupby(['country','year', 'gdp_for_year'])['suicides_no'].sum().reset_index()
+    df2=df1[['country','year','suicides_no','gdp_for_year']]
+    resultado=df2.loc[df3.country==str(selected)]
+    return resultado
+
+def visualize(df):
+    df1=df.sort_values(by=['year', 'gdp_for_year', 'suicides_no'], inplace=True)
+    grafica_1 = df1.plot(x='year', y=['suicides_no','gdp_for_year'])
+    return grafica_1, grafica_2
+
+def save_viz(barchart):
+    fig = barchart.get_figure()
+    fig.savefig(title + '.png')
+
+if __name__ == '__main__':
+    data = acquire()
+    filtered = wrangle(data)
+    results = analyze(filtered)
+    barchart = visualize(results)
+    save_viz(barchart)
