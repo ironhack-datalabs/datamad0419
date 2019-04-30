@@ -26,10 +26,10 @@ def analyze(df, selected):
     df=df.loc[df.country==str(selected)]
     return df
 
-def visualize(x):
-    df=x.sort_values(by=['year', 'suicides_no'], inplace=False)
+def visualize(entrada):
+    df=entrada.sort_values(by=['year', 'suicides_no'], inplace=False)
     grafica_1=df.plot(x='year', y=['suicides_no'])
-    df=x.sort_values(by=['year', 'gdp_for_year'], inplace=False)
+    df=entrada.sort_values(by=['year', 'gdp_for_year'], inplace=False)
     grafica_2=df.plot(x='year', y=['gdp_for_year'])
     return grafica_1, grafica_2
 
@@ -40,7 +40,7 @@ def save_viz(grafica_1, grafica_2): # TENGO DOS GRAFICAS
     fig.savefig('ev_pib' + '.png')
 
 if __name__ == '__main__':
-    selected= 'Spain' # input('Hi, we are an app that deals with suicide data within the EU. Please, enter a Country of the UE and we will give you the correlation between number of suicides and the evolution of the gdp')
+    selected= input('Hi, we are an app that deals with suicide data within the EU. Please, enter a Country of the UE and we will give you the correlation between number of suicides and the evolution of the gdp')
     filename = 'Suicidios.csv'
 
     data = acquire(filename)
