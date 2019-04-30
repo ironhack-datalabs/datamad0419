@@ -17,7 +17,7 @@ def wrangle(data):
 def analyze(data):
     datos = analisis.datos_analisis(data)
     areas = set(datos['Area_ISO'])
-    paises = list(set(data['Area']))
+    
     datos = analisis.columna_continente(datos, areas)
     datos_paises = analisis.columna_total_alimento(datos)
     datos_paises = analisis.produccion_bin(datos)
@@ -26,19 +26,27 @@ def analyze(data):
     return datos_paises, total_pais
 
 def report(data, total):
-    chart_total = reports.paises_mayores_productores(total)
-    guardar.save_viz(chart_total, 'Los 5 países que más producen - Valores por 1000 toneladas')
-    chart_compara = reports.report_compare(data, args.pais1, args.pais2)
+    pais1 = reports.comprobar_pais(data, args.pais1)
+    pais2 = reports.comprobar_pais(data, args.pais2)
+
+    chart_compara = reports.report_compare(data, pais1, pais2, args.ver)
     guardar.save_viz(chart_compara, 'Compara_paises')
+
+    chart_total = reports.paises_mayores_productores(total, args.ver)
+    guardar.save_viz(chart_total, 'Los 5 países que más producen - Valores por 1000 toneladas')
 
 #Para pasar los valores de los paises
 parser = argparse.ArgumentParser(description='Genera un gráfico comparando los datos de los paises eligidos')
-parser.add_argument('--p1', dest='pais1',
-                    default='Italy',
-                    help='País 1 para la comparación')
-parser.add_argument('--p2', dest='pais2',
-                    default='France',
-                    help='País 2 para la comparación')                    
+parser.add_argument('--p1', dest = 'pais1',
+                    default = 'Italy',
+                    help = 'País 1 para la comparación')
+parser.add_argument('--p2', dest = 'pais2',
+                    default = 'France',
+                    help = 'País 2 para la comparación') 
+parser.add_argument('-v', dest = 'ver',
+                    default = 0,
+                    type = int,
+                    help = 'Ver gráfica')                                        
 
 args = parser.parse_args()
 
