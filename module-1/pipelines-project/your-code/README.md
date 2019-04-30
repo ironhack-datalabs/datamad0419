@@ -28,6 +28,11 @@ En la columna de los años, las cantidades están expresadas en 1000 toneladas.
 **README.md** : Descripción del proyecto  
 
 
+## Parámetros para el main.py
+
+**--p1** Primer pais a comparar  
+**--p2** Segundo pais a comparar  
+
 ## Datos complementarios para el dataset
 
 Para completar el conjunto de datos del que disponemos, realizaremos llamadas a la siguiente api:  
