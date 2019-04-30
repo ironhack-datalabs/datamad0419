@@ -7,7 +7,7 @@ register_matplotlib_converters()
 import numpy as np                      # numerical python
 import seaborn as sns                   # para plots
 from pipeline import *                  # desde el pipeline
-
+from stats import *
 
 
 def bar_plot(df):   # plot del numero de  manchas
@@ -15,12 +15,17 @@ def bar_plot(df):   # plot del numero de  manchas
 	plt.title('Sunspots',size=12,fontweight='bold')
 	plt.xlabel('Date',size=10)                   
 	plt.ylabel('Number',size=10)
-	plt.show()
+	plt.savefig('barplot_spots.png')
+	#plt.show()
+	plt.close()
+	
 	plt.bar(df.index, df['Flares Number'], color='y')
 	plt.title('Solar Flares',size=12,fontweight='bold')
 	plt.xlabel('Date',size=10)                   
 	plt.ylabel('Number',size=10)
-	plt.show()
+	plt.savefig('barplot_flares.png')
+	#plt.show()
+	plt.close()
 	return ''
 
 
@@ -46,7 +51,9 @@ def binning_plot(df):   # plot por clase de llamarada
 	plt.title('Flares Classes',size=12,fontweight='bold')
 	plt.xlabel('Class',size=10)                   
 	plt.ylabel('Number',size=10)
-	plt.show()
+	plt.savefig('binning.png')
+	#plt.show()
+	plt.close()
 	return ''
 
 
@@ -55,9 +62,11 @@ def correlation_heatmap(df):     # plot de correlacion
 	mask=np.zeros_like(df.corr(), dtype=np.bool)
 	mask[np.triu_indices_from(mask)]=True
 	cmap=sns.diverging_palette(220, 10, as_cmap=True)
-	sns.heatmap(df.corr(), mask=mask, cmap=cmap, vmax=1.0, center=0, square=True, linewidths=.5, cbar_kws={"shrink": .5})
-	plt.title("Correlation")                                     
-	plt.show()   
+	sns.heatmap(df.corr(method='spearman'), mask=mask, cmap=cmap, vmax=1.0, center=0, square=True, linewidths=.5, cbar_kws={"shrink": .5})
+	plt.title("Correlation")  
+	plt.savefig('correlation.png', dpi=100)                                   
+	plt.show()  
+	plt.close() 
 	return ''
 
 

@@ -8,6 +8,7 @@ import quandl             # api quandl
 import numpy as np        # numerical python
 from draw import *        # importacion para plots
 from stats import *       # esdisticas
+from repo import *        # report
 
 
 def full(df):             # funcion para mostrar el dataframe completo
@@ -246,12 +247,15 @@ def month_means(df):         # medias mensuales de llamaradas y manchas (media d
 
 
 def data():                      # datos
+	print ('Procesando datos...')
 	df=read('flares.csv')        # leer csv
 	df=time_process(df)          # dataframe (kaggle)
 	df=pd.merge(df, spots(), how='inner', left_index=True, right_index=True) # merge con los datos de la api
 	df=f_n_class(df)                 # clasificacion numerica
 	df=month_means(df)               # medias mensuales
+	print ('Datos procesados.')
 	df.to_csv('flares(clean).csv')   # guarda dataset limpio 
+	print ('Datos guardados.')
 	return df
 
 
