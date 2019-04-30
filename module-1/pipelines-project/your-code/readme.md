@@ -1,6 +1,5 @@
 
 El dataset elegido ha sido: [**18,393 Pitchfork Reviews**](https://www.kaggle.com/nolanbconaway/pitchfork-data), un conjunto de reviews de álbums de música de la revista Pitchfork *de Enero del año 1999 a Enero del 2017*.
-Link de selección de colores: https://htmlcolorcodes.com/color-picker/
 
 Dado que el dataset estaba en formato **.sqlite**, he tenido que descargarlo y convertir en *.csv* las diferentes columnas (a excepción de artistas, cuyas columnas ya estaban en las demás y no era necesaria).
 
@@ -15,7 +14,7 @@ Dado que el dataset estaba en formato **.sqlite**, he tenido que descargarlo y c
 Primero importamos las librerias con las que vamos a trabajar, en este caso *pandas*, *numpy*, *functools* (import reduce), *matplotlib*, *requests* y mi archivo de funciones: *functionspipe*.
 
 Visualizamos los .csv que hemos importado y hacemos un merge de los mismos a través de la función reduce de *functools*.
-http://oi63.tinypic.com/29vmdmh.jpg
+![alt text](http://oi63.tinypic.com/29vmdmh.jpg)
 
 
 ## Trabajo con el Dataframe.
@@ -32,7 +31,7 @@ Hacemos lo mismo con la variable **genre**, asignamos los valores nulos a 0 y lo
 
 Por último, lo mismo con la variable **album** y, al comprobar que ahora hay valores duplicados tanto en *reviewid, artist y album*, los eliminamos y nos quedamos con el primero.
 Seguidamente ordenamos el dataset de manera ascendente en función de la columna score.
-http://oi63.tinypic.com/2m5ma2f.jpg
+![alt text](http://oi63.tinypic.com/2m5ma2f.jpg)
 
 
 ## Análisis del Dataframe.
@@ -53,15 +52,16 @@ Filtramos el dataset a sólo los elementos con nota de #10. Imprimimos los difer
 Usamos la API de *last.fm* con la apiKey personal para obtener el resultado que nos da en relación al artista y álbum en concreto y así obtener el número de oyentes del mismo.
 
 Una vez obtenidos los datos los pasamos a un Dataframe e incorporamos al que teníamos con anterioridad. Dado que algunos elementos no pudieron ser obtenidos con la API y eran valores nulos los eliminamos y ordenamos en Dataframe en función del número de oyentes por álbum.
-http://oi65.tinypic.com/28v5850.jpg
+![alt text](http://oi65.tinypic.com/28v5850.jpg)
 
 Guardamos el Dataset final.
 
 
 ## Hacemos Gráficos.
 
+Para la selección de colores de las gráficas he usado [**Color Picker**](https://htmlcolorcodes.com/color-picker/).
 Graficamos el ranking de álbumes según la revista a partir de los bins.
-rankingscore.png
+![alt text](rankingscore.png)
 
 También hacemos un gráfico de barras para analizar los géneros preferidos por la revista Pitchfork en función las reviews con nota 10.
-genrespreferred.png
+![alt text](genrespreferred.png)
