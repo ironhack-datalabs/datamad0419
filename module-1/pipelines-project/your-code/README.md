@@ -39,11 +39,7 @@ Para llegar a mis dos objetivos, creé dos dataframes. Como he adelantado antes,
 
 El informe son dos gráficos hechos usando la librería Matplotlib.
 
-/home/dani/aaironhack/datamad0419/datamad0419/module-1/pipelines-project/your-code/earthquake_year.png
-
 * En el primer gráfico podemos ver dos tendencias. Una que va desde 2004 hasta 2010, con una media de 250 terremotos anuales y otra desde 2011 a 2017, con una media de 600 anuales. Respecto a la magnitud de los mismos, la proporción de su magnitud es más o menos constante, siendo la mayor parte de terremotos de magnitud entre 0 y 4.
-
-/home/dani/aaironhack/datamad0419/datamad0419/module-1/pipelines-project/your-code/top15.png
 
 * En el segundo gráfico podemos ver las 15 ciudades con más terremotos sufridos durante los años del estudio. La primera es Sitia, con más de 300, seguida por Ercis, Van y Changelos, con unos 250.
 
