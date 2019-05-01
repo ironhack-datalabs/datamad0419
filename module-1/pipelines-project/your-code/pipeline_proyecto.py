@@ -40,7 +40,7 @@ def save_viz(grafica_1, grafica_2): # TENGO DOS GRAFICAS
     fig.savefig('ev_pib' + '.png')
 
 if __name__ == '__main__':
-    selected= input('Hi, we are an app that deals with suicide data within the EU. Please, enter a Country of the UE and we will give you the correlation between number of suicides and the evolution of the gdp')
+    selected= input('Hi, we are an app that deals with suicide data within the EU. Please, enter a Country of the UE and we will give you the correlation between number of suicides and the evolution of the gdp: ')
     filename = 'Suicidios.csv'
 
     data = acquire(filename)
