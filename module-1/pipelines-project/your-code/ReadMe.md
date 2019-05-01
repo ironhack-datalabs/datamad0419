@@ -26,7 +26,7 @@ Las categorías se han dividido de la siguiente forma:
 * Essential +90
 
   
-![categorias](https://cdn1.imggmi.com/uploads/2019/4/30/3c302fc745bc5b48bae45f503cfd64ed-full.png)
+![categorias](https://ibb.co/qgTGPmB)
 
 Como se puede apreciar la mayoría de juegos entre las fechas especificadas tienen unas puntuaciones discretas y se engloban en las categorías de "For fans" y "Meh"
 
@@ -36,7 +36,7 @@ Algo normal por otra parte debido a la gran dificultad a la hora de desarrolar u
 
 ### Títulos imprescindibles.
 
-![Títulos imprescindibles](https://cdn1.imggmi.com/uploads/2019/4/30/ce1e5097559a1de31bc5a41f40249d3a-full.png)
+![Títulos imprescindibles](https://ibb.co/L83fQ8b)
 
 En el estudio no se han descartado juegos multiplataforma, por lo que es normal que algún juego se pueda repetir para diferentes hardware. Es lógico, los ports no siempre son lo que deberían.
 
