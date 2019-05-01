@@ -1,4 +1,6 @@
 .DS_Store
+.csv
+.env
 .idea
 venv/
 .ipynb_checkpoints
