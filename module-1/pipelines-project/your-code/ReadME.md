@@ -14,7 +14,7 @@ The main objective of this excercise was to apply learnt lessons on data analysi
 
 https://www.kaggle.com/usgs/earthquake-database</p>
 
-
+<img src="./pipeline.png">
 
 * <b>Acquire data:</b> Use of pandas to importa cvs file into a dataframe.
 * <b>Clean data:</b> Drop empty and unusefull columns from dataframe.
