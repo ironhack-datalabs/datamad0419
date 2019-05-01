@@ -48,7 +48,7 @@ Normalmente los DLC de pago son motivo de descontento y encontramos el caso cont
 
 ![Esenciales por plataforma](https://cdn1.imggmi.com/uploads/2019/4/30/1c26b1940b5cce6bee77afe7420c48ad-full.png)
 
-  PS4 se corona como la plataforma con más imprescindibles. Los últimos años para la consola de Sony han sido espectaculares con juegos de grandisima calidad por parte de sus estudios first party.
+PS4 se corona como la plataforma con más imprescindibles. Los últimos años para la consola de Sony han sido espectaculares con juegos de grandisima calidad por parte de sus estudios first party.
 Es curioso, sin embargo, encontrar a WiiU. Consola que fué un estrepitoso fracaso para Nintendo pero que recibio unas cuantas joyas que a día de hoy están siendo porteadas a Switch para conseguir esa rentabilidad que en WiiU no consiguieron.
   
 
@@ -56,16 +56,26 @@ Es curioso, sin embargo, encontrar a WiiU. Consola que fué un estrepitoso fraca
 
 ![Mayores diferencias prensa](https://cdn1.imggmi.com/uploads/2019/4/30/67e700ff9e3273d2f9d9f5cb1897ba7c-full.png)
 
-  
+ Son pocos los casos en los que la prensa puntúa menos que los usuarios. Ademas son juegos muy peculiares. En esta categoría quiero destacar Dead or Alive Xtreme 3 y Kagura Reflexions. 
+ Son el típico juego ecchi , picante a lo japones, con los tipicos estereotipos del genero. La prensa castiga este tipo de juegos pero al fan parecen no disgustarle tanto...
   
 
 ### Mayores diferencias usuarios.
 
 ![Mayores diferencias usuarios](https://cdn1.imggmi.com/uploads/2019/4/30/e1627a2f51beabe06b67a0ff09f01ef8-full.png)
 
-  
+La parte más controvetida es justamente esta. Juegos que la prensa ha puntuado bien pero el usuario ha castigado. 
+¿A que se pueden deber diferencias de puntuación de hasta 70 puntos?
+**Micropagos** (o maxipagos, según se mire.)  
+Son juegos que se han visto envueltos en la polémica del juego como servicio o de estar directamente rotos como juego por querer exprimir hasta el último centimo del consumidor.
+Las últimas entregas deportivas o el reciente Artifact son claros ejemplos.
+No podemos dejar de citar a Battlefront II. Juego que hizo cambiar las leyes de varios paises, como Belgica, sobre las compras internas en videojuegos.  
   
 
 ### Top 10 más populares hoy.
 
 ![Top 10](https://cdn1.imggmi.com/uploads/2019/4/30/8857ae74abd3909233fec00068591249-full.png)
+
+Según los datos de IGDB, una de las bases de datos más extensas sobre videojuegos, estos son los juegos más populares a dia de hoy.
+Son juegos que acaban de salir o aun ni han salido al mercado pero estan generando hype en las redes sociales, foros especializados, plataformas de streaming... 
+Mortal Kombat 11 tiene todas las papeletas para ser uno de los juegos con mayores diferencias de puntuación entre prensa y usuarios. Ya hay muchas criticas sobre su sistema de micropagos.
