@@ -31,13 +31,18 @@ def raw(df):
 # 2. Preparing data: internal (Database) & external (APIs) - Data integration
 '''API
 API.ApiConfig.api_key = "hr5FPZc3e_DneGG_wsUf"
-get/requests/blablabla
+get/requests/...
 '''
 
 # 3. Data cleaning & manipulation
 
 def conversion_ms_to_min(x):
     return x/60000
+
+def concatenate2columns(df,a,b):
+    name = a+'_'+b
+    df[name]=df[[a,b]].apply(lambda x: ' '.join(x),axis=1)
+    print(df[name].head())
 
 def bins(var):
     bins_labels = ['Low','Mid','High']
@@ -48,11 +53,16 @@ def bins(var):
     df[str(var)+'_labels']= pd.cut(df[var],cutoffs, labels=bins_labels)
     return df.head(5)
 
-def tempo_classification(var):
+def tempo_classification(origin_var,new_var):
+    df[new_var] = df[origin_var]
     bins_labels = ['Larghissimo','Grave','Lento','Larghetto','Adagio','Andante','Moderato','Allegro','Vivace','Presto','Prestissimo']
     cutoffs = [0,20,40,60,66,76,108,120,140,168,200,400] 
-    df['tempo_clas'] = pd.cut(df[var],cutoffs, labels=bins_labels)
-    return df[['tempo','tempo_clas']].head()
+    df[new_var] = pd.cut(df[origin_var],cutoffs, labels=bins_labels)
+    return df[[origin_var,new_var]].head()
+
+def datasubset(df_origin,columns_selection,df_subset_name):
+    df_subset_name = df[df_origin.columns.intersection(columns_selection)]
+    return df_subset_name.shape,df_subset_name.head()
 
 def removing_duplicates(df, columns = []):
     before_removing = len(df)
@@ -62,7 +72,7 @@ def removing_duplicates(df, columns = []):
     print('# duplicated removed from df: {}'.format(removed))
     return df
 
-# 3. DATA ANALYSIS
+# 4. Data Viz
 
 def valcount(data, var):
     return df[var].value_counts()
@@ -75,11 +85,21 @@ def concat_pivot(data, rows, columns, values):
     pivot = df.pivot_table(values=values, columns=columns, index=rows)
     return pivot
 
+
+
+
+# 5. Reporting & Data Viz
+
 def histo(df, var):
     return df[var].hist()
 
 def plotting(df,var):
     return df[var].boxplot()
+
+def boxplotting(table):
+    sns.set_style("whitegrid")
+    fig = plt.figure(figsize=(15,5))
+    return sns.boxplot(data=table
 
 def bars(df, var):
     sns.set_style(style='darkgrid')
@@ -87,6 +107,11 @@ def bars(df, var):
     table_plot=pd.DataFrame(table)
     plt.title(var+' ranking & distribution')
     return sns.barplot(table_plot[var], table_plot.index, palette="viridis")
+
+def violinplotting(data):
+    f, ax = plt.subplots()
+    sns.despine(offset=10, trim=True)
+    return sns.violinplot(data=data);
 
 def corr_matrix(df, days=30):
     corr_matrix = df.tail(days).corr()
