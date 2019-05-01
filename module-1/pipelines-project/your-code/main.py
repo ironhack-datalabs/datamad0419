@@ -26,7 +26,7 @@ def limpiaArtisobras(obras):
 def merge(nombre,primerdf,segundodf,columna):
     nombre = pd.merge(primerdf, segundodf, on=columna,how='inner')
     return nombre
-def genero_autores(moma,columna):
+def genero_autores(moma):
     moma['Gender'] = moma['Gender'].str.replace('male', 'Male')
     moma['Gender'] = moma['Gender'].str.replace('FeMale', 'Female')
     moma['Gender'] = moma['Gender'].fillna('Unknown')
@@ -60,15 +60,15 @@ def genero_autoressindesc(moma):
     plt.xticks(rotation=0)
     plt.title(title)
     plt.show()"""
-def obrasartista(Genero):
+def obrasartista(moma,Genero):
     obrasgenero= moma[moma['Gender'] == Genero]
     t = obrasgenero.Name_x.value_counts()
     return print (t)
-def nacionalidadartista(nacionalidad):
+def nacionalidadartista(moma,nacionalidad):
     obrasgenero= moma[moma['Nationality'] == nacionalidad]
     d = (obrasgenero.Name_x.value_counts())
     return print(d)
-def gennacartista(Genero,nacionalidad):
+def gennacartista(moma,Genero,nacionalidad):
     obrasgenero= moma[(moma['Gender'] == Genero) & (moma['Nationality'] == nacionalidad)] 
     gennarcar = obrasgenero.Name_x.value_counts()
     return print(gennarcar)
@@ -78,60 +78,12 @@ def limpiezadate(moma):
 def nuevaadquisicion(Acquisition_Date):
     new_acquisition= re.sub("\-+\d*","",Acquisition_Date)
     return new_acquisition
-def categorizacion():
+def categorizacion(moma):
     etiquetas= ['desconocido','preguerrilla','postguerrilla']
     cortes = [-1,1925,1985,2019]
     moma['Acquisition_Datenew'] = pd.cut(moma['Acquisition Date'],cortes, labels=etiquetas)
     return moma['Acquisition_Datenew']
-def impactoguerrilla(periodo):
+def impactoguerrilla(moma,periodo):
     generoperiodo= moma[moma['Acquisition_Datenew'] == periodo]
     tab=genero_autoressindesc(generoperiodo)
     return tab
-artista = abrirdoc("artista",'artists.csv')
-obras = abrirdoc("obras",'artworks.csv')
-
-obras =rename(obras,"Artist ID",'Artist_ID')
-artista=rename(artista,"Artist ID",'Artist_ID')
-
-obras = limpiaArtisobras(obras)
-
-moma = merge("moma",artista,obras,'Artist_ID')
-print("-------------------------------------------------")
-print("Porcentaje de artistas según el genero")
-genero_autores(moma)
-print("-------------------------------------------------")
-
-print("Porcentaje de artistas quitando desconocido el genero")
-genero_autoressindesc(moma)
-
-print("\n")
-print("-------------------------------------------------")
-
-#plot_val_counts(moma,title='Top 20 artists with greatest number of artworks on display at MoMa')
-
-obrasartista("Male")
-
-print("\n")
-print("-------------------------------------------------")
-
-nacionalidadartista("Spanish")
-print("\n")
-print("-------------------------------------------------")
-
-gennacartista("Male","Spanish")
-print("\n")
-print("-------------------------------------------------")
-
-moma= limpiezadate(moma)
-
-moma['Acquisition Date']= moma["Acquisition Date"].apply(nuevaadquisicion)
-moma["Acquisition Date"] = moma["Acquisition Date"].astype(int)
-moma['Acquisition_Datenew']= categorizacion()
-
-print("Proporción del género de los/as artistas antes de 1985")
-impactoguerrilla("preguerrilla")
-print("\n")
-print("-------------------------------------------------")
-print("Proporción del género de los/as artistas después de 1985")
-impactoguerrilla("postguerrilla")
-print("-------------------------------------------------")
