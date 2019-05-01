@@ -62,7 +62,8 @@ def tempo_classification(origin_var,new_var):
 
 def datasubset(df_origin,columns_selection,df_subset_name):
     df_subset_name = df[df_origin.columns.intersection(columns_selection)]
-    return df_subset_name.shape,df_subset_name.head()
+    print(df_subset_name.shape,df_subset_name.head())
+    return df_subset_name
 
 def removing_duplicates(df, columns = []):
     before_removing = len(df)
