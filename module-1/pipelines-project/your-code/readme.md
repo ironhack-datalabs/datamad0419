@@ -61,7 +61,7 @@ Guardamos el Dataset final.
 
 Para la selección de colores de las gráficas he usado [**Color Picker**](https://htmlcolorcodes.com/color-picker/).
 Graficamos el ranking de álbumes según la revista a partir de los bins.
-![alt text](https://raw.githubusercontent.com/ironhack-datalabs/datamad0419/a39175c8cd8971fe9dbebba757404d76c52c7006/module-1/pipelines-project/your-code/rankingscore.png)
+![alt text](https://raw.githubusercontent.com/ironhack-datalabs/datamad0419/a39175c8cd8971fe9dbebba757404d76c52c7006/module-1/pipelines-project/your-code/rankingscore.pngv)
 
 También hacemos un gráfico de barras para analizar los géneros preferidos por la revista Pitchfork en función las reviews con nota 10.
-![alt text](https://raw.githubusercontent.com/ironhack-datalabs/datamad0419/a39175c8cd8971fe9dbebba757404d76c52c7006/module-1/pipelines-project/your-code/genrespreferred.png)
+![alt text](https://raw.githubusercontent.com/ironhack-datalabs/datamad0419/a39175c8cd8971fe9dbebba757404d76c52c7006/module-1/pipelines-project/your-code/genrespreferred.png)o
