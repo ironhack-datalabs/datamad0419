@@ -43,9 +43,10 @@ def analyze(data):
 def graph(data):
     sns.set_style("white")
     xticks_range = range(0, len(df.columns))
-    df.plot(title='Physicochemical variables by quality', xticks=xticks_range)
+    data.plot(title='Physicochemical variables by quality', xticks=xticks_range)
     plt.xticks(rotation=-45)
-    plt.savefig('graph.png', transparent=True)    
+    plt.savefig('graph.png', transparent=True)   
+    plt.show() 
     
 def graph_api(data):
     years_list = []
@@ -55,27 +56,28 @@ def graph_api(data):
     years = pd.concat(years_list, ignore_index=True)
     sns.set_style("white")  
     years.plot(title='Temperature evolution from 1980 to 1995 in Portugal')     
-    plt.savefig('graph_temp.png', transparent=True)    
+    plt.savefig('graph_temp.png', transparent=True) 
+    plt.show()  
 
 if __name__ == "__main__":
 
     filename = 'data/winequality-red.csv'
     df = acquire(filename)     
 
-    wrangle(df)
-    missing = mf.missing_pct(df)
+    cols = wrangle(df)
+    missing = mf.missing_pct(cols)
     print('Table "missing.csv" to be shown')
 
     quality_rank = analyze(df)
     print('Table "quality_rank.csv" to be shown')
     print('Table "bins_qual_rank.csv" to be shown')      
 
-    chart = graph(df)    
+    chart = graph(quality_rank)    
     print('Chart "chart.csv" to be shown')
 
     url = 'http://climatedataapi.worldbank.org/climateweb/rest/v1/country/mavg/tas/1980/1999/PRT'
     data = request_api(url)
-    graph_api(data)    
+    #graph_api(data)    
     print('Graph "graph_temp.png" to be shown') 
 
     
