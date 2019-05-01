@@ -123,18 +123,6 @@ def plot_yearVSmovies(imdb):
     plt.savefig('Relation movies by year')
     plt.show()
 
-def plot_yearVSvotes(imdb):
-    imdb.groupby('Year').mean()['Total votes (k)'].plot(xticks = np.arange(1940,2016,5))
-
-    sns.set(rc={'figure.figsize':(10,5)})
-    plt.title("Year Vs Average # of votes",fontsize = 14)
-    plt.xlabel('Release year',fontsize = 13)
-    plt.ylabel('# of votes',fontsize = 13)
-
-    sns.set_style("whitegrid")
-    plt.savefig('Relation years and mean votes')
-    plt.show()
-
 def plot_top10budget(imdb):
     info = pd.DataFrame(imdb['Budget (US$ Mn)'].sort_values(ascending = False))
     info['Title'] = imdb['Title']

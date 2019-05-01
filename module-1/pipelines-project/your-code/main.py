@@ -27,7 +27,6 @@ if __name__=="__main__":
     plot_genre(imdb)
     plot_bins(imdb)
     plot_yearVSmovies(imdb)
-    plot_yearVSvotes(imdb)
     plot_top10budget(imdb)
     plot_worsttop10(imdb)
     plot_corr_coreVSbudget(imdb)
