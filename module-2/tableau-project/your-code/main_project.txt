@@ -1,0 +1,39 @@
+https://public.tableau.com/profile/yonatan7904#!/vizhome/tableau_project_15570470387820/Historia1?publish=yes
+
+
+En primer lugar es necesario notar que Tableau usa la notacion matematica correcta.
+Es decir, la coma (',') separa unidades y decimales mientras que el punto ('.') separa
+bloques de tres cifras, millares de centenas, centenas de millar de millones, etc.., 
+por lo que la limpieza de estos datos con Pandas, asumiendo que los datos tambien tienen
+la notacion correcta, es basicamente inutil debido a que Python utiliza la notacion 
+americana, la incorrecta desde el punto de vista matematico.
+
+En mi proyecto trato de analizar que plataformas son las mas usadas, si dichas plataformas tienen algo
+que ver con el tiempo de espera, tanto del conductor como del usuario, o si tienen algo que ver
+con los descuentos obtenidos por los usuarios.
+
+
+Del analisis se obtienen varios datos.
+Tan solo un usuario a calificado el servicio por debajo de 5 (con un 4), mientras que el resto lo han
+calificado con un 6 o mas. Mas de una tercera parte de los usuarios, el 35.55% de los usuarios, califican
+el servicio con un 9.
+
+La plataforma mas usada por los usuarios para contratar el servicio es el iphone (ios, plataforma apple),
+el 68.09%, seguido por android, con un 31.52% de los registros. Tan solo existen 13 registros de peticion via web.
+
+Sin embargo, el promedio de duracion del servicio es mayor para los usuarios que utilizan android, casi 4 puntos por 
+encima de los usuarios de ios.
+
+Por otro lado, y como es logico, el tiempo de espera de los conductores aumenta cuando el servicio es reservado 
+previamente y el tiempo de espera del usuario aumenta cuando el servicio es al instante, ambos en torno los 
+5 minutos de media. Los conductores esperan de media 2 minutos cuando el servicio es al instante frente al minuto 
+que espera el usurio con reserva previa. 
+
+De entre todos los usuarios del servicio, los unicos que han logrado tener algun tipo de descuento son aquellos
+que usan plataforma iphone y servicio ASAP (al instante).
+
+Mi conclusion es que para el usuario que use este tipo de servicio, lo recomendable es tener un iphone.
+Si consideramos ciertas las estadisticas de statcounter al respecto de los smartphone en Europa,
+(http://gs.statcounter.com/os-market-share/mobile/europe), el 72.71% son dispositivos android frente
+al 26.23% ios, la empresa que presta el servicio podria estar desperdiciando una ventana de oportunidad
+del mercado en Europa.
