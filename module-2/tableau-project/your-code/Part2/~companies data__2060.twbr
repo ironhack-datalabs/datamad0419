@@ -1,0 +1,530 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.18.1219.1533                               -->
+<workbook source-build='2018.3.2 (20183.18.1219.1533)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='clean_data' inline='true' name='federated.1ck3alc1h21hbt163zu6u1v4y362' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='clean_data' name='semistructpassivestore-direct.1yxxnu21h0sl1n138e5sl0jgjeqt'>
+            <connection class='semistructpassivestore-direct' directory='C:/Users/Martin/Desktop/IRONHACK/datamad0419/module-2/tableau-project/your-code/Part2' filename='clean_data.json' password='' server=''>
+              <semistruct-schemas>
+                <semistruct-schema table='[clean_data.json]'>
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <relation connection='semistructpassivestore-direct.1yxxnu21h0sl1n138e5sl0jgjeqt' name='clean_data.json' table='[clean_data.json]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[clean_data.json]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[category_code]</local-name>
+            <parent-name>[clean_data.json]</parent-name>
+            <remote-alias>category_code</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>founded_year</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[founded_year]</local-name>
+            <parent-name>[clean_data.json]</parent-name>
+            <remote-alias>founded_year</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[clean_data.json]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[clean_data.json]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[clean_data.json]</parent-name>
+            <remote-alias>name</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_employees</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[number_of_employees]</local-name>
+            <parent-name>[clean_data.json]</parent-name>
+            <remote-alias>number_of_employees</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>raised_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[raised_amount]</local-name>
+            <parent-name>[clean_data.json]</parent-name>
+            <remote-alias>raised_amount</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>raised_currency_code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[raised_currency_code]</local-name>
+            <parent-name>[clean_data.json]</parent-name>
+            <remote-alias>raised_currency_code</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_money_raised</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[total_money_raised]</local-name>
+            <parent-name>[clean_data.json]</parent-name>
+            <remote-alias>total_money_raised</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Company Size' datatype='string' name='[Calculation_144959669918937088]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [number_of_employees] &lt; 15 THEN &apos;Small&apos; ELSEIF [number_of_employees]&lt;100 THEN &apos;Medium&apos; ELSE &apos;Big&apos; END' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Category Code' datatype='string' name='[category_code]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>category_code</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' caption='Founded Year' datatype='real' name='[founded_year]' role='dimension' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>founded_year</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>latitude</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>longitude</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>name</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Number Of Employees' datatype='real' name='[number_of_employees]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>number_of_employees</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Raised Amount' datatype='real' name='[raised_amount]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>raised_amount</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='CountD' caption='Raised Currency Code' datatype='real' datatype-customized='true' name='[raised_currency_code]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>raised_currency_code</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Total Money Raised' datatype='string' datatype-customized='true' name='[total_money_raised]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>total_money_raised</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column-instance column='[Calculation_144959669918937088]' derivation='None' name='[none:Calculation_144959669918937088:nk]' pivot='key' type='nominal' />
+      <folder name='Clean Data' role='dimensions'>
+        <folder-item name='[Document Index (generated)]' type='field' />
+        <folder-item name='[category_code]' type='field' />
+        <folder-item name='[founded_year]' type='field' />
+        <folder-item name='[name]' type='field' />
+        <folder-item name='[total_money_raised]' type='field' />
+      </folder>
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/Martin/Documents/My Tableau Repository/Datasources/clean_data.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='05/09/2019 08:58:19 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='7008' timestamp-start='2019-05-09 08:58:19.695' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Document Index (generated)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Document Index (generated)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Document Index (generated)</remote-alias>
+              <ordinal>0</ordinal>
+              <family>clean_data.json</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7008</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>category_code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[category_code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>category_code</remote-alias>
+              <ordinal>1</ordinal>
+              <family>clean_data.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>founded_year</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[founded_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>founded_year</remote-alias>
+              <ordinal>2</ordinal>
+              <family>clean_data.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>latitude</remote-alias>
+              <ordinal>3</ordinal>
+              <family>clean_data.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2039</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>longitude</remote-alias>
+              <ordinal>4</ordinal>
+              <family>clean_data.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2017</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>name</remote-alias>
+              <ordinal>5</ordinal>
+              <family>clean_data.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6499</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>number_of_employees</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[number_of_employees]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>number_of_employees</remote-alias>
+              <ordinal>6</ordinal>
+              <family>clean_data.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>119</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>raised_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[raised_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>raised_amount</remote-alias>
+              <ordinal>7</ordinal>
+              <family>clean_data.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>246</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>raised_currency_code</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[raised_currency_code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>raised_currency_code</remote-alias>
+              <ordinal>8</ordinal>
+              <family>clean_data.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_money_raised</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[total_money_raised]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_money_raised</remote-alias>
+              <ordinal>9</ordinal>
+              <family>clean_data.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>503</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' show-structure='false' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_144959669918937088:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Big&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Medium&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Small&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Spain&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_data' name='federated.1ck3alc1h21hbt163zu6u1v4y362' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ck3alc1h21hbt163zu6u1v4y362'>
+            <column caption='Company Size' datatype='string' name='[Calculation_144959669918937088]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [number_of_employees] &lt; 15 THEN &apos;Small&apos; ELSEIF [number_of_employees]&lt;100 THEN &apos;Medium&apos; ELSE &apos;Big&apos; END' />
+            </column>
+            <column-instance column='[latitude]' derivation='Avg' name='[avg:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='Avg' name='[avg:longitude:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>latitude</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>longitude</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[Calculation_144959669918937088]' derivation='None' name='[none:Calculation_144959669918937088:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Employees' datatype='real' name='[number_of_employees]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>number_of_employees</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Raised Amount' datatype='real' name='[raised_amount]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>raised_amount</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[number_of_employees]' derivation='Sum' name='[sum:number_of_employees:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[raised_amount]' derivation='Sum' name='[sum:raised_amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ck3alc1h21hbt163zu6u1v4y362].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ck3alc1h21hbt163zu6u1v4y362].[sum:number_of_employees:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1ck3alc1h21hbt163zu6u1v4y362].[sum:raised_amount:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1ck3alc1h21hbt163zu6u1v4y362].[:Measure Names]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ck3alc1h21hbt163zu6u1v4y362].[avg:longitude:qk]' field-type='quantitative' max='40660564.934390001' min='40026668.896950677' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1ck3alc1h21hbt163zu6u1v4y362].[avg:latitude:qk]' field-type='quantitative' max='6508331.9064225126' min='6137572.2419575788' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='true' />
+            <format attr='enabled' id='pp2_line' value='true' />
+            <format attr='enabled' id='light_adm0_bnd' value='true' />
+            <format attr='enabled' id='light_adm0_lbl' value='true' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='true' />
+            <format attr='enabled' id='light_pp2_statelabels' value='true' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='true' />
+            <format attr='enabled' id='countylabels' value='true' />
+            <format attr='enabled' id='zipbounds' value='true' />
+            <format attr='enabled' id='ziplabels' value='true' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1ck3alc1h21hbt163zu6u1v4y362].[none:Calculation_144959669918937088:nk]' />
+              <geometry column='[federated.1ck3alc1h21hbt163zu6u1v4y362].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ck3alc1h21hbt163zu6u1v4y362].[avg:latitude:qk]</rows>
+        <cols>[federated.1ck3alc1h21hbt163zu6u1v4y362].[avg:longitude:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1ck3alc1h21hbt163zu6u1v4y362].[none:Calculation_144959669918937088:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4C14D538-FF77-453E-9B5E-4CD8EB2FD212}' />
+    </window>
+  </windows>
+</workbook>
