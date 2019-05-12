@@ -1,0 +1,75 @@
+,_id,category_code,founded_year,geo,latitude,longitude,name,number_of_employees,raised_amount,raised_currency_code,total_money_raised,numero_compañias_cerca
+0,5cd590c53c474a367c3cc350,software,2008,"{'type': 'Point', 'coordinates': [-122.392142, 37.782263]}",37.782263,-122.392142,GoingOn,40.0,950000.0,USD,$8.5M,38
+3,5cd590c53c474a367c3cc353,games_video,2008,"{'type': 'Point', 'coordinates': [-122.393229, 37.781265]}",37.781265,-122.393229,Crunchyroll,50.0,4050000.0,USD,$4.8M,38
+7,5cd590c53c474a367c3cc357,web,2008,"{'type': 'Point', 'coordinates': [-73.985433, 40.740231]}",40.740231,-73.985433,BeliefNet,,7000000.0,USD,$7M,38
+13,5cd590c53c474a367c3cc35d,web,2008,"{'type': 'Point', 'coordinates': [-122.404488, 37.790032]}",37.790032,-122.404488,Unknown Vector,7.0,,,$0,38
+23,5cd590c53c474a367c3cc367,web,2008,"{'type': 'Point', 'coordinates': [-73.985281, 40.723652]}",40.723652,-73.985281,Kluster,,1000000.0,USD,$1M,31
+26,5cd590c53c474a367c3cc36a,web,2008,"{'type': 'Point', 'coordinates': [-73.985506, 40.757929]}",40.757929,-73.985506,Totspot,,,,$0,35
+27,5cd590c53c474a367c3cc36b,web,2008,"{'type': 'Point', 'coordinates': [-122.4025016, 37.7809512]}",37.7809512,-122.4025016,Heavy Electrons,,,,$0,38
+37,5cd590c53c474a367c3cc375,web,2008,"{'type': 'Point', 'coordinates': [-122.4042586, 37.80391]}",37.80391,-122.4042586,ReadBurner,4.0,,,$0,29
+50,5cd590c53c474a367c3cc382,games_video,2008,"{'type': 'Point', 'coordinates': [-122.419204, 37.775196]}",37.775196,-122.419204,stickychicken,2.0,,,$0,35
+69,5cd590c53c474a367c3cc395,software,2008,"{'type': 'Point', 'coordinates': [-122.419204, 37.775196]}",37.775196,-122.419204,GitHub,106.0,100000000.0,USD,$100M,35
+76,5cd590c53c474a367c3cc39c,software,2009,"{'type': 'Point', 'coordinates': [-122.3998782, 37.7896292]}",37.7896292,-122.3998782,Macroaxis,8.0,,,$0,37
+82,5cd590c53c474a367c3cc3a2,games_video,2008,"{'type': 'Point', 'coordinates': [-122.4013624, 37.7893215]}",37.7893215,-122.4013624,Serious Business,22.0,4000000.0,USD,$4M,37
+88,5cd590c53c474a367c3cc3a8,web,2008,"{'type': 'Point', 'coordinates': [-73.985506, 40.757929]}",40.757929,-73.985506,Kidmondo,,,,$0,35
+95,5cd590c53c474a367c3cc3af,web,2008,"{'type': 'Point', 'coordinates': [-73.993274, 40.743563]}",40.743563,-73.993274,Subway Crush,,,,$0,38
+121,5cd590c53c474a367c3cc3c9,software,2008,"{'type': 'Point', 'coordinates': [-73.985506, 40.757929]}",40.757929,-73.985506,Pinch Media,6.0,,,$560k,35
+156,5cd590c53c474a367c3cc3ec,web,2008,"{'type': 'Point', 'coordinates': [-122.419204, 37.775196]}",37.775196,-122.419204,Posterous,9.0,15000.0,USD,$10.1M,35
+157,5cd590c53c474a367c3cc3ed,software,2008,"{'type': 'Point', 'coordinates': [-73.978887, 40.751293]}",40.751293,-73.978887,Pluribo,,,,$0,38
+171,5cd590c53c474a367c3cc3fb,web,2008,"{'type': 'Point', 'coordinates': [-74.00721, 40.74034]}",40.74034,-74.00721,Bitly,,2000000.0,USD,$31.4M,38
+172,5cd590c53c474a367c3cc3fc,web,2008,"{'type': 'Point', 'coordinates': [-122.420903, 37.796164]}",37.796164,-122.420903,EcoFlip,5.0,,,$0,38
+173,5cd590c53c474a367c3cc3fd,games_video,2008,"{'type': 'Point', 'coordinates': [-73.980587, 40.724289]}",40.724289,-73.980587,GigMaven,8.0,,,$0,30
+176,5cd590c53c474a367c3cc400,games_video,2008,"{'type': 'Point', 'coordinates': [-122.396744, 37.780134]}",37.780134,-122.396744,Scavenja,8.0,,,$0,38
+184,5cd590c53c474a367c3cc408,software,2008,"{'type': 'Point', 'coordinates': [-122.39736, 37.794043]}",37.794043,-122.39736,OpenDrive,25.0,,,$0,38
+197,5cd590c53c474a367c3cc415,games_video,2008,"{'type': 'Point', 'coordinates': [-122.4015807, 37.7705096]}",37.7705096,-122.4015807,ngmoco,150.0,5600000.0,USD,$44.8M,33
+207,5cd590c53c474a367c3cc41f,web,2008,"{'type': 'Point', 'coordinates': [-73.990024, 40.739867]}",40.739867,-73.990024,YellowSpaces,1.0,,,$0,37
+227,5cd590c53c474a367c3cc433,web,2008,"{'type': 'Point', 'coordinates': [-122.403223, 37.794124]}",37.794124,-122.403223,Twonq,3.0,800000.0,USD,$800k,37
+230,5cd590c53c474a367c3cc436,web,2008,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",40.756054,-73.986951,Papervitamins,2.0,,,$0,36
+239,5cd590c53c474a367c3cc43f,web,2008,"{'type': 'Point', 'coordinates': [-122.3999719, 37.7870923]}",37.7870923,-122.3999719,Lolapps,65.0,4000000.0,USD,$4M,37
+244,5cd590c53c474a367c3cc444,web,2008,"{'type': 'Point', 'coordinates': [-74.004441, 40.721583]}",40.721583,-74.004441,photothread,,,,$0,25
+247,5cd590c53c474a367c3cc447,web,2008,"{'type': 'Point', 'coordinates': [-73.999675, 40.741441]}",40.741441,-73.999675,Samepoint,5.0,,,$0,36
+249,5cd590c53c474a367c3cc449,web,2008,"{'type': 'Point', 'coordinates': [-73.990024, 40.739867]}",40.739867,-73.990024,YellowSpaces,1.0,,,$0,37
+271,5cd590c53c474a367c3cc45f,web,2008,"{'type': 'Point', 'coordinates': [-122.403223, 37.794124]}",37.794124,-122.403223,Twonq,3.0,800000.0,USD,$800k,37
+274,5cd590c53c474a367c3cc462,web,2008,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",40.756054,-73.986951,Papervitamins,2.0,,,$0,36
+283,5cd590c53c474a367c3cc46b,web,2008,"{'type': 'Point', 'coordinates': [-122.3999719, 37.7870923]}",37.7870923,-122.3999719,Lolapps,65.0,4000000.0,USD,$4M,37
+288,5cd590c53c474a367c3cc470,web,2008,"{'type': 'Point', 'coordinates': [-74.004441, 40.721583]}",40.721583,-74.004441,photothread,,,,$0,25
+291,5cd590c53c474a367c3cc473,web,2008,"{'type': 'Point', 'coordinates': [-73.999675, 40.741441]}",40.741441,-73.999675,Samepoint,5.0,,,$0,36
+300,5cd590c53c474a367c3cc47c,web,2008,"{'type': 'Point', 'coordinates': [-73.970266, 40.764481]}",40.764481,-73.970266,The Company Database,,,,$0,27
+304,5cd590c53c474a367c3cc480,web,2008,"{'type': 'Point', 'coordinates': [-122.419204, 37.775196]}",37.775196,-122.419204,BoxCycle,,,,$0,35
+309,5cd590c53c474a367c3cc485,web,2008,"{'type': 'Point', 'coordinates': [-122.4031242, 37.79402]}",37.79402,-122.4031242,PicApp,,3200000.0,USD,$3.2M,37
+332,5cd590c53c474a367c3cc49c,software,2008,"{'type': 'Point', 'coordinates': [-73.992609, 40.740941]}",40.740941,-73.992609,Buzzr,5.0,,,$0,37
+348,5cd590c53c474a367c3cc4ac,web,2010,"{'type': 'Point', 'coordinates': [-73.987764, 40.744618]}",40.744618,-73.987764,Yipit,23.0,250000.0,USD,$7.55M,38
+349,5cd590c53c474a367c3cc4ad,software,2008,"{'type': 'Point', 'coordinates': [-122.423132, 37.792303]}",37.792303,-122.423132,Tivix,18.0,,,$0,39
+350,5cd590c53c474a367c3cc4ae,web,2008,"{'type': 'Point', 'coordinates': [-122.394958, 37.781262]}",37.781262,-122.394958,Virgance,15.0,750000.0,USD,$750k,38
+353,5cd590c53c474a367c3cc4b1,software,2008,"{'type': 'Point', 'coordinates': [-122.419204, 37.775196]}",37.775196,-122.419204,148Apps,1.0,,,$0,35
+385,5cd590c53c474a367c3cc4d1,web,2008,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",40.756054,-73.986951,People Capital,10.0,2500000.0,USD,$2.5M,36
+386,5cd590c53c474a367c3cc4d2,software,2008,"{'type': 'Point', 'coordinates': [-122.419204, 37.775196]}",37.775196,-122.419204,Connectize,,,,$0,35
+403,5cd590c53c474a367c3cc4e3,web,2008,"{'type': 'Point', 'coordinates': [-122.3915063, 37.7890183]}",37.7890183,-122.3915063,Circle of Moms,9.0,,USD,$0,37
+406,5cd590c53c474a367c3cc4e6,software,2011,"{'type': 'Point', 'coordinates': [-73.9799007, 40.7645772]}",40.7645772,-73.9799007,Unison Technologies,30.0,,,$0,32
+407,5cd590c53c474a367c3cc4e7,web,2008,"{'type': 'Point', 'coordinates': [-73.990024, 40.739867]}",40.739867,-73.990024,Modelinia,,5000000.0,USD,$5M,37
+425,5cd590c53c474a367c3cc4f9,games_video,2010,"{'type': 'Point', 'coordinates': [-122.4052761, 37.8053241]}",37.8053241,-122.4052761,Indee,3.0,,,$0,29
+426,5cd590c53c474a367c3cc4fa,games_video,2008,"{'type': 'Point', 'coordinates': [-73.9914834, 40.7703479]}",40.7703479,-73.9914834,Why Hasn't He?,0.0,,,$0,26
+431,5cd590c53c474a367c3cc4ff,web,2008,"{'type': 'Point', 'coordinates': [-122.419204, 37.775196]}",37.775196,-122.419204,Kaplan Index,,,,$0,35
+464,5cd590c53c474a367c3cc520,games_video,2009,"{'type': 'Point', 'coordinates': [-122.4041485, 37.7905538]}",37.7905538,-122.4041485,Heyzap,,650000.0,USD,$7.97M,38
+470,5cd590c53c474a367c3cc526,web,2008,"{'type': 'Point', 'coordinates': [-73.9890149, 40.7438356]}",40.7438356,-73.9890149,Ticketpredator,,,,$0,39
+486,5cd590c53c474a367c3cc536,web,2008,"{'type': 'Point', 'coordinates': [-122.40971, 37.788796]}",37.788796,-122.40971,KODA,15.0,3000000.0,USD,$4.5M,40
+492,5cd590c53c474a367c3cc53c,games_video,2009,"{'type': 'Point', 'coordinates': [-73.976169, 40.727763]}",40.727763,-73.976169,Music For Busy People,3.0,,,$0,30
+508,5cd590c53c474a367c3cc54c,software,2008,"{'type': 'Point', 'coordinates': [-122.40414, 37.792968]}",37.792968,-122.40414,MediaMelon,,,,$0,37
+512,5cd590c53c474a367c3cc550,games_video,2008,"{'type': 'Point', 'coordinates': [-73.9916617, 40.7495594]}",40.7495594,-73.9916617,CollegeClickTV,,,,$0,38
+528,5cd590c53c474a367c3cc560,games_video,2008,"{'type': 'Point', 'coordinates': [-73.9867361, 40.7297485]}",40.7297485,-73.9867361,SwitchGames,3.0,,,$0,35
+536,5cd590c53c474a367c3cc568,games_video,2008,"{'type': 'Point', 'coordinates': [-73.985273, 40.750597]}",40.750597,-73.985273,Crispy Gamer,,8250000.0,USD,$8.25M,38
+541,5cd590c53c474a367c3cc56d,web,2008,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",40.756054,-73.986951,Wee Web,5.0,270000.0,USD,$270k,36
+604,5cd590c53c474a367c3cc5ac,web,2009,"{'type': 'Point', 'coordinates': [-122.419204, 37.775196]}",37.775196,-122.419204,Twazzup,,,,$0,35
+605,5cd590c53c474a367c3cc5ad,web,2008,"{'type': 'Point', 'coordinates': [-122.401497, 37.792324]}",37.792324,-122.401497,Thrillcall,,,,$0,38
+619,5cd590c53c474a367c3cc5bb,web,2008,"{'type': 'Point', 'coordinates': [-73.9893359, 40.7277434]}",40.7277434,-73.9893359,TrialX,5.0,,,$0,30
+620,5cd590c53c474a367c3cc5bc,web,2009,"{'type': 'Point', 'coordinates': [-73.983171, 40.746417]}",40.746417,-73.983171,Catchafire,,399984.0,USD,$400k,36
+632,5cd590c53c474a367c3cc5c8,web,2008,"{'type': 'Point', 'coordinates': [-122.4043215, 37.8017938]}",37.8017938,-122.4043215,Kidlandia,,,USD,$3.23M,29
+640,5cd590c53c474a367c3cc5d0,web,2009,"{'type': 'Point', 'coordinates': [-122.4025976, 37.7710177]}",37.7710177,-122.4025976,Nextstop,,,,$0,34
+671,5cd590c53c474a367c3cc5ef,web,2009,"{'type': 'Point', 'coordinates': [-73.9918181, 40.7489381]}",40.7489381,-73.9918181,ArtNeighbor,5.0,,,$0,36
+682,5cd590c53c474a367c3cc5fa,web,2009,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",40.756054,-73.986951,Udorse,3.0,500000.0,USD,$500k,36
+690,5cd590c53c474a367c3cc602,web,2009,"{'type': 'Point', 'coordinates': [-122.419204, 37.775196]}",37.775196,-122.419204,Finest Expert,3.0,,,$0,35
+692,5cd590c53c474a367c3cc604,web,2008,"{'type': 'Point', 'coordinates': [-122.402922, 37.800482]}",37.800482,-122.402922,One Simple Move,4.0,,,$0,27
+695,5cd590c53c474a367c3cc607,web,2009,"{'type': 'Point', 'coordinates': [-73.9918181, 40.7489381]}",40.7489381,-73.9918181,Strategist News,4.0,,,$0,36
+728,5cd590c53c474a367c3cc628,web,2009,"{'type': 'Point', 'coordinates': [-74.00717, 40.7408042]}",40.7408042,-74.00717,ChallengePost,17.0,500000.0,USD,$4.6M,38
+729,5cd590c53c474a367c3cc629,web,2008,"{'type': 'Point', 'coordinates': [-73.9900984, 40.7450497]}",40.7450497,-73.9900984,StyleCaster,60.0,4000000.0,USD,$5M,38
+738,5cd590c53c474a367c3cc632,web,2008,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",40.756054,-73.986951,Conversition,10.0,,,$0,36
