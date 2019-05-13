@@ -1,0 +1,143 @@
+,_id,category,coords,founded_year,latitude,longitude,name,number_of_employees,tamaño_empresa,total_money_raised
+0,5cd962d86517e94a863ba64a,finance,"{'type': 'Point', 'coordinates': [-73.9983139, 40.720391]}",2008,40.720391,-73.9983139,Kapitall,15,small,7300000.0
+1,5cd962d86517e94a863b9dea,web,"{'type': 'Point', 'coordinates': [-74.00118, 40.718871]}",2007,40.718871,-74.00118,Thrive,15,small,
+2,5cd962d86517e94a863ba271,public_relations,"{'type': 'Point', 'coordinates': [-73.9973, 40.722118]}",2007,40.722118,-73.9973,GroundRez,20,small,
+3,5cd962d86517e94a863ba5c3,other,"{'type': 'Point', 'coordinates': [-73.9964376, 40.723714]}",2007,40.723714,-73.9964376,Undercurrent,18,small,
+4,5cd962d86517e94a863b9e35,enterprise,"{'type': 'Point', 'coordinates': [-73.997026, 40.724421]}",2007,40.724421,-73.997026,Trendrr,20,small,
+5,5cd962d86517e94a863ba5eb,news,"{'type': 'Point', 'coordinates': [-73.996876, 40.724604]}",2008,40.724604,-73.996876,Patch,19,small,
+6,5cd962d86517e94a863ba38d,games_video,"{'type': 'Point', 'coordinates': [-74.005398, 40.7166822]}",2007,40.7166822,-74.005398,Pilotlite,5,startup,
+7,5cd962d86517e94a863b9d8e,web,"{'type': 'Point', 'coordinates': [-73.998208, 40.725568]}",2006,40.725568,-73.998208,GroundReport,6,startup,
+8,5cd962d86517e94a863ba5d8,other,"{'type': 'Point', 'coordinates': [-74.005897, 40.715145]}",2006,40.715145,-74.005897,Solidea,50,small,
+9,5cd962d86517e94a863b9c8c,games_video,"{'type': 'Point', 'coordinates': [-73.995625, 40.726155]}",2007,40.726155,-73.995625,Livestream,120,medium,14700000.0
+10,5cd962d86517e94a863ba25d,network_hosting,"{'type': 'Point', 'coordinates': [-73.991122, 40.724416]}",2007,40.724416,-73.991122,Gravityspot,1,startup,
+11,5cd962d86517e94a863b9f7f,web,"{'type': 'Point', 'coordinates': [-74.007072, 40.714521]}",2008,40.714521,-74.007072,Strateer,2,startup,
+12,5cd962d86517e94a863ba5f5,advertising,"{'type': 'Point', 'coordinates': [-73.994797, 40.727216]}",2009,40.727216,-73.994797,Simulmedia,35,small,57300000.0
+13,5cd962d86517e94a863ba616,ecommerce,"{'type': 'Point', 'coordinates': [-74.008767, 40.723351]}",2008,40.723351,-74.008767,Proper Cloth,1,startup,100000.0
+14,5cd962d86517e94a863ba830,software,"{'type': 'Point', 'coordinates': [-74.006023, 40.72616]}",2007,40.72616,-74.006023,ALOT,50,small,
+15,5cd962d86517e94a863b9ee3,public_relations,"{'type': 'Point', 'coordinates': [-74.002808, 40.729286]}",2007,40.729286,-74.002808,onebluebrick,3,startup,
+16,5cd962d86517e94a863b9f7a,web,"{'type': 'Point', 'coordinates': [-73.991924, 40.728623]}",2007,40.728623,-73.991924,TickerHound,3,startup,
+17,5cd962d86517e94a863ba6da,web,"{'type': 'Point', 'coordinates': [-73.9893359, 40.7277434]}",2008,40.7277434,-73.9893359,TrialX,5,startup,
+18,5cd962d86517e94a863ba794,ecommerce,"{'type': 'Point', 'coordinates': [-73.989324, 40.72874]}",2009,40.72874,-73.989324,Covet Shop,2,startup,
+19,5cd962d86517e94a863ba31d,web,"{'type': 'Point', 'coordinates': [-74.001724, 40.707268]}",2008,40.707268,-74.001724,Cookstr,10,startup,
+20,5cd962d86517e94a863b9f37,education,"{'type': 'Point', 'coordinates': [-74.0078134, 40.7310476]}",2008,40.7310476,-74.0078134,Knewton,145,medium,105000000.0
+21,5cd962d86517e94a863b9d6e,web,"{'type': 'Point', 'coordinates': [-74.007413, 40.707253]}",2007,40.707253,-74.007413,Metromole,3,startup,
+22,5cd962d86517e94a863ba5b7,games_video,"{'type': 'Point', 'coordinates': [-73.9867361, 40.7297485]}",2008,40.7297485,-73.9867361,SwitchGames,3,startup,
+23,5cd962d86517e94a863b9fd2,advertising,"{'type': 'Point', 'coordinates': [-73.9884, 40.731392]}",2007,40.731392,-73.9884,ListensToYou,3,startup,
+24,5cd962d86517e94a863ba05b,games_video,"{'type': 'Point', 'coordinates': [-73.980587, 40.724289]}",2008,40.724289,-73.980587,GigMaven,8,startup,
+25,5cd962d86517e94a863b9fa1,web,"{'type': 'Point', 'coordinates': [-73.9932793, 40.733276]}",2006,40.733276,-73.9932793,Ziki,8,startup,
+26,5cd962d86517e94a863ba758,security,"{'type': 'Point', 'coordinates': [-74.011114, 40.707954]}",2009,40.707954,-74.011114,Vaultive,25,small,11000000.0
+27,5cd962d86517e94a863ba595,advertising,"{'type': 'Point', 'coordinates': [-73.991535, 40.733201]}",2007,40.733201,-73.991535,HItviews,12,small,2290000.0
+28,5cd962d86517e94a863ba7f1,public_relations,"{'type': 'Point', 'coordinates': [-74.009311, 40.732225]}",2006,40.732225,-74.009311,Taridium VoIP,15,small,
+29,5cd962d86517e94a863ba67e,analytics,"{'type': 'Point', 'coordinates': [-73.990967, 40.73343]}",2009,40.73343,-73.990967,Chartbeat,50,small,14500000.0
+30,5cd962d86517e94a863ba174,search,"{'type': 'Point', 'coordinates': [-74.01312, 40.708093]}",2007,40.708093,-74.01312,Briteclick,4,startup,
+31,5cd962d86517e94a863ba22d,search,"{'type': 'Point', 'coordinates': [-74.01312, 40.708093]}",2007,40.708093,-74.01312,Briteclick,4,startup,
+32,5cd962d86517e94a863ba258,mobile,"{'type': 'Point', 'coordinates': [-73.991334, 40.733928]}",2007,40.733928,-73.991334,Buzzd,9,startup,4000000.0
+33,5cd962d86517e94a863ba652,software,"{'type': 'Point', 'coordinates': [-74.0136605, 40.7078343]}",2009,40.7078343,-74.0136605,GameChanger Media,20,small,3640000.0
+34,5cd962d86517e94a863b9dbc,network_hosting,"{'type': 'Point', 'coordinates': [-74.011827, 40.706527]}",2007,40.706527,-74.011827,FixSor,5,startup,
+35,5cd962d86517e94a863ba034,mobile,"{'type': 'Point', 'coordinates': [-74.0082089, 40.704213]}",2006,40.704213,-74.0082089,Airtag,50,small,
+36,5cd962d86517e94a863ba68c,web,"{'type': 'Point', 'coordinates': [-73.9906813, 40.7028474]}",2007,40.7028474,-73.9906813,Discount Sports Tickets,3,startup,
+37,5cd962d86517e94a863ba33d,other,"{'type': 'Point', 'coordinates': [-74.012822, 40.705439]}",2007,40.705439,-74.012822,Elika Associates,5,startup,
+38,5cd962d86517e94a863ba3fe,web,"{'type': 'Point', 'coordinates': [-73.989613, 40.702692]}",2008,40.702692,-73.989613,gliider,5,startup,
+39,5cd962d86517e94a863ba1d4,ecommerce,"{'type': 'Point', 'coordinates': [-73.9878525, 40.7032884]}",2006,40.7032884,-73.9878525,Pond5,25,small,500000.0
+40,5cd962d86517e94a863ba11b,ecommerce,"{'type': 'Point', 'coordinates': [-73.9878525, 40.7032884]}",2006,40.7032884,-73.9878525,Pond5,25,small,500000.0
+41,5cd962d86517e94a863ba54b,games_video,"{'type': 'Point', 'coordinates': [-73.976169, 40.727763]}",2009,40.727763,-73.976169,Music For Busy People,3,startup,
+42,5cd962d86517e94a863ba446,enterprise,"{'type': 'Point', 'coordinates': [-74.0138541, 40.7038704]}",2007,40.7038704,-74.0138541,LeadVine,2,startup,
+43,5cd962d86517e94a863ba6d6,other,"{'type': 'Point', 'coordinates': [-73.9954473, 40.738495]}",2007,40.738495,-73.9954473,Oyster Digital Media,2,startup,
+44,5cd962d86517e94a863b9e42,ecommerce,"{'type': 'Point', 'coordinates': [-73.9954585, 40.7384997]}",2007,40.7384997,-73.9954585,Bonobos,150,medium,74700000.0
+45,5cd962d86517e94a863ba09f,web,"{'type': 'Point', 'coordinates': [-74.0058, 40.738137]}",2006,40.738137,-74.0058,StyleCard,10,startup,
+46,5cd962d86517e94a863ba2b9,public_relations,"{'type': 'Point', 'coordinates': [-74.008159, 40.738143]}",2008,40.738143,-74.008159,Sailthru,85,small,48000000.0
+47,5cd962d86517e94a863b9e48,games_video,"{'type': 'Point', 'coordinates': [-73.9930489, 40.73993]}",2005,40.73993,-73.9930489,Cellufun,30,small,5230000.0
+48,5cd962d86517e94a863ba62f,software,"{'type': 'Point', 'coordinates': [-73.987199, 40.738567]}",2007,40.738567,-73.987199,SpaBooker,42,small,14700000.0
+49,5cd962d86517e94a863b9cf3,public_relations,"{'type': 'Point', 'coordinates': [-73.993127, 40.740337]}",2006,40.740337,-73.993127,Empressr,35,small,
+50,5cd962d86517e94a863ba114,ecommerce,"{'type': 'Point', 'coordinates': [-73.993376, 40.740441]}",2005,40.740441,-73.993376,ShopWiki,25,small,6250000.0
+51,5cd962d86517e94a863ba1ce,ecommerce,"{'type': 'Point', 'coordinates': [-73.993376, 40.740441]}",2005,40.740441,-73.993376,ShopWiki,25,small,6250000.0
+52,5cd962d86517e94a863ba199,web,"{'type': 'Point', 'coordinates': [-73.990024, 40.739867]}",2008,40.739867,-73.990024,YellowSpaces,1,startup,
+53,5cd962d86517e94a863ba0e0,web,"{'type': 'Point', 'coordinates': [-73.990024, 40.739867]}",2008,40.739867,-73.990024,YellowSpaces,1,startup,
+54,5cd962d86517e94a863ba67c,social,"{'type': 'Point', 'coordinates': [-74.00721, 40.74034]}",2007,40.74034,-74.00721,betaworks,10,startup,41800000.0
+55,5cd962d86517e94a863ba2d8,software,"{'type': 'Point', 'coordinates': [-73.992609, 40.740941]}",2008,40.740941,-73.992609,Buzzr,5,startup,
+56,5cd962d86517e94a863ba18c,web,"{'type': 'Point', 'coordinates': [-73.999675, 40.741441]}",2008,40.741441,-73.999675,Samepoint,5,startup,
+57,5cd962d86517e94a863ba245,web,"{'type': 'Point', 'coordinates': [-73.999675, 40.741441]}",2008,40.741441,-73.999675,Samepoint,5,startup,
+58,5cd962d86517e94a863ba0bc,web,"{'type': 'Point', 'coordinates': [-73.993182, 40.741179]}",2007,40.741179,-73.993182,Hunch,23,small,19200000.0
+59,5cd962d86517e94a863ba807,web,"{'type': 'Point', 'coordinates': [-74.00717, 40.7408042]}",2009,40.7408042,-74.00717,ChallengePost,17,small,4600000.0
+60,5cd962d86517e94a863b9dd0,software,"{'type': 'Point', 'coordinates': [-73.985878, 40.739794]}",2005,40.739794,-73.985878,Phreesia,70,small,42700000.0
+61,5cd962d86517e94a863ba808,news,"{'type': 'Point', 'coordinates': [-73.9867417, 40.7401544]}",2005,40.7401544,-73.9867417,Mashable,100,small,13300000.0
+62,5cd962d86517e94a863ba2e7,consulting,"{'type': 'Point', 'coordinates': [-73.985207, 40.740145]}",2008,40.740145,-73.985207,"RGA Advisors, LLC",10,startup,
+63,5cd962d86517e94a863b9d31,advertising,"{'type': 'Point', 'coordinates': [-73.9918126, 40.742459]}",2005,40.742459,-73.9918126,Yodle,1000,medium,40000000.0
+64,5cd962d86517e94a863b9dab,web,"{'type': 'Point', 'coordinates': [-73.9934288, 40.7431477]}",2007,40.7431477,-73.9934288,8coupons,4,startup,
+65,5cd962d86517e94a863ba27b,cleantech,"{'type': 'Point', 'coordinates': [-74.006513, 40.743157]}",2008,40.743157,-74.006513,ecomii,10,startup,
+66,5cd962d86517e94a863ba332,enterprise,"{'type': 'Point', 'coordinates': [-73.990853, 40.743165]}",2007,40.743165,-73.990853,Aditall,15,small,
+67,5cd962d86517e94a863b9fce,web,"{'type': 'Point', 'coordinates': [-73.993274, 40.743563]}",2007,40.743563,-73.993274,Lolz,10,startup,
+68,5cd962d86517e94a863b9cd7,web,"{'type': 'Point', 'coordinates': [-74.004592, 40.74406]}",2006,40.74406,-74.004592,Behance,30,small,6500000.0
+69,5cd962d86517e94a863ba325,public_relations,"{'type': 'Point', 'coordinates': [-73.989505, 40.744201]}",2007,40.744201,-73.989505,ZepFrog Corp,15,small,
+70,5cd962d86517e94a863ba524,advertising,"{'type': 'Point', 'coordinates': [-73.9844611, 40.7429533]}",2006,40.7429533,-73.9844611,TRAFFIQ,39,small,18000000.0
+71,5cd962d86517e94a863ba73f,games_video,"{'type': 'Point', 'coordinates': [-73.98618, 40.743877]}",2006,40.743877,-73.98618,Saavn,25,small,6000000.0
+72,5cd962d86517e94a863ba756,web,"{'type': 'Point', 'coordinates': [-74.032177, 40.726517]}",2006,40.726517,-74.032177,Simply Good Media,4,startup,
+73,5cd962d86517e94a863b9eb2,other,"{'type': 'Point', 'coordinates': [-73.987949, 40.744402]}",2007,40.744402,-73.987949,BeenVerified,15,small,
+74,5cd962d86517e94a863ba80b,web,"{'type': 'Point', 'coordinates': [-73.9900984, 40.7450497]}",2008,40.7450497,-73.9900984,StyleCaster,60,small,5000000.0
+75,5cd962d86517e94a863ba658,ecommerce,"{'type': 'Point', 'coordinates': [-73.987764, 40.744618]}",2008,40.744618,-73.987764,IntheGlo,5,startup,30000.0
+76,5cd962d86517e94a863ba324,web,"{'type': 'Point', 'coordinates': [-73.987764, 40.744618]}",2010,40.744618,-73.987764,Yipit,23,small,7550000.0
+77,5cd962d86517e94a863ba0ff,ecommerce,"{'type': 'Point', 'coordinates': [-73.98458, 40.74385]}",2007,40.74385,-73.98458,myJambi,7,startup,
+78,5cd962d86517e94a863ba1b7,ecommerce,"{'type': 'Point', 'coordinates': [-73.98458, 40.74385]}",2007,40.74385,-73.98458,myJambi,7,startup,
+79,5cd962d86517e94a863b9dfa,web,"{'type': 'Point', 'coordinates': [-73.983626, 40.743808]}",2007,40.743808,-73.983626,Next New Networks,121,medium,27100000.0
+80,5cd962d86517e94a863ba3e6,mobile,"{'type': 'Point', 'coordinates': [-73.990033, 40.745534]}",2008,40.745534,-73.990033,CyberSynchs,100,small,
+81,5cd962d86517e94a863b9d42,ecommerce,"{'type': 'Point', 'coordinates': [-73.983268, 40.694731]}",2005,40.694731,-73.983268,Etsy,300,medium,91700000.0
+82,5cd962d86517e94a863ba7b7,consulting,"{'type': 'Point', 'coordinates': [-73.993035, 40.746514]}",2005,40.746514,-73.993035,Ramp Up Tech,25,small,
+83,5cd962d86517e94a863ba048,analytics,"{'type': 'Point', 'coordinates': [-73.983229, 40.745003]}",2007,40.745003,-73.983229,Urgent Career,9,startup,
+84,5cd962d86517e94a863ba826,games_video,"{'type': 'Point', 'coordinates': [-74.0094471, 40.7464969]}",2006,40.7464969,-74.0094471,Film Annex,5,startup,
+85,5cd962d86517e94a863b9f09,search,"{'type': 'Point', 'coordinates': [-73.9823449, 40.7455579]}",2006,40.7455579,-73.9823449,findingDulcinea,30,small,
+86,5cd962d86517e94a863ba37b,web,"{'type': 'Point', 'coordinates': [-73.994203, 40.748634]}",2006,40.748634,-73.994203,BarterQuest,10,startup,
+87,5cd962d86517e94a863ba0c9,search,"{'type': 'Point', 'coordinates': [-73.982596, 40.746332]}",2007,40.746332,-73.982596,Conductor,55,small,33600000.0
+88,5cd962d86517e94a863b9de9,web,"{'type': 'Point', 'coordinates': [-73.983969, 40.746883]}",2006,40.746883,-73.983969,Tripology,9,startup,1250000.0
+89,5cd962d86517e94a863ba61f,public_relations,"{'type': 'Point', 'coordinates': [-73.989276, 40.74828]}",2009,40.74828,-73.989276,IrishCentral,20,small,
+90,5cd962d86517e94a863ba7b4,web,"{'type': 'Point', 'coordinates': [-73.9918181, 40.7489381]}",2009,40.7489381,-73.9918181,Strategist News,4,startup,
+91,5cd962d86517e94a863ba771,web,"{'type': 'Point', 'coordinates': [-73.9918181, 40.7489381]}",2009,40.7489381,-73.9918181,ArtNeighbor,5,startup,
+92,5cd962d86517e94a863b9ff8,games_video,"{'type': 'Point', 'coordinates': [-73.957968, 40.720764]}",2006,40.720764,-73.957968,VBS TV,100,small,10000000.0
+93,5cd962d86517e94a863ba3b1,web,"{'type': 'Point', 'coordinates': [-73.9800645, 40.74727]}",2005,40.74727,-73.9800645,Carbonmade,6,startup,
+94,5cd962d86517e94a863b9d3c,web,"{'type': 'Point', 'coordinates': [-73.996122, 40.7508]}",2007,40.7508,-73.996122,GoLark,3,startup,
+95,5cd962d86517e94a863ba757,web,"{'type': 'Point', 'coordinates': [-73.9952442, 40.751234]}",2007,40.751234,-73.9952442,YEAONAY,1,startup,
+96,5cd962d86517e94a863ba7bc,web,"{'type': 'Point', 'coordinates': [-73.9565551, 40.714279]}",2008,40.714279,-73.9565551,Disrupto,7,startup,
+97,5cd962d86517e94a863ba49c,web,"{'type': 'Point', 'coordinates': [-74.0348315, 40.7370784]}",2008,40.7370784,-74.0348315,IAmInTown,3,startup,
+98,5cd962d86517e94a863b9e39,network_hosting,"{'type': 'Point', 'coordinates': [-73.990675, 40.752143]}",2006,40.752143,-73.990675,Social Sauce,10,startup,
+99,5cd962d86517e94a863b9fbe,advertising,"{'type': 'Point', 'coordinates': [-73.992544, 40.752404]}",2007,40.752404,-73.992544,TradingUp Online,7,startup,
+100,5cd962d86517e94a863b9f7b,ecommerce,"{'type': 'Point', 'coordinates': [-73.978733, 40.749277]}",2008,40.749277,-73.978733,Plentitube,5,startup,
+101,5cd962d86517e94a863ba509,advertising,"{'type': 'Point', 'coordinates': [-73.973243, 40.74724]}",2008,40.74724,-73.973243,Transit Treasure,1,startup,
+102,5cd962d86517e94a863ba4ea,software,"{'type': 'Point', 'coordinates': [-73.987871, 40.752539]}",2007,40.752539,-73.987871,PEX Card,11,small,5700000.0
+103,5cd962d86517e94a863b9f83,public_relations,"{'type': 'Point', 'coordinates': [-73.991512, 40.753877]}",2008,40.753877,-73.991512,Ladies Who Launch,12,small,
+104,5cd962d86517e94a863ba185,advertising,"{'type': 'Point', 'coordinates': [-73.991123, 40.753931]}",2007,40.753931,-73.991123,AdSide,14,small,
+105,5cd962d86517e94a863ba23e,advertising,"{'type': 'Point', 'coordinates': [-73.991123, 40.753931]}",2007,40.753931,-73.991123,AdSide,14,small,
+106,5cd962d86517e94a863b9ed0,network_hosting,"{'type': 'Point', 'coordinates': [-73.992152, 40.754698]}",2006,40.754698,-73.992152,Zoomabet,13,small,
+107,5cd962d86517e94a863b9fcf,network_hosting,"{'type': 'Point', 'coordinates': [-73.989622, 40.754901]}",2007,40.754901,-73.989622,MYSTYLEPOST,6,startup,
+108,5cd962d86517e94a863ba00e,games_video,"{'type': 'Point', 'coordinates': [-73.988543, 40.754762]}",2007,40.754762,-73.988543,My Damn Channel,10,startup,8660000.0
+109,5cd962d86517e94a863ba7f0,analytics,"{'type': 'Point', 'coordinates': [-73.985647, 40.754937]}",2005,40.754937,-73.985647,OpTier,150,medium,77500000.0
+110,5cd962d86517e94a863b9e61,web,"{'type': 'Point', 'coordinates': [-73.981237, 40.753918]}",2005,40.753918,-73.981237,Odeo,60,small,
+111,5cd962d86517e94a863ba7b6,other,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",2007,40.756054,-73.986951,Primospot,6,startup,
+112,5cd962d86517e94a863ba795,web,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",2009,40.756054,-73.986951,Udorse,3,startup,500000.0
+113,5cd962d86517e94a863ba834,web,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",2008,40.756054,-73.986951,Conversition,10,startup,
+114,5cd962d86517e94a863ba759,games_video,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",2007,40.756054,-73.986951,Yoostar,40,small,
+115,5cd962d86517e94a863ba4b8,advertising,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",2008,40.756054,-73.986951,Pictela,20,small,3500000.0
+116,5cd962d86517e94a863ba5f3,web,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",2008,40.756054,-73.986951,Wee Web,5,startup,270000.0
+117,5cd962d86517e94a863ba46d,games_video,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",2007,40.756054,-73.986951,Fotohoo,2,startup,
+118,5cd962d86517e94a863ba636,other,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",2008,40.756054,-73.986951,UniversityJunction,20,small,
+119,5cd962d86517e94a863ba04f,advertising,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",2008,40.756054,-73.986951,Medialets,60,small,28400000.0
+120,5cd962d86517e94a863ba3d8,web,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",2008,40.756054,-73.986951,People Capital,10,startup,2500000.0
+121,5cd962d86517e94a863ba145,web,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",2008,40.756054,-73.986951,Papervitamins,2,startup,
+122,5cd962d86517e94a863ba1fe,web,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",2008,40.756054,-73.986951,Papervitamins,2,startup,
+123,5cd962d86517e94a863ba3b2,advertising,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",2007,40.756054,-73.986951,PlaceVine,3,startup,500000.0
+124,5cd962d86517e94a863b9ff1,web,"{'type': 'Point', 'coordinates': [-73.97917, 40.754211]}",2006,40.754211,-73.97917,BountyJobs,45,small,29800000.0
+125,5cd962d86517e94a863ba13d,public_relations,"{'type': 'Point', 'coordinates': [-73.9871847, 40.7564318]}",2008,40.7564318,-73.9871847,Thomson Reuters,50000,big,
+126,5cd962d86517e94a863ba1f6,public_relations,"{'type': 'Point', 'coordinates': [-73.9871847, 40.7564318]}",2008,40.7564318,-73.9871847,Thomson Reuters,50000,big,
+127,5cd962d86517e94a863b9d7e,software,"{'type': 'Point', 'coordinates': [-73.968173, 40.75033]}",2006,40.75033,-73.968173,HeadStrong Brain Gym,5,startup,
+128,5cd962d86517e94a863ba3a1,ecommerce,"{'type': 'Point', 'coordinates': [-73.968145, 40.750567]}",2005,40.750567,-73.968145,Homethinking,8,startup,
+129,5cd962d86517e94a863b9cdc,search,"{'type': 'Point', 'coordinates': [-73.985506, 40.757929]}",2012,40.757929,-73.985506,PeekYou,20,small,1830000.0
+130,5cd962d86517e94a863b9ef5,network_hosting,"{'type': 'Point', 'coordinates': [-73.985506, 40.757929]}",2006,40.757929,-73.985506,MyBloop,7,startup,
+131,5cd962d86517e94a863b9db0,games_video,"{'type': 'Point', 'coordinates': [-73.985506, 40.757929]}",2007,40.757929,-73.985506,Camlink,4,startup,
+132,5cd962d86517e94a863b9f60,software,"{'type': 'Point', 'coordinates': [-73.985506, 40.757929]}",2008,40.757929,-73.985506,Pinch Media,6,startup,560000.0
+133,5cd962d86517e94a863b9c84,social,"{'type': 'Point', 'coordinates': [-73.985506, 40.757929]}",2007,40.757929,-73.985506,MeetMoi,15,small,5580000.0
+134,5cd962d86517e94a863ba277,education,"{'type': 'Point', 'coordinates': [-73.9793465, 40.7568493]}",2008,40.7568493,-73.9793465,Unigo,9,startup,2000000.0
+135,5cd962d86517e94a863b9cf7,mobile,"{'type': 'Point', 'coordinates': [-73.976348, 40.756799]}",2006,40.756799,-73.976348,Worklight,30,small,17600000.0
+136,5cd962d86517e94a863ba384,advertising,"{'type': 'Point', 'coordinates': [-73.9763479, 40.756799]}",2007,40.756799,-73.9763479,MediaMath,125,medium,26900000.0
+137,5cd962d86517e94a863ba197,web,"{'type': 'Point', 'coordinates': [-74.039011, 40.747005]}",2007,40.747005,-74.039011,SuiteMatch,3,startup,
+138,5cd962d86517e94a863ba250,web,"{'type': 'Point', 'coordinates': [-74.039011, 40.747005]}",2007,40.747005,-74.039011,SuiteMatch,3,startup,
+139,5cd962d86517e94a863b9e8c,enterprise,"{'type': 'Point', 'coordinates': [-73.98459, 40.759243]}",2008,40.759243,-73.98459,Salesconx,15,small,1300000.0
+140,5cd962d86517e94a863ba04c,games_video,"{'type': 'Point', 'coordinates': [-73.9447994, 40.727434]}",2008,40.727434,-73.9447994,GEN247,12,small,
+141,5cd962d86517e94a863b9d38,enterprise,"{'type': 'Point', 'coordinates': [-74.0094471, 40.6772802]}",2005,40.6772802,-74.0094471,Vemo,3,startup,

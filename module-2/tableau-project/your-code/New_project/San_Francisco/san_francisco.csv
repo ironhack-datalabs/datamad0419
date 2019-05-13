@@ -1,0 +1,46 @@
+,_id,category,coords,founded_year,latitude,longitude,name,number_of_employees,tamaño_empresa,total_money_raised
+0,5cd962d86517e94a863b9fd8,mobile,"{'type': 'Point', 'coordinates': [-122.0937686, 37.4186097]}",2006,37.4186097,-122.0937686,Jibe Mobile,10,startup,9100000.0
+1,5cd962d86517e94a863ba709,medical,"{'type': 'Point', 'coordinates': [-122.0933053, 37.4202074]}",2009,37.4202074,-122.0933053,drchrono,50,small,4130000.0
+2,5cd962d86517e94a863ba606,network_hosting,"{'type': 'Point', 'coordinates': [-122.0884286, 37.4189073]}",2009,37.4189073,-122.0884286,Gridstore,31,small,25000000.0
+3,5cd962d86517e94a863b9f76,web,"{'type': 'Point', 'coordinates': [-122.087471, 37.419041]}",2007,37.419041,-122.087471,Crowd Science,25,small,2000000.0
+4,5cd962d86517e94a863ba320,enterprise,"{'type': 'Point', 'coordinates': [-122.087417, 37.418616]}",2006,37.418616,-122.087417,SOASTA,100,small,63600000.0
+5,5cd962d86517e94a863b9e00,social,"{'type': 'Point', 'coordinates': [-122.0872274, 37.4203945]}",2007,37.4203945,-122.0872274,ShareThis,80,small,82900000.0
+6,5cd962d86517e94a863b9c8b,mobile,"{'type': 'Point', 'coordinates': [-122.0899512, 37.4233896]}",2005,37.4233896,-122.0899512,Jajah,110,medium,33000000.0
+7,5cd962d86517e94a863b9fcb,enterprise,"{'type': 'Point', 'coordinates': [-122.089951, 37.42339]}",2006,37.42339,-122.089951,ZapTXT,3,startup,
+8,5cd962d86517e94a863ba66b,network_hosting,"{'type': 'Point', 'coordinates': [-122.086989, 37.41364]}",2007,37.41364,-122.086989,NetHooks,4,startup,100000.0
+9,5cd962d86517e94a863ba021,mobile,"{'type': 'Point', 'coordinates': [-122.100333, 37.429674]}",2007,37.429674,-122.100333,Arsenal Interactive,11,small,
+10,5cd962d86517e94a863b9dbf,web,"{'type': 'Point', 'coordinates': [-122.075413, 37.419156]}",2006,37.419156,-122.075413,Zilpy,3,startup,
+11,5cd962d86517e94a863b9cf8,web,"{'type': 'Point', 'coordinates': [-122.104099, 37.401355]}",2007,37.401355,-122.104099,SueEasy,6,startup,135000.0
+12,5cd962d86517e94a863b9e03,enterprise,"{'type': 'Point', 'coordinates': [-122.0879281, 37.3973787]}",2006,37.3973787,-122.0879281,Wrike,50,small,11000000.0
+13,5cd962d86517e94a863ba373,mobile,"{'type': 'Point', 'coordinates': [-122.073003, 37.400465]}",2008,37.400465,-122.073003,Fuzzyshot,3,startup,
+14,5cd962d86517e94a863ba575,ecommerce,"{'type': 'Point', 'coordinates': [-122.073003, 37.400465]}",2006,37.400465,-122.073003,Plastic Jungle,22,small,23400000.0
+15,5cd962d86517e94a863ba6bf,web,"{'type': 'Point', 'coordinates': [-122.073003, 37.400465]}",2009,37.400465,-122.073003,psychiatryRounds,10,startup,
+16,5cd962d86517e94a863b9cba,web,"{'type': 'Point', 'coordinates': [-122.073003, 37.400465]}",2007,37.400465,-122.073003,Buxfer,4,startup,315000.0
+17,5cd962d86517e94a863b9f16,enterprise,"{'type': 'Point', 'coordinates': [-122.073003, 37.400465]}",2008,37.400465,-122.073003,Increo Solutions,5,startup,500000.0
+18,5cd962d86517e94a863b9f27,software,"{'type': 'Point', 'coordinates': [-122.073003, 37.400465]}",2007,37.400465,-122.073003,Olark,14,small,
+19,5cd962d86517e94a863b9d45,web,"{'type': 'Point', 'coordinates': [-122.117418, 37.402802]}",2007,37.402802,-122.117418,TravelMuse,11,small,5600000.0
+20,5cd962d86517e94a863ba684,security,"{'type': 'Point', 'coordinates': [-122.099454, 37.393836]}",2008,37.393836,-122.099454,HyTrust,55,small,34500000.0
+21,5cd962d86517e94a863b9d5e,web,"{'type': 'Point', 'coordinates': [-122.079114, 37.392962]}",2007,37.392962,-122.079114,Mill River Labs,5,startup,900000.0
+22,5cd962d86517e94a863ba7e5,finance,"{'type': 'Point', 'coordinates': [-122.078727, 37.392392]}",2006,37.392392,-122.078727,Mint.com,31,small,31800000.0
+23,5cd962d86517e94a863ba186,ecommerce,"{'type': 'Point', 'coordinates': [-122.0786234, 37.3923684]}",2006,37.3923684,-122.0786234,Altos Research,5,startup,
+24,5cd962d86517e94a863ba23f,ecommerce,"{'type': 'Point', 'coordinates': [-122.0786234, 37.3923684]}",2006,37.3923684,-122.0786234,Altos Research,5,startup,
+25,5cd962d86517e94a863b9e01,web,"{'type': 'Point', 'coordinates': [-122.077597, 37.391727]}",2006,37.391727,-122.077597,Krillion,10,startup,9650000.0
+26,5cd962d86517e94a863ba59f,web,"{'type': 'Point', 'coordinates': [-122.08316, 37.388077]}",2006,37.388077,-122.08316,YOUnite,2,startup,1300000.0
+27,5cd962d86517e94a863b9d0a,advertising,"{'type': 'Point', 'coordinates': [-122.08276, 37.388095]}",2006,37.388095,-122.08276,TrialPay,100,small,55800000.0
+28,5cd962d86517e94a863b9d39,mobile,"{'type': 'Point', 'coordinates': [-122.084171, 37.386665]}",2005,37.386665,-122.084171,Ribbit,28,small,11000000.0
+29,5cd962d86517e94a863b9cff,web,"{'type': 'Point', 'coordinates': [-122.083487, 37.386175]}",2007,37.386175,-122.083487,Polyvore,73,small,22100000.0
+30,5cd962d86517e94a863b9ebf,enterprise,"{'type': 'Point', 'coordinates': [-122.0826, 37.3862]}",2007,37.3862,-122.0826,Presdo,5,startup,35000.0
+31,5cd962d86517e94a863ba649,enterprise,"{'type': 'Point', 'coordinates': [-122.0595623, 37.3973018]}",2006,37.3973018,-122.0595623,Axcient,150,medium,64200000.0
+32,5cd962d86517e94a863b9f44,network_hosting,"{'type': 'Point', 'coordinates': [-122.087712, 37.384756]}",2007,37.384756,-122.087712,Zecter,8,startup,2520000.0
+33,5cd962d86517e94a863b9d7f,search,"{'type': 'Point', 'coordinates': [-122.117133, 37.451255]}",2007,37.451255,-122.117133,Paglo,9,startup,
+34,5cd962d86517e94a863ba49d,web,"{'type': 'Point', 'coordinates': [-122.072998, 37.384297]}",2008,37.384297,-122.072998,CureTogether,3,startup,
+35,5cd962d86517e94a863ba538,network_hosting,"{'type': 'Point', 'coordinates': [-122.1425934, 37.4145294]}",2008,37.4145294,-122.1425934,HotPrints,7,startup,
+36,5cd962d86517e94a863b9ca2,network_hosting,"{'type': 'Point', 'coordinates': [-122.143701, 37.425801]}",2005,37.425801,-122.143701,Box,950,medium,409000000.0
+37,5cd962d86517e94a863ba423,analytics,"{'type': 'Point', 'coordinates': [-122.143368, 37.4280877]}",2008,37.4280877,-122.143368,Silver Tail Systems,90,small,22100000.0
+38,5cd962d86517e94a863b9cd5,mobile,"{'type': 'Point', 'coordinates': [-122.143915, 37.42746]}",2005,37.42746,-122.143915,SayNow,20,small,7500000.0
+39,5cd962d86517e94a863ba1be,mobile,"{'type': 'Point', 'coordinates': [-122.145153, 37.424614]}",2010,37.424614,-122.145153,vufind,7,startup,930000.0
+40,5cd962d86517e94a863ba103,mobile,"{'type': 'Point', 'coordinates': [-122.145153, 37.424614]}",2010,37.424614,-122.145153,vufind,7,startup,930000.0
+41,5cd962d86517e94a863b9cca,web,"{'type': 'Point', 'coordinates': [-122.145783, 37.427235]}",2005,37.427235,-122.145783,Doostang,10,startup,5750000.0
+42,5cd962d86517e94a863ba3ab,advertising,"{'type': 'Point', 'coordinates': [-122.1151274, 37.3792486]}",2008,37.3792486,-122.1151274,Fanminder,11,small,1000000.0
+43,5cd962d86517e94a863ba517,web,"{'type': 'Point', 'coordinates': [-122.1235054, 37.4561297]}",2008,37.4561297,-122.1235054,trekaroo,4,startup,
+44,5cd962d86517e94a863ba6ab,network_hosting,"{'type': 'Point', 'coordinates': [-122.050179, 37.389615]}",2006,37.389615,-122.050179,Gear6,20,small,20000000.0
