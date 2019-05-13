@@ -5,17 +5,27 @@ import os
 import webbrowser
 import folium
 
-puntuaciones= {
-  'games_video' : 100,
-  'software' : 50,
-  'BigCompany' : 25,
-  'Startup' : 40,
-  'USA': -80
-  }
+
 
 client = MongoClient ('localhost', 27017)
 db = client.companies
 collection = db.companies
+
+def set_values():
+  games_video = int(input("Introduzca valor para Videojuegos: "))
+  software = int(input("Introduzca valor para Software: "))
+  BigCompany = int(input("Introduzca valor para Gran compañía: "))
+  Startup = int(input("Introduzca valor para Startup: "))
+  USA = int(input("Introduzca penalización para USA: "))
+
+  values= {
+  'games_video' : games_video,
+  'software' : software,
+  'BigCompany' : BigCompany,
+  'Startup' : Startup,
+  'USA': USA
+  }
+  return values
 
 def query_to_db():
   cursor = collection.find({'$and': 
@@ -60,7 +70,7 @@ def create_db_index(json_file):
   if existe:
       os.system('mongoimport --db ofi_final --collection ofi_final --drop --file '+ json_file)
       db_ofi = client['ofi_final']
-      db_ofi.ofi_final.create_index([('2dGeo', GEOSPHERE )])
+      db_ofi.ofi_final.create_index([('2Dgeo', GEOSPHERE )])
       print('Base de datos y collección creadas')
   else:
       raise ValueError('Error archivo no encontrado')
@@ -75,9 +85,9 @@ def get_geo_data(datos):
 
 def sum_points(reg):
   points = 0
-  points+= puntuaciones[reg.category_code]
-  points+= puntuaciones[reg.type]
-  if reg.country_code== 'USA': points+= puntuaciones['USA']
+  points+= puntos[reg.category_code]
+  points+= puntos[reg.type]
+  if reg.country_code== 'USA': points+= puntos['USA']
   return points
 
 def get_offices_near(reg):
@@ -99,6 +109,7 @@ def get_offices_near(reg):
   return sum(points)
 
 def calculate_points(df):
+  print('Calculando ubicación en función a sus parámetros...')
   df['points'] = df.apply(get_offices_near, axis=1)
   return df  
 
@@ -120,7 +131,9 @@ def generate_map(row):
   m.save('main_map.html')
   return m
 
+
 #Main
+puntos= set_values()
 datos_crudo= query_to_db()
 df = json_normalize(data= datos_crudo, record_path='offices', 
                     meta=['name', 'category_code', 'number_of_employees', 'founded_year'])
@@ -140,5 +153,4 @@ df_geo_mongo = get_geo_data(datos_mongo)
 df_points = calculate_points(df_geo_mongo)
 df_points= df_points.sort_values('points', ascending=False)
 mapa= generate_map(df_points[0:1])
-
 webbrowser.open('file://' + os.path.realpath('main_map.html'))
