@@ -1,0 +1,6 @@
+He seleccionado la latitud y longitud 37,7813 -122,395 en San Francisco debido a que es un punto en el que hay una buena proporción de empresas grandes y pequeñas dedicadas al mismo sector que nuestra empresa, habiendo una buena cantidad de empresas alrededor.
+
+El primer proyecto tableau sobre coches, el url del tableau es el siguiente:
+https://public.tableau.com/profile/gonzalo4388#!/vizhome/tableaucoches/Historia1
+El segundo proyecto sobre geolocalizaciones, el url es el siguiente:
+https://public.tableau.com/profile/gonzalo4388#!/vizhome/tableaugeo_15577566808090/Hoja1
