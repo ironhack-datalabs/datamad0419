@@ -1,0 +1,66 @@
+,Point,_id,category_code,city,country_code,founded_year,latitude,longitude,name,number_of_employees,numero_compañias_cerca
+1,"{'type': 'Point', 'coordinates': [-122.393229, 37.781265]}",5cd5a7372cda8341777639e7,games_video,San Francisco,USA,2008,37.781265,-122.393229,Crunchyroll,50,27
+5,"{'type': 'Point', 'coordinates': [-122.404488, 37.790032]}",5cd5a7372cda8341777639eb,web,San Francisco,USA,2008,37.790032,-122.404488,Unknown Vector,7,26
+13,"{'type': 'Point', 'coordinates': [-122.392142, 37.782263]}",5cd5a7372cda8341777639f3,software,San Francisco,USA,2008,37.782263,-122.392142,GoingOn,40,27
+19,"{'type': 'Point', 'coordinates': [-122.4042586, 37.80391]}",5cd5a7372cda8341777639f9,web,San Francisco,USA,2008,37.80391,-122.4042586,ReadBurner,4,19
+29,"{'type': 'Point', 'coordinates': [-73.992706, 40.755409]}",5cd5a7372cda834177763a03,web,New York City,USA,2008,40.755409,-73.992706,Wakozi,5,26
+31,"{'type': 'Point', 'coordinates': [-122.155678, 37.446382]}",5cd5a7372cda834177763a05,web,Palo Alto,USA,2008,37.446382,-122.155678,Noovo,8,16
+33,"{'type': 'Point', 'coordinates': [-122.419204, 37.775196]}",5cd5a7372cda834177763a07,games_video,San Francisco,USA,2008,37.775196,-122.419204,stickychicken,2,27
+39,"{'type': 'Point', 'coordinates': [-122.3998782, 37.7896292]}",5cd5a7372cda834177763a0d,software,San Francisco,USA,2009,37.7896292,-122.3998782,Macroaxis,8,25
+44,"{'type': 'Point', 'coordinates': [-122.4013624, 37.7893215]}",5cd5a7372cda834177763a12,games_video,San Francisco,USA,2008,37.7893215,-122.4013624,Serious Business,22,25
+49,"{'type': 'Point', 'coordinates': [-122.401537, 37.773727]}",5cd5a7372cda834177763a17,web,San Francisco,USA,2008,37.773727,-122.401537,RemindBlast,5,27
+53,"{'type': 'Point', 'coordinates': [-122.164925, 37.446662]}",5cd5a7372cda834177763a1b,web,Palo Alto,USA,2008,37.446662,-122.164925,Weardrobe,2,16
+70,"{'type': 'Point', 'coordinates': [-73.985506, 40.757929]}",5cd5a7372cda834177763a2c,software,New York,USA,2008,40.757929,-73.985506,Pinch Media,6,25
+94,"{'type': 'Point', 'coordinates': [-122.1612868, 37.4440981]}",5cd5a7372cda834177763a44,web,Palo Alto,USA,2011,37.4440981,-122.1612868,Ziippi,6,16
+104,"{'type': 'Point', 'coordinates': [-122.419204, 37.775196]}",5cd5a7372cda834177763a4e,web,San Francisco,USA,2008,37.775196,-122.419204,Posterous,9,27
+111,"{'type': 'Point', 'coordinates': [-122.420903, 37.796164]}",5cd5a7372cda834177763a55,web,San Francisco,USA,2008,37.796164,-122.420903,EcoFlip,5,27
+114,"{'type': 'Point', 'coordinates': [-73.980587, 40.724289]}",5cd5a7372cda834177763a58,games_video,New York,USA,2008,40.724289,-73.980587,GigMaven,8,19
+116,"{'type': 'Point', 'coordinates': [-122.396744, 37.780134]}",5cd5a7372cda834177763a5a,games_video,San Francisco,USA,2008,37.780134,-122.396744,Scavenja,8,28
+121,"{'type': 'Point', 'coordinates': [-122.398379, 37.758352]}",5cd5a7372cda834177763a5f,web,San Francisco,USA,2008,37.758352,-122.398379,Open Places,3,17
+128,"{'type': 'Point', 'coordinates': [-122.39736, 37.794043]}",5cd5a7372cda834177763a66,software,Palo Alto,USA,2008,37.794043,-122.39736,OpenDrive,25,24
+142,"{'type': 'Point', 'coordinates': [-122.419204, 37.775196]}",5cd5a7372cda834177763a74,web,San Francisco,USA,2008,37.775196,-122.419204,Zorap,2,27
+143,"{'type': 'Point', 'coordinates': [-122.1490582, 37.4459832]}",5cd5a7372cda834177763a75,web,Palo Alto,USA,2008,37.4459832,-122.1490582,RankBoom,2,16
+148,"{'type': 'Point', 'coordinates': [-73.990024, 40.739867]}",5cd5a7372cda834177763a7a,web,New York,USA,2008,40.739867,-73.990024,YellowSpaces,1,26
+155,"{'type': 'Point', 'coordinates': [-122.159928, 37.437328]}",5cd5a7372cda834177763a81,games_video,Palo Alto,USA,2008,37.437328,-122.159928,Snipd,2,16
+170,"{'type': 'Point', 'coordinates': [-122.403223, 37.794124]}",5cd5a7372cda834177763a90,web,San Francisco,USA,2008,37.794124,-122.403223,Twonq,3,25
+172,"{'type': 'Point', 'coordinates': [-122.158497, 37.448598]}",5cd5a7372cda834177763a92,games_video,Palo Alto,USA,2008,37.448598,-122.158497,Bojam,5,16
+175,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",5cd5a7372cda834177763a95,web,,USA,2008,40.756054,-73.986951,Papervitamins,2,26
+191,"{'type': 'Point', 'coordinates': [-73.999675, 40.741441]}",5cd5a7372cda834177763aa5,web,New York,USA,2008,40.741441,-73.999675,Samepoint,5,25
+193,"{'type': 'Point', 'coordinates': [-73.990024, 40.739867]}",5cd5a7372cda834177763aa7,web,New York,USA,2008,40.739867,-73.990024,YellowSpaces,1,26
+202,"{'type': 'Point', 'coordinates': [-122.159928, 37.437328]}",5cd5a7372cda834177763ab0,games_video,Palo Alto,USA,2008,37.437328,-122.159928,Snipd,2,16
+215,"{'type': 'Point', 'coordinates': [-122.158497, 37.448598]}",5cd5a7372cda834177763abd,games_video,Palo Alto,USA,2008,37.448598,-122.158497,Bojam,5,16
+218,"{'type': 'Point', 'coordinates': [-122.403223, 37.794124]}",5cd5a7372cda834177763ac0,web,San Francisco,USA,2008,37.794124,-122.403223,Twonq,3,25
+221,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",5cd5a7372cda834177763ac3,web,,USA,2008,40.756054,-73.986951,Papervitamins,2,26
+238,"{'type': 'Point', 'coordinates': [-73.999675, 40.741441]}",5cd5a7372cda834177763ad4,web,New York,USA,2008,40.741441,-73.999675,Samepoint,5,25
+272,"{'type': 'Point', 'coordinates': [-73.992609, 40.740941]}",5cd5a7372cda834177763af6,software,New York,USA,2008,40.740941,-73.992609,Buzzr,5,26
+291,"{'type': 'Point', 'coordinates': [-122.419204, 37.775196]}",5cd5a7372cda834177763b09,software,San Francisco,USA,2008,37.775196,-122.419204,148Apps,1,27
+293,"{'type': 'Point', 'coordinates': [-73.988071, 40.744549]}",5cd5a7372cda834177763b0b,software,New York,USA,2008,40.744549,-73.988071,Aghreni Technologies,15,27
+297,"{'type': 'Point', 'coordinates': [-122.423132, 37.792303]}",5cd5a7372cda834177763b0f,software,San Francisco,USA,2008,37.792303,-122.423132,Tivix,18,28
+304,"{'type': 'Point', 'coordinates': [-122.394958, 37.781262]}",5cd5a7372cda834177763b16,web,San Francisco,USA,2008,37.781262,-122.394958,Virgance,15,28
+305,"{'type': 'Point', 'coordinates': [-73.987764, 40.744618]}",5cd5a7372cda834177763b17,web,New York,USA,2010,40.744618,-73.987764,Yipit,23,27
+320,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",5cd5a7372cda834177763b26,web,New York,USA,2008,40.756054,-73.986951,People Capital,10,26
+332,"{'type': 'Point', 'coordinates': [-122.3915063, 37.7890183]}",5cd5a7372cda834177763b32,web,San Francisco,USA,2008,37.7890183,-122.3915063,Circle of Moms,9,24
+337,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",5cd5a7372cda834177763b37,web,New York,USA,2009,40.756054,-73.986951,Livekick,4,26
+340,"{'type': 'Point', 'coordinates': [-73.9799007, 40.7645772]}",5cd5a7372cda834177763b3a,software,New York,USA,2011,40.7645772,-73.9799007,Unison Technologies,30,22
+354,"{'type': 'Point', 'coordinates': [-122.4052761, 37.8053241]}",5cd5a7372cda834177763b48,games_video,San Francisco,USA,2010,37.8053241,-122.4052761,Indee,3,19
+360,"{'type': 'Point', 'coordinates': [-73.9914834, 40.7703479]}",5cd5a7372cda834177763b4e,games_video,New York City,USA,2008,40.7703479,-73.9914834,Why Hasn't He?,0,17
+384,"{'type': 'Point', 'coordinates': [-122.1490582, 37.4459832]}",5cd5a7372cda834177763b66,web,Palo Alto,USA,2008,37.4459832,-122.1490582,Trutoon,5,16
+410,"{'type': 'Point', 'coordinates': [-122.40971, 37.788796]}",5cd5a7372cda834177763b80,web,San Francisco,USA,2008,37.788796,-122.40971,KODA,15,28
+413,"{'type': 'Point', 'coordinates': [-74.0094471, 40.7464969]}",5cd5a7372cda834177763b83,web,New York,USA,2008,40.7464969,-74.0094471,Jobulous,6,24
+424,"{'type': 'Point', 'coordinates': [-73.976169, 40.727763]}",5cd5a7372cda834177763b8e,games_video,New York City,USA,2009,40.727763,-73.976169,Music For Busy People,3,18
+446,"{'type': 'Point', 'coordinates': [-122.1632941, 37.4441726]}",5cd5a7372cda834177763ba4,web,Palo Alto,USA,2008,37.4441726,-122.1632941,iCelebrate,3,16
+447,"{'type': 'Point', 'coordinates': [-122.159291, 37.443]}",5cd5a7372cda834177763ba5,web,Palo Alto,USA,2008,37.443,-122.159291,Purebred Network,3,16
+448,"{'type': 'Point', 'coordinates': [-73.9867361, 40.7297485]}",5cd5a7372cda834177763ba6,games_video,New York,USA,2008,40.7297485,-73.9867361,SwitchGames,3,26
+462,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",5cd5a7372cda834177763bb4,web,New York,USA,2008,40.756054,-73.986951,Wee Web,5,26
+468,"{'type': 'Point', 'coordinates': [-122.419204, 37.775196]}",5cd5a7372cda834177763bba,games_video,San Francisco,USA,2012,37.775196,-122.419204,Fliggo,2,27
+525,"{'type': 'Point', 'coordinates': [-122.42044, 37.772287]}",5cd5a7372cda834177763bf3,web,San Francisco,USA,2008,37.772287,-122.42044,myGreek,10,25
+534,"{'type': 'Point', 'coordinates': [-122.163352, 37.444531]}",5cd5a7372cda834177763bfc,web,Palo Alto,USA,2008,37.444531,-122.163352,Milo,20,16
+556,"{'type': 'Point', 'coordinates': [-73.9928423, 40.7395876]}",5cd5a7372cda834177763c12,web,NEW YORK,USA,2008,40.7395876,-73.9928423,FanFeedr,5,26
+560,"{'type': 'Point', 'coordinates': [-73.9893359, 40.7277434]}",5cd5a7372cda834177763c16,web,New York,USA,2008,40.7277434,-73.9893359,TrialX,5,19
+579,"{'type': 'Point', 'coordinates': [-73.9918181, 40.7489381]}",5cd5a7372cda834177763c29,web,New York City,USA,2009,40.7489381,-73.9918181,ArtNeighbor,5,27
+588,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",5cd5a7372cda834177763c32,web,New York,USA,2009,40.756054,-73.986951,Udorse,3,26
+592,"{'type': 'Point', 'coordinates': [-122.419204, 37.775196]}",5cd5a7372cda834177763c36,web,San Francisco,USA,2009,37.775196,-122.419204,Finest Expert,3,27
+595,"{'type': 'Point', 'coordinates': [-73.9918181, 40.7489381]}",5cd5a7372cda834177763c39,web,New York,USA,2009,40.7489381,-73.9918181,Strategist News,4,27
+623,"{'type': 'Point', 'coordinates': [-122.402922, 37.800482]}",5cd5a7372cda834177763c55,web,San Francisco,USA,2008,37.800482,-122.402922,One Simple Move,4,18
+626,"{'type': 'Point', 'coordinates': [-74.00717, 40.7408042]}",5cd5a7372cda834177763c58,web,New York,USA,2009,40.7408042,-74.00717,ChallengePost,17,27
+637,"{'type': 'Point', 'coordinates': [-73.986951, 40.756054]}",5cd5a7372cda834177763c63,web,New York City,USA,2008,40.756054,-73.986951,Conversition,10,26
