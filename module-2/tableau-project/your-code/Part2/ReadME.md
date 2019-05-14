@@ -30,3 +30,18 @@ The objective of this project is to find the ideal location for a new video game
 - **Query top employees:**  Here we sort the dtaframe and chose the company that has the highest number fo employees in the neighborhood.  Then we do a geoquery of the top company with 5000m radius.  We export this new dataframe as a csv for deeper analysis in Tableau.
 
 - **Query top companys worth:** Similar to the last step we repeat the process but with the companys net worth in mind.
+
+## Tableau Visual Analysis ##
+
+The two separate csv's where analysed through Tableau.  Two simple diagrams describe the data.  In the first page a map shows the location of the companies within tha 5000m radius of the query.  The second page is a circle diagram that shows the size of the circles according to the companies networth by sectors.  In both diagrams the companies have been colored to show how many employees work in them.
+
+[Palo Alto / California](https://public.tableau.com/profile/martin7293#!/vizhome/CompaniesPaloAlto/Story1)
+
+[Chicago / Illinois](https://public.tableau.com/profile/martin7293#!/vizhome/CompaniesChicago/Story1)
+
+## Conclusions ##
+
+-  After the analysis teh company should be founded in Palo Alto / California.
+-  The data contains the number of employees for the global company, not just the main office.  This can lead to errors.
+-  It is a good practice o plan the workflow and the objectives in advance in order to avoid wasting time.
+-  CartoPy is a good library for expirienced users, but requires a lot of work to give ditail to the maps. Therefore Tableau can give better results in less time.
