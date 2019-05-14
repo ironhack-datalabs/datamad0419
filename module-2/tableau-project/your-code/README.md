@@ -21,20 +21,20 @@ Para obtener la localización obtaremos por encontrar un buen ratio entre empres
 Se ha obtenido el costo del alquiler de un estudio, para tomarlo como referencia de que tan caro sería vivir en cada ciudad.  
 Para ello se ha realizado un scraping de la siguiente web:  
 
-[expatistan.com](https://www.expatistan.com/price/studio-rent-normal-area/ciudad)[newtab]  
+[expatistan.com](https://www.expatistan.com/price/studio-rent-normal-area/london) 
 
 ## Archivos del repositorio referentes a mongDB
 
 **main_companies.ipynb** : Donde se realiza toda la programación.  
 **oficinas.json**: Datos después de realizar los filtros  
 **oficinas_tableau.json** : Datos de la localización final  
-**map-oficinas.html**: Mapa html con la localizaciones de las oficinas [abrir](http://gmd.ovh/temp/map-oficinas.html)[newtab]
-**map-final.html**: Mapa html con la localización final [abrir](http://gmd.ovh/temp/map-final.html)[newtab]
+**map-oficinas.html**: Mapa html con la localizaciones de las oficinas [abrir](http://gmd.ovh/temp/map-oficinas.html)  
+**map-final.html**: Mapa html con la localización final [abrir](http://gmd.ovh/temp/map-final.html)  
 **README.md** : Descripción del proyecto  
 
 ## Anotaciones
 Se podría limpiar los datos en lo referente a las ciudades, ya que aparecen barrios y otras localizaciones
-y así poder utilizar [numbeo.com/london](https://www.numbeo.com/cost-of-living/in/London)[newtab] para obtener el costo de la vida
+y así poder utilizar [numbeo.com/london](https://www.numbeo.com/cost-of-living/in/London) para obtener el costo de la vida
 en esas ciudades.
 
 ## Mejoras
