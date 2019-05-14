@@ -17,7 +17,7 @@
     
     <meta name="viewport" content="width=device-width,
         initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <style>#map_1943b13d093942809d20878c1d088aee {
+    <style>#map_569c1c3653a442a2853db2f2b9b633b2 {
         position: relative;
         width: 100.0%;
         height: 100.0%;
@@ -28,7 +28,7 @@
 </head>
 <body>    
     
-    <div class="folium-map" id="map_1943b13d093942809d20878c1d088aee" ></div>
+    <div class="folium-map" id="map_569c1c3653a442a2853db2f2b9b633b2" ></div>
 </body>
 <script>    
     
@@ -36,9 +36,9 @@
         var bounds = null;
     
 
-    var map_1943b13d093942809d20878c1d088aee = L.map(
-        'map_1943b13d093942809d20878c1d088aee', {
-        center: [37.781386, -122.421406],
+    var map_569c1c3653a442a2853db2f2b9b633b2 = L.map(
+        'map_569c1c3653a442a2853db2f2b9b633b2', {
+        center: [51.5111369, -0.1247662],
         zoom: 16,
         maxBounds: bounds,
         layers: [],
@@ -49,7 +49,7 @@
 
 
     
-    var tile_layer_2f30e2de5238442e806fa3c8c8b1155e = L.tileLayer(
+    var tile_layer_90f5713dcb2a48fcb8041232f24015a8 = L.tileLayer(
         'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
         {
         "attribution": null,
@@ -61,43 +61,43 @@
         "opacity": 1,
         "subdomains": "abc",
         "tms": false
-}).addTo(map_1943b13d093942809d20878c1d088aee);
+}).addTo(map_569c1c3653a442a2853db2f2b9b633b2);
     
-        var marker_8912e53165c34e999abc96f5ef3b5882 = L.marker(
-            [37.781386, -122.421406],
+        var marker_e654c34922eb49e2b36ce0048b0da0da = L.marker(
+            [51.5111369, -0.1247662],
             {
                 icon: new L.Icon.Default(),
                 }
-            ).addTo(map_1943b13d093942809d20878c1d088aee);
+            ).addTo(map_569c1c3653a442a2853db2f2b9b633b2);
         
     
 
-                var icon_7784a214d9d44c0da6744653ec4cd61f = L.AwesomeMarkers.icon({
+                var icon_ed484054665d47cf81f22782400c55ba = L.AwesomeMarkers.icon({
                     icon: 'info-sign',
                     iconColor: 'white',
                     markerColor: 'green',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_8912e53165c34e999abc96f5ef3b5882.setIcon(icon_7784a214d9d44c0da6744653ec4cd61f);
+                marker_e654c34922eb49e2b36ce0048b0da0da.setIcon(icon_ed484054665d47cf81f22782400c55ba);
             
     
-            var popup_8a2696d09e2c46dbbebec0acfbd2afe9 = L.popup({maxWidth: '100%'
+            var popup_5380438e661948e7af35e0d26b12ab37 = L.popup({maxWidth: '100%'
             
             });
 
             
-                var html_1d5dac3c3c6a43fa9155f3fc1afaa477 = $(`<div id="html_1d5dac3c3c6a43fa9155f3fc1afaa477" style="width: 100.0%; height: 100.0%;">400    TubeSpree Name: name, dtype: object</div>`)[0];
-                popup_8a2696d09e2c46dbbebec0acfbd2afe9.setContent(html_1d5dac3c3c6a43fa9155f3fc1afaa477);
+                var html_f902c3b07469434995f335e6df430553 = $(`<div id="html_f902c3b07469434995f335e6df430553" style="width: 100.0%; height: 100.0%;">72    Zmags Name: name, dtype: object</div>`)[0];
+                popup_5380438e661948e7af35e0d26b12ab37.setContent(html_f902c3b07469434995f335e6df430553);
             
 
-            marker_8912e53165c34e999abc96f5ef3b5882.bindPopup(popup_8a2696d09e2c46dbbebec0acfbd2afe9)
+            marker_e654c34922eb49e2b36ce0048b0da0da.bindPopup(popup_5380438e661948e7af35e0d26b12ab37)
             ;
 
             
         
     
-        marker_8912e53165c34e999abc96f5ef3b5882.bindTooltip(
+        marker_e654c34922eb49e2b36ce0048b0da0da.bindTooltip(
             `<div>`
             + `Este es tu sitio!` + `</div>`,
             {"sticky": true}

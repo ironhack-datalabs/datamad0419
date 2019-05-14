@@ -5,8 +5,6 @@ import os
 import webbrowser
 import folium
 
-
-
 client = MongoClient ('localhost', 27017)
 db = client.companies
 collection = db.companies
@@ -133,24 +131,23 @@ def generate_map(row):
 
 
 #Main
-puntos= set_values()
-datos_crudo= query_to_db()
-df = json_normalize(data= datos_crudo, record_path='offices', 
-                    meta=['name', 'category_code', 'number_of_employees', 'founded_year'])
-df_clean= clean_nans(df)
-df_ordered= order_data(df_clean)
-df_final= get_class(df_ordered)
-df_geo = get_2d_geo(df_final)
+if __name__ == '__main__':
+  puntos= set_values()
+  datos_crudo= query_to_db()
+  df = json_normalize(data= datos_crudo, record_path='offices', 
+                      meta=['name', 'category_code', 'number_of_employees', 'founded_year'])
+  df_clean= clean_nans(df)
+  df_ordered= order_data(df_clean)
+  df_final= get_class(df_ordered)
+  df_geo = get_2d_geo(df_final)
+  df_geo.to_json('data_normalize_to_plot.json', orient='records', lines= True)
 
-df_geo.to_json('data_normalize_to_plot.json', orient='records', lines= True)
+  create_db_index('data_normalize_to_plot.json')
+  db = client.ofi_final
+  datos_mongo = db.ofi_final
 
-create_db_index('data_normalize_to_plot.json')
-
-db = client.ofi_final
-datos_mongo = db.ofi_final
-
-df_geo_mongo = get_geo_data(datos_mongo)
-df_points = calculate_points(df_geo_mongo)
-df_points= df_points.sort_values('points', ascending=False)
-mapa= generate_map(df_points[0:1])
-webbrowser.open('file://' + os.path.realpath('main_map.html'))
+  df_geo_mongo = get_geo_data(datos_mongo)
+  df_points = calculate_points(df_geo_mongo)
+  df_points= df_points.sort_values('points', ascending=False)
+  mapa= generate_map(df_points[0:1])
+  webbrowser.open('file://' + os.path.realpath('main_map.html'))
