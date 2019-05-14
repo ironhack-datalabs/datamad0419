@@ -2,7 +2,7 @@ import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QLineEdit
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import pyqtSlot
-from mainGeo import *
+
 
 class App(QWidget):
     def __init__(self):
@@ -85,7 +85,6 @@ class App(QWidget):
       'startup' : self.startup.text(),
       'usa': self.usa.text()
       }
-      geolocalizacion(self.values)
 
 
 if __name__ == '__main__':

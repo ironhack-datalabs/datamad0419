@@ -11,6 +11,9 @@ La limpieza de datos y construcción se ha realizado en **dos diferentes jupyter
 Primero se hizo "mongo-geo-lambdas" en el cual conseguí los datos deseados mediante apply y lambdas.
 Posteriormente se hizo con la función normalize ya que simplificaba el proceso y me permitía obtener todas las oficinas de las empresas se una  mejor manera.
 
+Es estudio final se lanza desde **mainGeo.py**. Pide los parámetros de puntuación.
+El ficheros mainQT.py ha sido para practicar interfaces graficas pero he teneido problemas de scope y he decidido no incluirlo al final por falta de tiempo.
+
 Se han eliminado todas las oficinas que presentaban NaN en latitud o longitud y las empresas que no especificaban número de empleados.
 
 Tras este punto obtenemos el Data set de las empresas seleccionadas.
