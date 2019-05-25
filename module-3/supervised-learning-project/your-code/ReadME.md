@@ -40,3 +40,13 @@ This data set was selected because it contained clean numeric data, so we could 
 **Pipeline:**
 
 ![flowDiagramPipeline](images/FlowDiagram.png)
+
+### Results 
+
+Checking data output shows that the data is clean, numeric and ready for Machine Learning.
+
+<img src="images/CheckingData1.png" alt="CheckData1" width="300"/>
+
+<img src="images/CheckingData2.png" alt="CheckData2" width="300"/>
+
+<img src="images/corr_heatmap.png" alt="corr_hm" width="500"/>
