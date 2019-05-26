@@ -1,42 +1,35 @@
 # Supervised Machine Learning
 
 ## Descripción
+Los datos están relacionados con campañas de marketing directo de una institución bancaria portuguesa.  
+Las campañas de marketing se basaron en llamadas telefónicas. A menudo, se requería más de un contacto con el mismo cliente, para poder acceder si el producto (depósito bancario a plazo) sería (o no) suscrito.  
 
-### banco:
+El dataset ha sido descargado desde kaggle: [dataset](https://www.kaggle.com/sonujha090/bank-marketing)[newtab]
 
-Title: Bank Marketing
-Sources Created by: Paulo Cortez (Univ. Minho) and Sérgio Moro (ISCTE-IUL) @ 2012
+### Explicación del dataset:
 
-Past Usage:
+El dataset está compuesto de 2 archivos:  
+* bank-full.csv 45211 filas 
+* bank.csv 4521 filas
 
-The full dataset was described and analyzed in:
+Este último se utilizará para el entrenamiento  
+Estos archivos no han sido subido al repositorio  
 
-S. Moro, R. Laureano and P. Cortez. Using Data Mining for Bank Direct Marketing: An Application of the CRISP-DM Methodology. In P. Novais et al. (Eds.), Proceedings of the European Simulation and Modelling Conference - ESM'2011, pp. 117-121, Guimarães, Portugal, October, 2011. EUROSIS.
+La descripción de las columnas del dataset puede ser consultada en el enlace anterior.
 
-Relevant Information:
+## Archivos del repositorio
 
-The data is related with direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be (or not) subscribed.
+**main.ipynb** : Aquí está todo el desarrollo del ML.  
+**README.md** : Descripción del proyecto  
 
-There are two datasets: 1) bank-full.csv with all examples, ordered by date (from May 2008 to November 2010). 2) bank.csv with 10% of the examples (4521), randomly selected from bank-full.csv. The smallest dataset is provided to test more computationally demanding machine learning algorithms (e.g. SVM).
+## Anotaciones
+Para este proyecto se ha tratado el problema como multiclase.  
+Se ha optado por una regresión logística  
+Y se han utilizado métodos de over_sampling para mejorar el sistema  
 
-The classification goal is to predict if the client will subscribe a term deposit (variable y).
+## Mejoras
+Mejorar las gráficas de las ROC curve
 
-Number of Instances: 45211 for bank-full.csv (4521 for bank.csv)
+## Otras cuestiones
+Esta ha sido una primera aproximación a un problema de ML, tendría que profundizar más en algunos temas.  
 
-Number of Attributes: 16 + output attribute.
-
-Attribute information:
-
-For more information, read [Moro et al., 2011].
-
-Input variables:
-
-bank client data: 1 - age (numeric) 2 - job : type of job (categorical: "admin.","unknown","unemployed","management","housemaid","entrepreneur","student", "blue-collar","self-employed","retired","technician","services") 3 - marital : marital status (categorical: "married","divorced","single"; note: "divorced" means divorced or widowed) 4 - education (categorical: "unknown","secondary","primary","tertiary") 5 - default: has credit in default? (binary: "yes","no") 6 - balance: average yearly balance, in euros (numeric) 7 - housing: has housing loan? (binary: "yes","no") 8 - loan: has personal loan? (binary: "yes","no")
-
-related with the last contact of the current campaign: 9 - contact: contact communication type (categorical: "unknown","telephone","cellular") 10 - day: last contact day of the month (numeric) 11 - month: last contact month of year (categorical: "jan", "feb", "mar", ..., "nov", "dec") 12 - duration: last contact duration, in seconds (numeric)
-
-other attributes: 13 - campaign: number of contacts performed during this campaign and for this client (numeric, includes last contact) 14 - pdays: number of days that passed by after the client was last contacted from a previous campaign (numeric, -1 means client was not previously contacted) 15 - previous: number of contacts performed before this campaign and for this client (numeric) 16 - poutcome: outcome of the previous marketing campaign (categorical: "unknown","other","failure","success")
-
-Output variable (desired target): 17 - y - has the client subscribed a term deposit? (binary: "yes","no")
-
-Missing Attribute Values: None
