@@ -4,7 +4,7 @@
 Los datos están relacionados con campañas de marketing directo de una institución bancaria portuguesa.  
 Las campañas de marketing se basaron en llamadas telefónicas. A menudo, se requería más de un contacto con el mismo cliente, para poder acceder si el producto (depósito bancario a plazo) sería (o no) suscrito.  
 
-El dataset ha sido descargado desde kaggle: [dataset](https://www.kaggle.com/sonujha090/bank-marketing)[newtab]
+El dataset ha sido descargado desde kaggle: [dataset](https://www.kaggle.com/sonujha090/bank-marketing)  
 
 ### Explicación del dataset:
 
